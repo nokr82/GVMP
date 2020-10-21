@@ -1,0 +1,39 @@
+2020-04-27 20:14:56 [INFO ] [] XPayClient initialize [/var/www/html/vmp/plugin/lgxpay/lgdacom] [test]
+2020-04-27 20:14:56 [DEBUG] [] Config [server_id] = [01]
+2020-04-27 20:14:56 [DEBUG] [] Config [timeout] = [60]
+2020-04-27 20:14:56 [DEBUG] [] Config [log_level] = [4]
+2020-04-27 20:14:56 [DEBUG] [] Config [verify_cert] = [1]
+2020-04-27 20:14:56 [DEBUG] [] Config [verify_host] = [1]
+2020-04-27 20:14:56 [DEBUG] [] Config [report_error] = [1]
+2020-04-27 20:14:56 [DEBUG] [] Config [output_UTF8] = [1]
+2020-04-27 20:14:56 [DEBUG] [] Config [auto_rollback] = [1]
+2020-04-27 20:14:56 [DEBUG] [] Config [log_dir] = [/var/www/html/vmp/plugin/lgxpay/lgdacom/log]
+2020-04-27 20:14:56 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2020-04-27 20:14:56 [DEBUG] [] Config [lgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2020-04-27 20:14:56 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2020-04-27 20:14:56 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2020-04-27 20:14:56 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2020-04-27 20:14:56 [DEBUG] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] Post [LGD_TXID] = [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4]
+2020-04-27 20:14:56 [DEBUG] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] Post [LGD_AUTHCODE] = [c78f84b1e33a2d1967ed34739514732edc40ded4]
+2020-04-27 20:14:56 [DEBUG] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] Post [LGD_MID] = [tsi_991050]
+2020-04-27 20:14:56 [DEBUG] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] Post [LGD_TXNAME] = [AuthOnlyByKey]
+2020-04-27 20:14:56 [DEBUG] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] Post [LGD_AUTHONLYKEY] = []
+2020-04-27 20:14:56 [DEBUG] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] Post [LGD_PAYTYPE] = []
+2020-04-27 20:14:56 [DEBUG] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] post_string = LGD_TXID=tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4&LGD_AUTHCODE=c78f84b1e33a2d1967ed34739514732edc40ded4&LGD_MID=tsi_991050&LGD_TXNAME=AuthOnlyByKey&LGD_AUTHONLYKEY=&LGD_PAYTYPE=
+2020-04-27 20:14:56 [DEBUG] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"XC01","LGD_RESPMSG":"본인확인 요청키[LGD_AUTHONLYKEY]가 없습니다.","LGD_RESPONSE":[{"LGD_RESPCODE":"XC01","LGD_HASHDATA":"6e9c2daa5cdfbc91b0fc6edc36877c5f","LGD_TIMESTAMP":"20200427201456","LGD_RESPMSG":"본인확인 요청키[LGD_AUTHONLYKEY]가 없습니다."}]}
+]
+2020-04-27 20:14:56 [INFO ] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] Response Code=[XC01], Msg=[����Ȯ�� ��ûŰ[LGD_AUTHONLYKEY]�� �����ϴ�.], Count=1
+2020-04-27 20:14:56 [DEBUG] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] Response (LGD_RESPCODE, 0) = XC01
+2020-04-27 20:14:56 [DEBUG] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] Response (LGD_HASHDATA, 0) = 6e9c2daa5cdfbc91b0fc6edc36877c5f
+2020-04-27 20:14:56 [DEBUG] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] Response (LGD_TIMESTAMP, 0) = 20200427201456
+2020-04-27 20:14:56 [DEBUG] [tsi_991050-01202004272014567a697b57b4e026b11cf815278a22e17b3f9f1ff4] Response (LGD_RESPMSG, 0) = 본인확인 요청키[LGD_AUTHONLYKEY]가 없습니다.

@@ -1,0 +1,135 @@
+body {
+    display: inline-block;
+}
+table {
+	margin:0px;
+	padding:0px;
+}
+ td {
+	list-style: none;
+	text-align:center !important;
+	vertical-align:top !important;
+	min-width:80px !important;
+	margin:0px;
+	padding:0px;
+}
+.firstTable { 
+	clear: both;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+	border-spacing: 0;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	background-color: transparent;
+	list-style: none;
+	padding:0;
+}
+
+
+.firstTable table:first-child table {
+	font-weight: bold;
+	border-bottom-width: 2px;
+	border-top: 0;
+	vertical-align: bottom; 
+}
+
+
+.firstTable .mainTable {
+	background:#c6c6c6;
+	width:90px !important;
+	display: inline-block;
+	margin:0 10px 0 10px;
+
+
+
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	height: 32px;
+	line-height: 32px;
+	/*overflow: hidden;*/
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background-color: #edc951;
+	border: solid 1px #000000;
+	color: #000;
+	width: 50px;
+	position: relative;
+	display: inline-block;
+}
+
+.firstTable table {
+	width:100%;
+	padding:0px;
+	margin:0px;
+	border-spacing: 0px
+}
+.firstTable table td {
+	width:50%;
+	padding:0px;
+	margin:0px;
+}
+
+.OrgLeftLine > table:first-child td:last-child { 
+	clear:both;
+	border-left:1px solid #000000;
+	border-top:1px solid #000000;
+	height:15px;
+}
+
+
+.OrgRightLine > table:first-child td:first-child { 
+	clear:both;
+	border-right:1px solid #000000;
+	border-top:1px solid #000000;
+	height:15px;
+}
+
+.OrgSingle > table:first-child > tbody > tr > td:first-child { 
+	clear:both;
+	border-top:0px !important;
+	border-right:1px solid #000000 !important;
+}
+.OrgSingle > table:first-child > tbody > tr > td:last-child { 
+	clear:both;
+	border-top:0px !important;
+	border-left:0px;
+}
+
+
+
+.sad {
+    background-color: #5ea763 !important;
+    color: #fff !important;
+}
+
+.angry {
+    background-color: #e56a77 !important;
+    color: #fff !important;
+}
+
+
+
+
+.mainTable:after {
+    content:"";
+    position:absolute;
+    top: -18px; 
+    left: -10px;
+    width: 28px ;
+    height: 28px;
+    background-image: url('../images/pt_smile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: 99997;    
+}
+
+.sad:after {
+    background-image: url(../images/pt_sad.png);
+}
+
+.angry:after {
+    background-image: url(../images/pt_angry.png);
+}

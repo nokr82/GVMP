@@ -1,0 +1,108 @@
+@charset 'utf-8';
+
+html {font-size: 18px;}
+body {padding: 0; padding-bottom: 5%; margin: 0; min-width: 320px; line-height:1.3; color: #333; background-color:#e2ebed; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all;}
+h1, h2, h3, h4, h5, h6 {font-size:1rem;}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {margin:0; padding:0;}
+ul, ol {list-style:none;}
+img {border:0;}
+a {text-decoration:none; font-weight: 300; color: #333}
+i, address, small, em {text-decoration: none; font-weight: 400; font-style: normal}
+table {border-collapse: collapse; border-spacing: 0;}
+figure {margin: 0; }
+strong, b {font-weight: normal}
+input {border:0;}
+Input {-webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0;box-shadow: none;}
+input::-ms-clear { display: none; }
+select {-webkit-appearance: none; -moz-appearance: none; appearance: none;} 
+select::-ms-expand { display: none; }
+
+
+/* 공통사항 */
+.clearfix::after {content: ''; display: block; clear: both}
+/*.pay_wrap input {transition: all 0.5s ease-in-out !important}*/
+.pay_wrap input.on {border: 2px solid #4285F4 !important; box-shadow: none }
+
+
+/* 메인시작 */ 
+.pay_wrap {padding-top: 3%}
+
+.inner {margin: 0 auto; width: 670px; text-align: center}
+.inner h2 {margin: 0 auto 55px; font-size: 1.7rem; font-weight: normal; color: #b7b6b6}
+.inner h3 {margin-bottom: 10px; text-align: center; font-size: 0.9rem; font-weight: normal; color: #49474a}
+.inner .card_info {position: relative; padding: 4.7% 5.3% 6.75%; background-color: #fff; box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); box-sizing: border-box}
+.inner .card_info::after {content: ''; position: absolute; left: 50%; bottom: -34px; margin-left: -36px; width: 72px; height: 34px; background: url('../images/pay_card_triange_.png')no-repeat 0 0;}
+.inner .card_info ul li {margin-bottom: 20px;}
+.inner .card_info ul li label {margin-bottom: 16px; display: block; font-size: 1.2rem; color: #b8b3b3}
+.inner .card_info ul li input { border-radius: 10px; background: #f9f5f5;}
+.inner .card_info ul li .valueOnly {width: 92px; height: 46px; font-size: 1.2rem; color: #717171; line-height: 46px; text-align: center}
+.inner .card_info ul li input::placeholder {color: #b8b3b3}
+.inner .card_info ul li i {margin: 0 9px; font-size: 1.5rem; color: #b8b3b3; vertical-align: middle}
+.inner .card_info ul li:nth-child(2) i {margin: 0 15px; font-size: 1.2rem; vertical-align: baseline} 
+.inner .card_info ul .select_installmt {position: relative}
+.inner .card_info ul .select_installmt select {padding: 0 12em; width: 100%; height: 46px; text-align-last: center;border: 0;  border-radius: 10px; background: #f9f5f5 url('../images/play-button.png') no-repeat 60% center; background-size: 10px; font-size: 1.2rem; color: #717171; outline:0 !important;}
+
+.inner .card_info ul .select_installmt select option {text-align: center}
+.inner .card_info ul .money_box .total_money_box {width: 100%; height: 46px; border-radius: 10px; background: #f1d9d9;}
+.inner .card_info ul .money_box .total_money_box #total_money {display: inline-block; margin: 0 auto 0 -16%; width: 30%; height: 42px; border: none; border-radius: none; font-size: 1.2rem; color: #717171; line-height: 42px; text-align: right; vertical-align: baseline; background: none;}
+.inner .card_info ul .money_box .total_money_box #total_money:focus {border: none !important; box-shadow: none !important}
+.inner .card_info ul .money_box .total_money_box .won {display: inline-block; height: 42px; font-size: 1.2rem; color: #717171;line-height: 42px;}
+
+.card_info .inp_name, .card_info .inp_phone {	width:100% !important;
+	height:46px;
+	line-height: 46px;
+	padding:0 16px;
+  outline:0;
+font-size:1.2rem;
+}
+   
+
+  .card_info .law_notice {
+    padding:19px 30px;
+    margin:19px auto 0;
+    border: 1px solid #bcb8b8;	
+    border-radius: 11px;
+    text-align: center;
+    font-weight: 400;
+    font-size:0.77rem;
+    line-height: 1.71;
+    color:#787175;
+    letter-spacing: -0.9px;
+    box-sizing: border-box;
+    background: #fff;
+  }
+
+
+
+
+.inner .card_img_box {margin-top: 10%; padding: 20px 0 23px; background-color: #49474a; box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);text-align: center}
+.inner .card_img_box img {width: 85px;}
+.inner .card_img_box p {margin:14px auto 0; padding-top: 8px; width: 145px; border-top: 5px solid #6b6b6b; border-radius: 2px; font-size: 1rem; color: #fff}
+
+.inner .card_btn {margin: 50px 0;}
+.inner .card_btn p {font-size: 0.9rem; color: #49474a}
+.inner .card_btn .submit_btn {display: block; margin: 10px 0 0 0; width: 100%; height: 63px; background-color: #eb6868; font-size: 1.45rem; font-weight: 400; color: #fff; line-height: 63px;}
+
+/* 미디어쿼리 */  
+@media (max-width: 725px){
+html {font-size: 14px}
+.inner {width: 443px;}
+.inner .card_info ul li input[type="text"] {width: 70px; height: 35px; line-height: 35px;}
+.inner .card_info ul .select_installmt select {padding: 0 10em}
+.inner .card_img_box img {width: 19%}
+.inner .card_btn a {height: 43px; line-height: 43px}
+}
+
+@media (max-width: 480px){
+.inner {width: 98%}
+.inner h2 {margin: 7% auto; font-size: 1.2rem}
+.inner .card_info::after {margin-left: -5%; width: 10%; background-size: contain}
+.inner .card_info ul li input[type="text"] {width: 20%}
+.inner .card_info ul li i {margin: 0 1%}
+.inner .card_info ul li:nth-child(2) i {margin: 0 3%}
+.inner .card_info ul .select_installmt select {padding: 0 6em; background-position-x: 66%}
+.inner .card_info ul .money_box .total_money_box #total_money {margin: 0 auto;}    
+.inner .card_img_box img {width: 13.8%}
+.inner .card_img_box p {width: 23.3%; border-width: 4px; word-break: keep-all}
+.inner .card_btn p {margin: 0 auto; width: 216px; line-height: 25px;}
+}

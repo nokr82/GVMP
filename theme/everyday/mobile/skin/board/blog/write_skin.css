@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+#fwrite{
+    width: 70%;
+    margin: auto;
+}
+
+@media (max-width:768px){
+    #fwrite{
+        width: 95%;
+    }
+}
+
+/*@media (max-width:620px){
+    #smart_editor2 .se2_text_tool ul:nth-child(3){
+        clear: both;
+    }
+}*/

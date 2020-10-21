@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head runat="server">
+    <title>*** KCP Online Payment System [ASP.NET Version] ***</title>
+    <link href="../css/sample.css" rel="stylesheet" type="text/css" />
+
+    <script language="javascript" type="text/javascript">
+
+    // 주문번호 생성 예제
+    function init_orderid()
+    {
+        var today = new Date();
+        var year  = today.getFullYear();
+        var month = today.getMonth()+ 1;
+        var date  = today.getDate();
+        var time  = today.getTime();
+
+        if(parseInt(month) < 10)
+        {
+            month = "0" + month;
+        }
+
+        var vOrderID = year + "" + month + "" + date + "" + time;
+
+        document.forms[0].ordr_idxx.value = vOrderID;
+    }
+
+    function jsf__show_progress( show )
+    {
+        if ( show == true )
+        {
+            window.show_pay_btn.style.display  = 'none';
+            window.show_progress.style.display = 'inline';
+        }
+        else
+        {
+            window.show_pay_btn.style.display  = 'inline';
+            window.show_progress.style.display = 'none';
+        }
+    }
+
+    function  jsf__chk_form( form )
+    {
+        phoneno    = form.phon_no.value;
+        phonenolen = form.phon_no.value.length;
+
+        if ( phonenolen < 10 || phonenolen > 11 )
+        {
+            alert( '휴대폰 전화번호의 길이는 최소 10자리에서 최대 11자리입니다.' );
+            form.phon_no.focus();
+            form.phon_no.select();
+            return  false;
+        }
+
+        for ( inx = 0 ; inx < phonenolen ; inx ++ )
+        {
+            if ( phoneno.charAt( inx ) > '9' || phoneno.charAt( inx ) < '0' )
+            {
+                alert( '결제요청 전화번호는 \'-\' 없이 숫자만 입력하여 주십시오.' );
+                form.phon_no.focus();
+                form.phon_no.select();
+                break;
+            }
+        }
+
+        if ( phoneno.charAt(0) == "0" )
+        {
+            if( phoneno.charAt(1) == "0" || phoneno.charAt(1) == "7" || phoneno.charAt(1) == "8" || phoneno.charAt(1) == "9" )
+            {
+                alert('결제요청 가능한 전화번호를 입력하시기 바랍니다.');
+                form.phon_no.focus();
+                form.phon_no.select();
+                return false;
+            }
+            
+        }
+
+        return  true;
+    }
+
+    function  jsf__pay_ars( form )
+    {
+
+        jsf__show_progress(true);
+
+
+        if ( jsf__chk_form( form ) == false )
+        {
+            jsf__show_progress(false);
+
+            return false;
+
+        }
+
+        return true;
+    }
+
+    </script>
+
+</head>
+
+<body onload="init_orderid();" >
+
+<div align="center">
+    <form name="formOrder" method="post" action="./pp_cli_hub.php">
+
+    <table width="589" cellspacing="0" cellpadding="0">
+        <tr style="height:14px"><td style="background-image:url('../img/boxtop589.gif')"></td></tr>
+        <tr>
+            <td style="background-image:url('../img/boxbg589.gif') " align="center">
+
+                <table width="551" cellspacing="0" cellpadding="16">
+                    <tr style="height:17px">
+                        <td style="background-image:url('../img/ttbg551.gif');border:0px;" class="white">
+                            <span class="bold big">[가상번호 ARS 신용카드]</span> 등록 요청 샘플 페이지
+                        </td>
+                    </tr>
+                    <!-- 상단 문구 -->
+                    <tr>
+                        <td style="background-image:url('../img/boxbg551.gif') ;">
+                            <p class="align_left">해당 페이지는 가상번호 ARS 신용카드 상품등록 부분입니다.</p>
+                        </td>
+                    </tr>
+                    <tr style="height:11px"><td style="background:url('../img/boxbtm551.gif') no-repeat;"></td></tr>
+                </table>
+
+                <!-- 신용카드 ARS 가상번호 상품등록 폼 -->
+                <table width="527" border="0" cellspacing="0" cellpadding="0" class="margin_top_20">
+                    <tr><td colspan="2"  class="title">주문 정보</td></tr>
+					<!-- 요청 방법 -->
+                    <tr>
+                        <td class="sub_title1">요청 방법</td>
+                        <td class="sub_input1">가상번호 ARS 신용카드 결제<input type="hidden" name="pay_method" value="VARS" class="frminput"/></td>
+                    </tr>
+                    <!-- 주문 번호(ordr_idxx) -->
+                    <tr>
+                        <td class="sub_title1">주문 번호</td>
+                        <td class="sub_input1"><input type="text" name="ordr_idxx" value="" size="30" maxlength="50"  class="frminput" /></td>
+                    </tr>
+					<!-- 요청 금액(phon_mny) -->
+                    <tr>
+                        <td class="sub_title1">요청 금액</td>
+                        <td class="sub_input1"><input type="text" name="phon_mny" value="1004" size="9" maxlength="12"  class="frminput" /></td>
+                    </tr>
+                    <!-- 상품명(good_name) -->
+                    <tr>
+                        <td class="sub_title1">상품명</td>
+                        <td class="sub_input1"><input type="text" name="good_name" value="KCP테스트상품" maxlength="100"  class="frminput" /></td>
+                    </tr>
+                    <!-- 주문자 이름(buyr_name) -->
+                    <tr>
+                        <td class="sub_title1">주문자이름</td>
+                        <td class="sub_input1"><input type="text" name="buyr_name" value="홍길동" size="20" maxlength="20"  class="frminput" /></td>
+                    </tr>
+                    <!-- 고객 휴대전화번호(phon_no) -->
+                    <tr>
+                        <td class="sub_title1">고객 휴대전화번호</td>
+                        <td class="sub_input1"><input type="text" name="phon_no" value="" size="20" maxlength="11"  class="frminput" />('-' 없이 숫자만, 10~11자리)</td>
+                    </tr>
+                    <!-- 이동통신사 (comm_id) -->
+                    <tr>
+                        <td class="sub_title1">이동통신사</td>
+                        <td class="sub_input1">
+						<input type="radio" name="comm_id" value="SKT" checked>SKT
+                        <input type="radio" name="comm_id" value="KTF">KT
+						<input type="radio" name="comm_id" value="LGT">LG U+</td>
+                    </tr>
+					<!-- 인증 구분(cert_flg) -->
+                    <tr>
+                        <td class="sub_title1">인증 구분</td>
+                        <td class="sub_input1">
+						<input type="radio" name="cert_flg" value="Y" checked>인증
+                        <input type="radio" name="cert_flg" value="N">비인증</td>
+                    </tr>
+                </table>
+
+                <table width="527" border="0" cellspacing="0" cellpadding="0" class="margin_top_10">
+                    <!-- 결제 요청/처음으로 이미지 -->
+                    <tr id="show_pay_btn">
+                        <td class="center">
+                            <input type="image" src="../img/btn_pay.gif" alt="결제를 요청합니다" onclick="return jsf__pay_ars(this.form);" />
+                            <a href="../index.html"><img src="../img/btn_home.gif" width="108" height="37" alt="처음으로 이동합니다" /></a>
+                        </td>
+                    </tr>
+                    <!-- 처리 중입니다. -->
+                    <tr id="show_progress" style="display:none" >
+                        <td class="center red bold">
+                            처리 중입니다. 잠시만 기다려 주십시오...
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr><td><img src="../img/boxbtm589.gif" alt="Copyright(c) KCP Inc. All rights reserved."/></td></tr>
+    </table>
+
+    <!-- 필수값: 요청종류(pay) -->
+    <input type="hidden" name="req_tx" value="pay" readonly>
+
+    <!-- 선택 항목 : ARS 결제 만료기간 (요청에 대한 신용카드 결제 만료기간을 YYYYMMDDHHMMSS 로 세팅 -->
+    <input type="hidden" name="expr_dt" value="">
+
+    </form>
+</div>
+</body>
+</html>

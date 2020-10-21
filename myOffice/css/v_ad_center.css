@@ -1,0 +1,766 @@
+@charset "UTF-8";
+/*V 광고센터*/
+.haze {width: 0; height: 0; color: transparent; text-indent: -99999%; overflow-x:hidden;}
+
+/*버튼*/
+.btn_v_ad_list {display: inline-block; width: 64px; height: 32px; line-height: 32px; border-radius: 5px; background-color: #1b83a3; font-size: 13px; color: #fff; letter-spacing: -0.65px; text-align: center}
+
+
+/*input*/
+.v_ad_content input {padding: 5px 13px; border: 1px solid #ddd; font-family: 'Noto Sans KR'; font-size: 14px; -webkit-appearance: none; appearance: none; -webkit-border-radius: 0; border-radius: 0;}
+.v_ad_content input[type=text] {font-size: 14px}
+.v_ad_content input:focus {box-shadow: none; border: none !important; border-bottom: 1px solid  #128eba!important;}
+.v_ad_content input[type=text]:focus {box-shadow: none; border: none !important; border-bottom: 2px solid  #128eba!important; font-size: 14px}
+.v_ad_content input[type=number]:focus {outline: none; box-shadow: none; border: none !important; border-bottom: 2px solid  #128eba!important; font-size: 14px;}
+.v_ad_content textarea {overflow:hidden; padding: 7px; resize: none; border: 1px solid #ddd; font-size: 14px; font-weight: 300}
+.v_ad_content textarea::placeholder {font-size: 14px; letter-spacing: -0.7px; color: #ccc}
+.v_ad_content textarea:focus {box-shadow: none; border: none !important; border-bottom: 2px solid  #128eba!important; font-size: 14px}
+input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+.v_ad_content input::placeholder {font-size: 14px; letter-spacing: -0.7px; color: #ccc}
+
+
+/*스크롤바*/ 
+.mCS-inset-2-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-inset-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-inset-3-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-inset-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-inset-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-inset.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {background: #787878 !important}
+.mCS-my-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ background-color: red; }
+
+
+/*ie 일때 object fit 효과*/
+.custom-object-fit {position: relative; background-size: cover;  background-position: center center;}
+.custom-object-fit img {opacity: 0;}
+
+
+/*유저 정보*/
+.user_Modified {margin-bottom: 50px;}
+
+/*나눔 배너*/
+#givePoint {clear: both}
+
+/*정산 캘린더*/
+.calendar {margin-top: 50px;}
+
+/*alert*/
+.alert_box .alert_msg {width: 400px !important}
+.alert_box .alert_msg .confirm_box p {font-size: 17px !important}
+
+
+
+
+/*마이오피스 V광고센터*/
+#v_center {margin: 20px auto 10px; width: 1024px; }
+#v_center a {margin: 0}
+.vc_img_banner .vc_img_box {display: block; width: 100%; height: 215px;}
+.vc_img_banner .vc_img_box img {display: block; width: 100%; height: 100%; object-fit: cover}
+.vc_img_banner .vc_img_box .vcenter_img_mobile {display: none}
+
+.vc_txt_banner {margin-top: 7px; }
+.vc_txt_banner .vc_txt_box {position: relative; display: block; padding-left: 107px; width: 100%; height: 81px; line-height: 81px; background: #fff url('../images/bg_vcenter_txt_pc.jpg')no-repeat left center; background-size: contain; font-size: 18px; letter-spacing: -0.9px; text-align: left; color: #222222;}
+.vc_txt_banner .vc_txt_box::after {content: '광고'; position: absolute; left: 28px; top: 50%; margin-top: -11px; width: 51px; height: 22px; line-height: 22px; border-radius: 5px;  border: solid 1px #dddddd; background-color: #fff; font-family: 'NanumGothic';  font-size: 12px; letter-spacing: -0.6px; color: #999; text-align: center}
+.vc_txt_banner .vc_txt_box .vc_txt_tit {overflow:hidden; float: left; width: 85%; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal;}
+.vc_txt_banner .vc_txt_box .vc_txt_more {float: right;width: 12%; height: 81px; line-height: 81px; background: linear-gradient(152deg, #176e96, #1e92ad, #1e92ad, #126c81); background-size: 800% 800%; font-size: 15px; color: #fff; letter-spacing: -0.75px; text-align: center; -webkit-animation: btnBlinker 3s ease infinite;-moz-animation: btnBlinker 3s ease infinite; animation: btnBlinker 3s ease infinite;}
+
+
+
+/*V광고 센터 시작*/
+.v_ad_content {margin: 47px auto 18%; width: 1024px; font-family: 'NanumSquare';}
+.v_ad_content h4 {font-weight: 700; font-size: 35px; letter-spacing: -1.75px;}
+.v_ad_content h4 em {margin-left: 15px; font-size: 15px; letter-spacing: -0.75px; color: #999}
+.v_ad_content .btn_v_ad {position: absolute; top: 0; right: 0; padding-left: 28px; width: 181px; height: 46px; line-height: 46px; border-radius: 22.5px; background-image: linear-gradient(106deg, #176f97, #1e92ad); font-size: 15px; letter-spacing: -0.75px; color: #fff; animation: wave 1s ease-in-out infinite}
+.v_ad_content .btn_v_ad i {display: inline-block; margin-left: 31px; width: 22px; height: 16px; vertical-align: text-top}
+
+.v_ad_content .my_point {position: relative}
+.v_ad_content .my_point .btn_exchange i {background: url('../images/bg_v_ad_change.png')no-repeat center; background-size: cover}
+.v_ad_content .my_point ul {overflow: hidden; margin-top: 25px; background-color: #fff}
+.v_ad_content .my_point ul li {position: relative; float: left; padding: 0; width: 24%; height: 81px; line-height: 81px; text-align: center}
+.v_ad_content .my_point ul li + li:after {content: ''; position: absolute; left: 0; top: 50%; margin-top: -9px; width: 1px; height: 18px; background-color: #b6b6b6}
+.v_ad_content .my_point ul li em {margin-right: 7px; font-size: 15px; color: #999; letter-spacing: -0.75px;}
+.v_ad_content .my_point ul li strong {font-size: 20px; font-weight: 700; color: #222; letter-spacing: -1px;}
+.v_ad_content .my_point ul li:last-child {width: 28%}
+.v_ad_content .my_point ul li:last-child em {display: inline-block; padding-left: 27px; line-height: 23px; background: url('../images/icon_v_ad_bizmoney.png')no-repeat left top; background-size: 20px; }
+
+.ad_list_wrap {position: relative; margin-top: 110px;}
+.ad_list_wrap .btn_make_ad i {width: 21px; height: 21px; background: url('../images/bg_v_ad_list.png')no-repeat center; background-size: cover; vertical-align: sub;}
+.ad_list_wrap .ad_list {margin-top: 25px; text-align: center}
+.ad_list_wrap .ad_list table {width: 100%; border-collapse: collapse;}
+.ad_list_wrap .ad_list thead tr {height: 49px; line-height: 49px; background-color: #6e6e6e; }
+.ad_list_wrap .ad_list thead tr th {font-size: 17px; font-weight: 400; letter-spacing: -0.75px; color: #fff }
+.ad_list_wrap .ad_list tbody {background-color: #fff}
+.ad_list_wrap .ad_list tbody tr {height: 57px; line-height: 57px; border-bottom: 1px solid #eee}
+.ad_list_wrap .ad_list tbody td {font-family: 'Nanum Gothic'; font-size: 14px; font-weight: 400; color: #222; letter-spacing: -0.7px; text-align: center}
+.ad_list_wrap .ad_list tbody td.ad_tit {width: 40%}
+.ad_list_wrap .ad_list tbody td a {font-size: 14px; font-weight: 400; color: #222; letter-spacing: -0.7px; }
+.ad_list_wrap .ad_list tbody .ad_toggle a {position: relative; display: block; margin: 0 auto; width: 55px; height: 27px; border-radius: 13px; background-color: #868582; text-indent: -999999%; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+.ad_list_wrap .ad_list tbody .ad_toggle a::after {content: ''; position: absolute; top: 2px; left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff;box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.2); transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) }
+.ad_list_wrap .ad_list tbody .ad_toggle.on a {background-color: #8ec322;}
+.ad_list_wrap .ad_list tbody .ad_toggle.on a::after {left: auto; right: 4px; }
+
+.ad_list_wrap .ad_list tbody .ad_state .btn_v_ad_list {font-size: 13px; color: #fff}
+.ad_list_wrap .ad_list tbody .ad_state .btn_v_ad_list.btn_await {background-color: #1b83a3;}
+.ad_list_wrap .ad_list tbody .ad_state .btn_v_ad_list.btn_seal {background-color: #36b65d; }
+.ad_list_wrap .ad_list tbody .ad_state .btn_v_ad_list.btn_reject {background-color: #c45252;}
+
+.ad_list_wrap .ad_list tbody .btn_modi {font-size: 12px; background-color: #dadada; letter-spacing: -0.6px; color: #777}
+.ad_list_wrap .ad_list tbody .btn_delete {background: #777; color: #fff}
+
+.ad_list_wrap .ad_list tbody td .ad_txt {display: none}
+
+
+
+/*광고만들기*/ 
+.v_ad_content h3 {position: relative; padding-bottom: 52px; font-size: 45px; font-weight: 900; letter-spacing: -2.25px; color: #222; text-align: center }
+.v_ad_content h3::after {content: ''; display: block; position: absolute; left: 50%; bottom: 0; margin-left: -24.5px; width: 49px; height: 4px; background-color: #ddd}
+
+.make_txt_info {margin: 47px 0 98px; text-align: center; font-size: 20px; font-weight: 500; letter-spacing: -1px; color: #777;}
+.make_txt_info p {word-break: keep-all}
+.make_txt_info strong {font-weight: 700; color: #000;  word-break: keep-all} 
+
+
+.v_ad_banner {margin: 29px 0 53px; padding: 24px 37px 28px; background: url('../images/bg_v_ad_banner.png')no-repeat 100% 0; font-family: 'Noto Sans KR'; font-size: 15px; letter-spacing: -0.75px; color: #9e9e9e; cursor: pointer}
+.v_ad_banner .banner_teaser .banner_icon {display: inline-block;}
+.v_ad_banner .banner_teaser .banner_icon i {display: inline-block; width: 26px; height: 26px; line-height: 26px; border-radius: 50%; font-family: 'Noto Sans KR'; font-size: 13px; color: #fff; text-align: center}
+.v_ad_banner .banner_teaser .banner_icon i:nth-child(1) {background-color: #399f06}
+.v_ad_banner .banner_teaser .banner_icon i:nth-child(2) {margin-left: -10px; background-color: #db4c77}
+.v_ad_banner .banner_teaser .banner_icon i:nth-child(3) {margin-left: -10px; background-color: #1c7cae;}
+.v_ad_banner .banner_teaser p {display: inline-block; margin-left: 5px; font-size: 15px; font-weight: 400; letter-spacing: -0.75px; color: #9e9e9e}
+
+.v_ad_banner .banner_teaser .banner_tit {font-size: 37px; font-weight: 700; letter-spacing: -1.85px; color: #000}
+.v_ad_banner .banner_teaser .banner_tit strong {margin-left: 5px}
+.v_ad_banner .banner_teaser a {position: relative; margin-top: 13px; display: block; padding-left: 20px; width: 142px; height: 41px; line-height: 41px; background-image: linear-gradient(17deg, #176f97, #1e92ad); font-size: 13px; letter-spacing: -0.65px; text-align: left; color: #fff}
+.v_ad_banner .banner_teaser a::before{content:''; display: block; position: absolute; top:50%; right: 11%; width: 28px; height: 1px; background-color: #fff}
+.v_ad_banner .banner_teaser a::after{content:''; display: block; position: absolute; top: 43%; right: 11%; width: 7px; height: 1px; background-color: #fff; transform: rotate(-133deg)}
+
+.v_ad_banner .banner_pop_wrap.on {display: block;}
+.v_ad_banner .banner_pop_wrap {display: none; position: fixed; top:0; left: 0; right: 0; bottom: 0; z-index: 100000; background: rgba(0,0,0,0.6); } 
+.v_ad_banner .banner_pop_wrap .banner_pop_content {position: relative; margin: 15% auto; padding-top:30px;  width: 54%; background: #fff; text-align: center; cursor: default;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .btn_close {position: absolute; top: 20px; right: 20px; z-index: 10000; width: 19px; height: 19px; background: url('../images/btn_close_light_bk.svg')no-repeat; background-size: contain; text-indent: -99999%}
+.v_ad_banner .banner_pop_wrap .banner_pop_content h3 {padding-bottom: 26px; font-size: 33px; font-weight: 500}
+.v_ad_banner .banner_pop_wrap .banner_pop_content p {margin: 4% 0; font-family: 'NanumSquare'; font-size: 17px; font-weight: 400; letter-spacing: -0.85px; color: #999; word-break: keep-all}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info {overflow: hidden; padding: 4% 0 5%; background-color: #f1f1f1;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info > div {float: left; width: 50%;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info > div label {font-size: 15px; letter-spacing: -0.75px; color: #222}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info > div input {margin-left: 7%; width: 65%; height: 39px}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .btn_banner_pop {display: block; padding: 0;width: 100%; height: 63px; line-height: 63px; border: none; background: #1a7da0; font-size: 18px; font-weight: 300; letter-spacing: -0.9px; color: #edeff5;}
+
+
+.v_ad_user_content .v_ad_choice {overflow: hidden; margin-top: 29px; font-family: 'NanumSquare';cursor: pointer}
+.v_ad_user_content .v_ad_choice > div {float: left; position: relative; width: 48.89%; height: 117px;}
+.v_ad_user_content .v_ad_choice > div + div {margin-left: 2%;}
+.v_ad_user_content .v_ad_choice > div input[type=radio] {display: none; width: 0; height: 0}
+.v_ad_user_content .v_ad_choice > div input[type=radio] + label {position: relative; display: block; padding: 6.2% 6%; width: 100%; height: 100%; background-color: #fff; font-weight: 700; font-size: 26px; letter-spacing: -1.3px;cursor: pointer }
+.v_ad_user_content .v_ad_choice > div input[type=radio] + label::after {content:''; display: block; position: absolute; right: 4%; top: 50%; margin-top: -46.5px; width: 93px; height: 93px; border-radius: 50%; background: #fff url('../images/icon_v_ad_img.png')no-repeat center; background-size: 58px}
+.v_ad_user_content .v_ad_choice > div input[type=radio]:checked + label {background-color: #1a7da0; color: #fff}
+.v_ad_user_content .v_ad_choice > div input[type=radio]:checked + label::after {background: #fff url('../images/icon_v_ad_img_hover.png')no-repeat center; background-size: 58px}
+.v_ad_user_content .v_ad_choice > div input[type=radio]:checked + label + p {color: #bee0ec}
+.v_ad_user_content .v_ad_choice > div > p {position: absolute; left: 6%; bottom: 24%; font-size: 15px; font-weight: 500; letter-spacing: -0.75px; color: #777}
+
+.v_ad_user_content .v_ad_choice .choice_txt input[type=radio] + label::after {background: #fff url('../images/icon_v_ad_txt.png')no-repeat center; background-size: 58px}
+.v_ad_user_content .v_ad_choice .choice_txt input[type=radio]:checked + label::after {background: #fff url('../images/icon_v_ad_txt_hover.png')no-repeat center; background-size: 58px}
+
+
+.v_ad_user_content .v_ad_user_info {overflow: hidden; margin-top: 19px; padding: 37px 0 10px; background: #fff; font-family: 'Noto Sans KR'}
+.v_ad_user_content .v_ad_user_info.user_info_img {display: block}
+.v_ad_user_content .v_ad_user_info.user_info_txt {display: none}
+.v_ad_user_content .v_ad_user_info li {overflow: hidden; float: left; margin-bottom: 22px; padding-left: 26px; width: 50%; height: 39px;}
+.v_ad_user_content .v_ad_user_info li > div {float: left}
+.v_ad_user_content .v_ad_user_info li .col_1 {width: 31%}
+.v_ad_user_content .v_ad_user_info li .col_2 {width: 59%}
+.v_ad_user_content .v_ad_user_info li label {line-height: 39px; font-size: 15px; font-weight: 400; letter-spacing: -0.75px; color: #222}
+.v_ad_user_content .v_ad_user_info li input {width: 100%; height: 39px}
+.v_ad_user_content .v_ad_user_info li:nth-child(3) {font-size: 0}
+.v_ad_user_content .v_ad_user_info li #mb_money {width: 88%}
+.v_ad_user_content .v_ad_user_info li b {display: inline-block; margin-left: -1px; width:12%; height: 39px; line-height: 36px; border:1px solid #ddd; background-color: #f1f1f1; color: #a3a3a3; font-size: 12px; text-align: center; vertical-align: bottom}
+.v_ad_user_content .v_ad_user_info li strong {line-height: 39px; font-size: 15px; font-weight: 400; letter-spacing: -0.75px; color: #222}
+.v_ad_user_content .v_ad_user_info li em {display: block; font-size: 13px; color: #aaa; letter-spacing: -0.6px; word-break: keep-all}
+.v_ad_user_content .v_ad_user_info li.user_info_file {height: 57px; font-size: 0}
+.v_ad_user_content .v_ad_user_info li.user_info_file .col_2 {position: relative; height: 100%}
+.v_ad_user_content .v_ad_user_info li.user_info_file strong {line-height: 19px; }
+.v_ad_user_content .v_ad_user_info li.user_info_file input[type=file] {display: none;}
+.v_ad_user_content .v_ad_user_info li.user_info_file .btn_ad_user {display: inline-block; width: 48.8%; height: 39px; line-height: 39px;  background-color: #595959; font-size: 13px; color: #edeff5; text-align: center; letter-spacing: -0.65px; vertical-align: baseline; cursor: pointer}
+.v_ad_user_content .v_ad_user_info li.user_info_file .btn_ad_user.btn_preview {margin-left: 2.1%; background-color: #128eba;}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview.active {display: block}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview {display: none; position: fixed; z-index:100000; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7);}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .preview_img {overflow: hidden; /*position: absolute; left: 50%; top: 40%; margin-left: -512px; margin-top: -107.5px;*/ margin: 20% auto 0; width: 1024px; height: 215px; background: #eee}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .preview_img.mobile_img {/*margin-left: -362.5px; margin-top: -161.5px;*/ width: 725px; height: 323px;}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .preview_img img {display: block; height: 100%; object-fit: contain;}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .scrollbar_info {display: none; position: fixed; left: 50%; margin-top: 3%; margin-left: -200px; width: 400px; font-size: 24px; letter-spacing: -1.2px; color: #fff; text-align: center}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .scrollbar_info i {display: inline-block; width: 18px; height: 22px; background: url('../images/icon_arrow_left.png') 0 0; background-size: cover; animation: blinker 1s ease-in-out infinite}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .scrollbar_info i.right_arrow {background: url('../images/icon_arrow_right.png') 0 0; background-size: cover; }
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .scrollbar_info i + i {animation: blinker_reverse 1s ease-in-out infinite;}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .scrollbar_info > span {padding: 0 3%}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .scrollbar_info i.arrow_blink_1 + i {margin-left: -10px;}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .scrollbar_info i.arrow_blink_2 + i {margin-left: -10px;}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .btn_close {position: fixed; top: 100px; right: 10px; z-index: 9999;  width: 3%; height: 4%; background: url('../images/btn_close.png')no-repeat 0 0; background-size: contain; }
+.v_ad_user_content .v_ad_user_info li.user_info_file .mb_file_name {position: absolute; left: 0; bottom: 0; font-size: 13px; color: #aaa}
+
+.v_ad_user_content .v_ad_user_info li .v_ad_sch {font-size: 0}
+.v_ad_user_content .v_ad_user_info li .v_ad_sch input {width: 44.2%; text-align: center; cursor: pointer; vertical-align: baseline;box-shadow: none}
+.v_ad_user_content .v_ad_user_info li .v_ad_sch i {padding: 0 4%; font-size: 16px; color: #777}
+
+.v_ad_user_content .v_ad_user_info li.user_info_textarea {float: none; width: 100%;}
+.v_ad_user_content .v_ad_user_info li.user_info_textarea .col_1 {width: 15%}
+.v_ad_user_content .v_ad_user_info li.user_info_textarea .col_2 {position: relative; width: 80%}
+.v_ad_user_content .v_ad_user_info li.user_info_textarea textarea {padding-right: 96px; width: 100%; height: 100%; word-break: keep-all}
+.v_ad_user_content .v_ad_user_info li.user_info_textarea #byteInfo {position: absolute; top: 11px; right: 2%}
+
+.v_ad_user_content .user_info_btn_box.user_info_txt_btn {display: none}
+.v_ad_user_content .user_info_btn_box {margin-top: 33px; text-align: center}
+.v_ad_user_content .user_info_btn_box > * {display: inline-block; margin-right: 5px; width: 184px; height: 59px; line-height: 59px; border:none; background-color: #8c8c8c; font-family: 'NanumSquare';font-size: 18px; color: #edeff5; letter-spacing: -0.9px; vertical-align: baseline}
+.v_ad_user_content .user_info_btn_box input {padding: 0}
+.v_ad_user_content .user_info_btn_box a {background: #b3b3b3}
+
+
+
+/*비즈머니 전환*/ 
+.v_ad_money h3::after {display: none}
+.point_box {overflow: hidden; margin-top: 35px; padding: 62px 0; border-top: 1px solid black; background: #fff; }
+.point_box  p {font-size: 18px; font-weight: 600; letter-spacing: -0.9px;}
+.point_box label {font-weight: 700; font-size: 17px; letter-spacing: -0.85px;}
+.point_box label[for="mb_vmc_point"] {color: #197700}
+.point_box label[for="mb_vmp_point"] {color: #c66666}
+.point_box label[for="mb_vmm_point"] {color: #194d95}
+
+.point_box .point_col_1 {position: relative; float: left; padding-top: 5%;  width: 45%; text-align: center}
+.point_box .point_col_1::after {content:''; display: block; position: absolute; top: 67%; right: -39px; width: 30px; height: 30px; background: url('../images/bg_arrow_left.svg')no-repeat center; background-size: contain}
+.point_box .point_col_1 > div {margin-top: 12px; font-family: 'NanumSquare'; font-size: 50px; font-weight: 800; letter-spacing: -2.5px; color: #1a7da0; }
+.point_box .point_col_1 > div b {position: relative; padding: 0 5px; font-weight: 800;}
+.point_box .point_col_1 > div b::after {content:''; display: block; position: absolute; top: 18%; left: -50px; width: 37px; height: 37px; background: url('../images/icon_coin.svg')no-repeat center; background-size: contain}
+.point_box .point_col_2 {float: right; width: 45%}
+.point_box .point_col_2 p {margin-bottom: 5%; text-align: center}
+.point_box .point_col_2 ul li {overflow: hidden; height: 41px; line-height: 41px}
+.point_box .point_col_2 ul li + li {margin-top: 5px;}
+.point_box .point_col_2 ul li > div {float: left}
+.point_box .point_col_2 ul li .col_1 {width: 28%; font-size: 17px;font-weight: 700; letter-spacing: -0.85px; color: #999999}
+.point_box .point_col_2 ul li .col_2 {width: 58%}
+.point_box .point_col_2 ul li .col_2 input {width: 100%; height: 41px;}
+.point_box .point_col_2 ul li .col_2 input::placeholder {font-size: 13px;}
+.point_box .point_col_2 ul li:last-child p {font-family: 'Noto Sans KR'; font-size: 15px; font-weight: 400; letter-spacing: -0.75px; }
+.point_box .point_col_2 ul li:last-child b {font-size: 15px; font-weight: 400; }
+
+.v_ad_content .btn_box {text-align: center}
+.v_ad_content .btn_box .btn_v_ad.btn_exchange.btn_change_money {position: relative; margin: 3% auto; padding: 0; display: inline-block; text-align: left}
+.v_ad_content .btn_box .btn_v_ad.btn_exchange #request_biz_money {margin:0; padding: 0; padding-left: 28px; width: 100%; height: 100%; border:none; background: transparent; font-family: 'NanumSquare'; font-size: 15px; letter-spacing: -0.75px; color: #fff; text-align: left}
+.v_ad_content .btn_box .btn_v_ad.btn_exchange.btn_change_money i {position: absolute; top:50%; right: 23px;margin: 0; margin-top: -8px; background: url(../images/bg_v_ad_change_wh.png)no-repeat center; background-size: cover; transform: rotate(90deg)}
+.v_ad_content .btn_box .btn_v_ad.btn_v_ad_go_to {position: static; padding: 0; display: inline-block;background-image: linear-gradient(106deg, #9f9f9f, #848e91);}
+                                             
+/*애니메이션*/
+@keyframes blinker { from {opacity: 1}  to { opacity: 0.5}}
+@-webkit-keyframes blinker { from {opacity: 1}  to { opacity: 0.5}}
+@keyframes blinker_reverse { from {opacity: 0.5}  to { opacity: 1}}
+@-webkit-keyframes blinker_reverse { from {opacity: 0.5}  to { opacity: 1}}
+@-webkit-keyframes btnBlinker {
+    0%{background-position:27% 0%}
+    50%{background-position:74% 100%}
+    100%{background-position:27% 0%}
+}
+@-moz-keyframes btnBlueBlinker {
+    0%{background-position:27% 0%}
+    50%{background-position:74% 100%}
+    100%{background-position:27% 0%}
+}
+@keyframes btnBlueBlinker { 
+    0%{background-position:27% 0%}
+    50%{background-position:74% 100%}
+    100%{background-position:27% 0%}
+}
+
+
+
+
+/* -------------------- media -------------------- */ /* -------------------- media -------------------- */ 
+/* -------------------- media -------------------- */ /* -------------------- media -------------------- */ 
+
+@media (max-width : 1050px) {
+/*v광고센터*/
+.v_ad_content {width: 98%}   
+.v_ad_content .my_point ul {text-align: center}
+
+
+/*광고 만들기*/
+.v_ad_user_content .v_ad_user_info li .v_ad_sch i {padding: 0 3%;}
+.v_ad_user_content .v_ad_user_info li.user_info_file {height: 77px;}
+.v_ad_user_content .v_ad_user_info li.user_info_file .preview_img_box { position: absolute; top:40%; margin-top: -107.5px; width: 100%; height: 215px}
+.v_ad_user_content .v_ad_user_info li.user_info_file .preview_img_box.mobile_img_box {margin-top: -161.5px; height: 323px}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .preview_img {position: static; margin-top: 0; margin-left: 0;}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .preview_img.mobile_img {position: static; margin-top: 0; margin-left: 0;}
+.v_ad_user_content .v_ad_user_info li.user_info_file .v_ad_preview .scrollbar_info {display: block}
+.v_ad_user_content .v_ad_user_info li.user_info_textarea {height: 60px}
+}
+
+@media (max-width : 801px) {
+    
+/*버튼*/ 
+.btn_v_ad_list {width: 114px; height: 52px; line-height: 52px; border-radius: 5px;}
+  
+/*input*/
+.v_ad_content input::placeholder {font-size: 24px; letter-spacing: -1.2px}
+.v_ad_content input[type=text]:focus {font-size: 24px; letter-spacing: -1.2px}
+.v_ad_content textarea {font-size: 16px; letter-spacing: -1.2px}
+.v_ad_content textarea::placeholder {font-size: 16px; letter-spacing: -1.2px}
+.v_ad_content textarea:focus {font-size: 16px; letter-spacing: -1.2px}
+
+    
+#v_center {min-width: unset; width: 95% }
+.vc_img_banner .vc_img_box {height: auto}
+.vc_img_banner .vc_img_box .vcenter_img_pc {display: none}
+.vc_img_banner .vc_img_box .vcenter_img_mobile {display: block; height: auto; object-fit: contain}
+
+.vc_txt_banner {margin-top: 3.7%}
+.vc_txt_banner .vc_txt_box {padding-left: 0; padding-top: 14%; height: auto; background:#fff url('../images/bg_vcenter_txt_mobile.jpg')no-repeat right top;  background-size: 30%; font-size: 35px}
+.vc_txt_banner .vc_txt_box .vc_txt_tit {float: none; display: block;  overflow: visible; margin: 0 auto 5%; width: 92%; white-space: normal;  line-height: 1.43;  letter-spacing: -1.75px; word-break: keep-all}
+.vc_txt_banner .vc_txt_box .vc_txt_more {float: none; display: block; padding: 3.8% 0; width: 100%; height: auto; line-height: normal; background-image: linear-gradient(174deg, #11648a, #1e92ad);}
+.vc_txt_banner .vc_txt_box::after {top: 10%; left: 4%; margin-top: 0; padding: 0.8% 0; width: 12.3%; height: auto; line-height: normal; border-radius: 5px; font-size: 24px}
+    
+/*보유 포인트*/
+.v_ad_content .my_point .btn_exchange i {width: 34px; height: 34px; background: url(../images/bg_v_ad_change_wh.png)no-repeat center;  background-size: contain; vertical-align: -8px; transform: rotate(90deg);}
+.v_ad_content .my_point ul {padding: 2% 0; margin: 4.5% auto 0; width: 100%; }
+.v_ad_content .my_point ul li {overflow: hidden; width: 50%; text-align: left}
+.v_ad_content .my_point ul li + li:after {display: none}
+.v_ad_content .my_point ul li em {float: left; padding-right: 10%; width: 32.5%; margin: 0; line-height: 81px; font-size: 24px; letter-spacing: -1.2px; text-align: right;}
+.v_ad_content .my_point ul li strong {float: left; width: 67%;  font-size: 30px; font-weight: 400; letter-spacing: -1.5px; text-align: center;}
+.v_ad_content .my_point ul li:last-child {width: 50%}
+.v_ad_content .my_point ul li:last-child em {margin: 0; padding: 0; line-height:81px; background: none}
+
+
+
+
+/*v광고센터*/
+.v_ad_content {margin: 47px auto 13%; padding:0 1%;}
+.v_ad_content .v_ad_helper .btn_helper {display: none}
+.v_ad_content h4 {font-size: 48px; letter-spacing: -2.5px}
+.v_ad_content h4 em {display: block; margin: 20px 0 0 0; font-size: 24px; letter-spacing: -1.2px; color: #999 }
+.v_ad_content .btn_v_ad {top: -3%; right: -3px; padding-left: 24px;  width: 221px; height: 66px; line-height: 66px; border-radius: 22.5px; font-size: 24px; letter-spacing: -1.2px}
+.v_ad_content .btn_v_ad i {margin-left: 15px; width: 34px; height: 24px;}
+.v_ad_content .btn_v_ad.btn_make_ad i {margin-left: 36px; height: 34px; background: url('../images/bg_v_ad_list_wh.png')no-repeat center; background-size: cover; vertical-align: -8px}
+
+.ad_list_wrap {margin-top: 13%;}
+.ad_list_wrap .ad_list {margin-top: 4%}
+.ad_list_wrap .ad_list thead {display: none}
+
+.ad_list_wrap .ad_list tbody tr {overflow: hidden; display: block;  position: relative; height: 75px; transition: all 0.5s ease-in-out}
+.ad_list_wrap .ad_list tbody td {position: absolute; font-size: 30px; letter-spacing: -1.5px;}
+.ad_list_wrap .ad_list tbody td::after {content: ''; position: absolute; left: 10%; font-size: 23px;font-weight: 400; letter-spacing: -1.2px; color: #999 }
+.ad_list_wrap .ad_list tbody td.ad_tit {top: 0; left: 0; z-index: 800; padding-left: 3%; width: 100%; height: 75px; line-height: 75px; background: #636363 url('../images/bg_arrow_bottom.svg')no-repeat 95% center; background-size: 30px; font-size: 28px; letter-spacing: -1.4px; color: #fff; text-align: left; transition: all 0.5s ease-in-out; cursor: pointer}
+.ad_list_wrap .ad_list tbody td.ad_cat {left: 32.6%; bottom: 7%;}
+.ad_list_wrap .ad_list tbody td.ad_cat::after {content: '구분'; left: -180%;}
+.ad_list_wrap .ad_list tbody td.ad_toggle {top: 35%; left: 32.5%;}
+.ad_list_wrap .ad_list tbody td.ad_toggle::after {content: 'ON/OFF'; top: -35%; left: -234%;}
+.ad_list_wrap .ad_list tbody td.ad_toggle a {width: 78px; height: 37px; border-radius: 50px;}
+.ad_list_wrap .ad_list tbody .ad_toggle a::after {top: 3px; left: 4px; width: 30px; height: 30px;}
+.ad_list_wrap .ad_list tbody td.ad_money {top: auto; right: 8%; bottom: 7%;}
+.ad_list_wrap .ad_list tbody td.ad_money::after {content: '하루예산'; left: -100px}
+.ad_list_wrap .ad_list tbody td.ad_state {top: 55.6%; left: 32.3%}
+.ad_list_wrap .ad_list tbody td.ad_state::after {content: '상태'; top: -5%; left: -125%;}
+.ad_list_wrap .ad_list tbody .ad_state .btn_v_ad_list {font-size: 24px; letter-spacing: -1.2px;}
+.ad_list_wrap .ad_list tbody td:last-child {top: 34%; right: 8.5%;}
+.ad_list_wrap .ad_list tbody td:last-child::after {content: '관리'; top: -10%; left: -80%;}
+.ad_list_wrap .ad_list tbody .btn_modi {width: 112px; height: 51px; line-height: 51px; border-radius: 10px; font-size: 25px; letter-spacing: -1.25px;}
+.ad_list_wrap .ad_list tbody .btn_modi + .btn_modi {position: absolute; right: 0; bottom: -67px }
+.ad_list_wrap .ad_list tbody td .ad_txt {display: none; float: left; font-size: 24px;font-weight: 400; letter-spacing: -1.2px; color: #999}
+
+.ad_list_wrap .ad_list tbody tr.on {height: 319px;}
+.ad_list_wrap .ad_list tbody tr.on td.ad_tit {background: #129b42 url('../images/bg_arrow_top.svg')no-repeat 95% center; background-size: 30px;}
+
+/*광고 만들기*/
+.v_ad_content h3 {padding-bottom: 8%; font-size: 60px;}
+.make_txt_info {margin: 6% auto 12%; width: 85%; font-size: 28px; line-height: 3rem}
+
+.v_ad_banner {position: relative; height: 327px; margin: 4% 0 10%; padding: 5% 4% 28px; border:1px solid #d6d6d6; background: url(../images/bg_v_ad_banner_mobile.png)no-repeat right 0}
+.v_ad_banner .banner_teaser .banner_icon {display: none}
+.v_ad_banner .banner_teaser i {display: none}
+.v_ad_banner .banner_teaser i.banner_icon_point {display: inline-block; margin-right: 3px; width: 63px; height: 26px; line-height: 26px; text-align: center; font-size: 24px; letter-spacing: -1.2px;color: #fff}
+.v_ad_banner .banner_teaser i.banner_icon_point.banner_icon_vmc {margin-bottom: 11px; background-color: #399f06}
+.v_ad_banner .banner_teaser i.banner_icon_point.banner_icon_vmp {margin-bottom: 11px; background-color: #db4c77}
+.v_ad_banner .banner_teaser i.banner_icon_point.banner_icon_vmm {margin-bottom: 11px; background-color: #1c7cae}
+
+.v_ad_banner .banner_teaser p {position: absolute; top: 46%; margin: 0; width: 43%; font-size: 24px; font-weight: 400; line-height: 1.2; letter-spacing: -1.2px; word-break: keep-all }
+.v_ad_banner .banner_teaser .banner_tit strong {display: block; margin: 0}
+.v_ad_banner .banner_teaser a {position: absolute; bottom: 5%; width: 170px; height: 51px; line-height: 52px; font-size: 16px; }
+
+.v_ad_banner .banner_pop_wrap .banner_pop_content {width: 94%}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .btn_close  {width: 7%; height: 7%}
+.v_ad_banner .banner_pop_wrap .banner_pop_content h3 {font-size: 40px; letter-spacing: -2px;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content p {margin: 4% auto; width: 430px; font-size: 24px; letter-spacing: -1.2px; line-height: 1.6;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info {text-align: left}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info > div {overflow: hidden; float: none; padding-left: 10%; width: 100%;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info > div + div {margin-top: 12px;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info > div label {float: left; width: 24%; line-height: 59px; font-size: 24px; letter-spacing: -1.2px;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info > div input {float: left; margin: 0; height: 59px; font-size: 24px; letter-spacing: -1.2px;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .btn_banner_pop {height: 89px; line-height: 89px; font-size: 24px; letter-spacing: -1.2px;}
+
+
+
+
+.v_ad_user_content .v_ad_choice > div {float: none; margin: 9px 0; width: 100%; height: 172px;}
+.v_ad_user_content .v_ad_choice > div + div {margin-left: 0}
+.v_ad_user_content .v_ad_choice > div input[type=radio] + label {font-size: 40px; letter-spacing: -2px;}
+.v_ad_user_content .v_ad_choice > div > p {font-size: 28px; letter-spacing: -1.4px}
+
+.v_ad_user_content .v_ad_choice > div input[type=radio] + label::after {margin-top: -74px; width: 148px; height: 148px; background-size: 92px}
+.v_ad_user_content .v_ad_choice > div input[type=radio]:checked + label::after {background-size: 92px}
+.v_ad_user_content .v_ad_choice > div > p {bottom: 29%}
+
+.v_ad_user_content .v_ad_choice .choice_txt input[type=radio] + label::after {background-size: 92px}
+.v_ad_user_content .v_ad_choice .choice_txt input[type=radio]:checked + label::after {background-size: 92px}
+
+.v_ad_user_content .v_ad_user_info {position: relative; padding: 37px 0 400px}
+.v_ad_user_content .v_ad_user_info.user_info_txt {padding: 37px 0}
+.v_ad_user_content .v_ad_user_info li {overflow: unset; float: none;  padding-left: 6%; width: 100%; height: 59px;}
+.v_ad_user_content .v_ad_user_info li label {line-height: 59px; font-size: 24px; letter-spacing: -1.2px;}
+.v_ad_user_content .v_ad_user_info li input {height: 59px; font-size: 24px; font-weight: 300; letter-spacing: -1.2px}
+.v_ad_user_content .v_ad_user_info li .col_1 {width: 25%}
+
+.v_ad_user_content .v_ad_user_info li strong {line-height: 59px; font-size: 24px; letter-spacing: -1.2px;}
+.v_ad_user_content .v_ad_user_info li em {font-size: 22px; letter-spacing: -1.1px}
+.v_ad_user_content .v_ad_user_info li b {font-size: 22px; line-height: 53px; height: 59px; font-weight: 400}
+.v_ad_user_content .v_ad_user_info li .v_ad_sch input {width: 45%}
+.v_ad_user_content .v_ad_user_info li.user_info_file {position: absolute; bottom: 193px; margin: 0; padding: 5% 6%; height: 193px; border-top: 16px solid #edeff5; text-align: center; background-color: #dddddd;}
+.v_ad_user_content .v_ad_user_info li.user_info_file  + .user_info_file {bottom: 0;}
+.v_ad_user_content .v_ad_user_info li.user_info_file > div {float: none; width: 100%;}
+.v_ad_user_content .v_ad_user_info li.user_info_file .col_2 {padding-top: 3%}
+.v_ad_user_content .v_ad_user_info li.user_info_file strong {display: inline; margin-right: 2%}
+.v_ad_user_content .v_ad_user_info li em {display: inline}
+.v_ad_user_content .v_ad_user_info li.user_info_file .btn_ad_user {width: 47.5%; height: 59px; line-height: 59px; font-size: 22px; letter-spacing: -1.1px}
+.v_ad_user_content .v_ad_user_info li.user_info_file .mb_file_name {left: 6px; bottom: 13px; font-size: 16px;}
+.v_ad_user_content .v_ad_user_info li.user_info_textarea {height: 82px}
+.v_ad_user_content .v_ad_user_info li.user_info_textarea .col_1 {width: 25%}
+.v_ad_user_content .v_ad_user_info li.user_info_textarea .col_2 {width: 59%}
+.v_ad_user_content .v_ad_user_info li.user_info_textarea textarea {padding-right: 0}
+.v_ad_user_content .v_ad_user_info li.user_info_textarea #byteInfo {top: auto; bottom: 6px}
+
+.v_ad_user_content .user_info_btn_box > * {font-size: 26px; letter-spacing: -1.3}
+
+
+/*비즈머니 전환*/ 
+.v_ad_money h3 {display: none}
+.point_box  {margin-top: 14px; padding: 80px 0}
+.point_box p {font-size: 30px; font-weight: 500; letter-spacing: -1.5px;}
+.point_box label {font-size: 32px; letter-spacing: -1.6px;}
+
+.point_box .point_col_1 {float: none; padding: 0; width: 100%}
+.point_box .point_col_1::after {top: 145%; right: 50%; margin-right: -23px; width: 58px; height: 46px; transform: rotate(90deg)}
+.point_box .point_col_1 > div {font-size: 60px; letter-spacing: -3px;}
+.point_box .point_col_1 > div b::after {top:7%; left: -75px; width: 56px; height: 56px;}
+
+.point_box .point_col_2 {float: none; margin-top: 188px; width: 100%}
+.point_box .point_col_2 ul li {height: 71px; line-height: 71px}
+.point_box .point_col_2 ul li + li {margin-top: 11px;}
+.point_box .point_col_2 ul li .col_1 {padding-right: 20px;width: 38%; font-size: 32px; letter-spacing: -1.6px; text-align: right}
+.point_box .point_col_2 ul li .col_2 {width: 62%}
+.point_box .point_col_2 ul li .col_2 input {width: 85%; height: 71px; font-size: 24px; text-align: center}
+.point_box .point_col_2 ul li .col_2 input::placeholder {font-size: 24px; font-weight: 300}
+.point_box .point_col_2 ul li:last-child p {font-size: 26px; letter-spacing: -1.3px}
+.point_box .point_col_2 ul li:last-child b {padding: 0 5px;font-size: 26px;}
+.v_ad_content .btn_box .btn_v_ad.btn_exchange.btn_change_money {margin: 0; width: 100%; height: 103px; border-radius: 0}
+.v_ad_content .btn_box .btn_v_ad.btn_exchange.btn_change_money #request_biz_money {padding: 0; font-size: 30px; letter-spacing: -1.5px; font-size: 21px; text-align: center;}
+.v_ad_content .btn_box .btn_v_ad.btn_exchange.btn_change_money i {right: 32%; margin-top: -18px; width: 36px; height: 36px; background-size: contain;}
+.v_ad_content .btn_box .btn_v_ad.btn_v_ad_go_to {display: block; margin-top: 2%; width: 100%; border-radius: 0}
+
+/*alert*/
+.alert_box .alert_msg {width: 80% !important}
+
+}
+@media (max-width : 767px) {
+/*광고만들기*/
+.v_ad_user_content .v_ad_user_info li:last-child {bottom: 378px}
+}
+
+
+
+@media (max-width : 760px) {
+.v_ad_content .my_point ul li:last-child em {background-position: 15px 28px}
+.ad_list_wrap .ad_list tbody td.ad_cat {left: 29.6%;}
+.ad_list_wrap .ad_list tbody td.ad_cat::after {left: -154%}
+.ad_list_wrap .ad_list tbody td.ad_state {left: 29.8%}
+.ad_list_wrap .ad_list tbody td.ad_state::after {left: -109%}
+.ad_list_wrap .ad_list tbody td.ad_toggle {left: 30.5%}
+.ad_list_wrap .ad_list tbody td.ad_toggle::after {left: -194%}   
+
+}
+
+@media (max-width : 670px) {
+.v_ad_content .my_point ul li:last-child em {background-position-x: left}
+.ad_list_wrap .ad_list tbody td.ad_cat {left: 25.6%;}
+.ad_list_wrap .ad_list tbody td.ad_cat::after {left: -120%}
+.ad_list_wrap .ad_list tbody td.ad_state {left: 25.8%}
+.ad_list_wrap .ad_list tbody td.ad_state::after {left: -86%}
+.ad_list_wrap .ad_list tbody td.ad_toggle {left: 26.5%}
+.ad_list_wrap .ad_list tbody td.ad_toggle::after {left: -154%}  
+
+
+/*광고만들기*/
+.v_ad_user_content .v_ad_choice > div {height: 133px}
+.v_ad_user_content .v_ad_choice > div input[type=radio] + label::after {margin-top: -50px; width: 100px; height: 100px; background-size: 50%}
+.v_ad_user_content .v_ad_choice > div input[type=radio]:checked + label::after {background-size: 50%}
+
+.v_ad_user_content .v_ad_choice .choice_txt input[type=radio] + label::after {background-size: 50%}
+.v_ad_user_content .v_ad_choice .choice_txt input[type=radio]:checked + label::after {background-size: 50%}
+
+.v_ad_user_content .v_ad_choice > div > p {bottom: 22px; font-size: 21px}
+
+}
+
+
+@media (max-width : 600px) {
+    
+/*input*/ 
+/*input*/
+.v_ad_content input[type=text]:focus {font-size: 21px}
+.v_ad_content input[type=number]:focus {font-size: 21px;}
+.v_ad_content input::placeholder {font-size: 18px}
+ /*버튼*/
+ .btn_v_ad_list {width: 64px; height: 32px; line-height: 32px}
+    
+.vc_txt_banner .vc_txt_box {padding-left: 0; padding-top: 14%; height: auto; background:#fff url('../images/bg_vcenter_txt_mobile.jpg')no-repeat right top;  background-size: 30%; font-size: 17.5px}
+.vc_txt_banner .vc_txt_box::after {font-size: 12px;}
+
+/*보유포인트*/
+.v_ad_content .my_point .btn_exchange i {width: 26px; height: 26px; vertical-align: -7px}
+.v_ad_content .my_point ul li em {font-size: 18px;}
+.v_ad_content .my_point ul li strong {font-size: 22.5px}
+.v_ad_content .my_point ul li:last-child em {background-size: 19px; background-position: 9px 30px}
+
+
+
+/*v광고 센터*/
+.v_ad_content h4 {font-size: 36px;}
+.v_ad_content .btn_v_ad {top: -3px; right: 0; padding-left: 18px; width: 181px; height: 46px; line-height: 46px; font-size: 18px}
+.v_ad_content .btn_v_ad i {margin-left: 31px; width: 22px; height: 16px;}
+.v_ad_content .btn_v_ad.btn_make_ad i {margin-left: 44px; width: 25px; height: 25px; background-size: contain; vertical-align: -6px}
+.v_ad_content h4 em {font-size: 18px;}
+
+.ad_list_wrap .ad_list tbody tr {height: 60px}
+.ad_list_wrap .ad_list tbody td {font-size: 18px}
+.ad_list_wrap .ad_list tbody td::after {font-size: 18px}
+.ad_list_wrap .ad_list tbody td.ad_cat {left: 31.6%}
+.ad_list_wrap .ad_list tbody td.ad_cat::after {left: -177%}
+.ad_list_wrap .ad_list tbody td.ad_tit {height: 60px; line-height: 60px; font-size: 18px; background-size: 20px;}
+.ad_list_wrap .ad_list tbody td.ad_toggle {left: 31.5%}
+.ad_list_wrap .ad_list tbody td.ad_toggle::after {top: -57%; left: -172%}
+.ad_list_wrap .ad_list tbody td.ad_toggle a {width: 55px; height: 27px;}
+.ad_list_wrap .ad_list tbody .ad_toggle a::after {width: 22px; height: 22px}
+.ad_list_wrap .ad_list tbody td.ad_money {right: 8%}
+.ad_list_wrap .ad_list tbody td.ad_money::after {left: -78px}
+
+.ad_list_wrap .ad_list tbody td.ad_state {left: 31.2%;}
+.ad_list_wrap .ad_list tbody td.ad_state::after {top: -41%; left: -124%}
+.ad_list_wrap .ad_list tbody .ad_state .btn_v_ad_list {font-size: 16px}
+.ad_list_wrap .ad_list tbody td:last-child {top: 34%}
+.ad_list_wrap .ad_list tbody td:last-child::after {top: -42%; left: -99%}
+.ad_list_wrap .ad_list tbody .btn_modi {width: 64px; height: 32px; line-height: 32px; font-size: 16px}
+.ad_list_wrap .ad_list tbody .btn_modi + .btn_modi {bottom: -51px;}
+.ad_list_wrap .ad_list tbody tr.on {height: 250px}
+.ad_list_wrap .ad_list tbody tr.on td.ad_tit {background-size: 20px;}
+
+/*광고만들기*/
+.v_ad_content h3 {font-size: 45px;}
+.make_txt_info {width:367px;font-size: 21.5px; line-height: 2rem}
+.v_ad_banner {padding-bottom: 43%; height: unset; background-size: cover}
+.v_ad_banner .banner_teaser i.banner_icon_point {font-size: 18px;}
+.v_ad_banner .banner_teaser p {top: 40%; width: 211px}
+.v_ad_banner .banner_teaser .banner_tit {font-size: 27px}
+
+.v_ad_banner .banner_pop_wrap .banner_pop_content h3 {font-size: 30px;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content h3::after {height: 3px}
+.v_ad_banner .banner_pop_wrap .banner_pop_content p {width: 333px; font-size: 18px}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info > div label {font-size: 18px; line-height: 47px}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info > div input {font-size: 18px; height: 47px;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .btn_banner_pop {height: 63px; line-height: 63px; font-size: 18px;}
+
+
+
+.v_ad_user_content .v_ad_choice {margin-top: 7%}
+.v_ad_user_content .v_ad_choice > div {height: 145px}
+.v_ad_user_content .v_ad_choice > div input[type=radio] + label {font-size: 30px}
+
+.v_ad_user_content .v_ad_user_info {padding: 37px 0 390px;}
+.v_ad_user_content .v_ad_user_info li {height: 44px;}
+.v_ad_user_content .v_ad_user_info li .col_1 {width: 31%}
+.v_ad_user_content .v_ad_user_info li label {font-size: 21px; line-height: 44px}
+.v_ad_user_content .v_ad_user_info li strong {line-height: 44px; font-size: 21px;}
+.v_ad_user_content .v_ad_user_info li input {height: 44px; font-size: 21px;}
+.v_ad_user_content .v_ad_user_info li #mb_money {width: 85%}
+.v_ad_user_content .v_ad_user_info li em {display: block;font-size: 18px}
+
+.v_ad_user_content .v_ad_user_info li b {width: 15%; height: 44px; line-height: 41px; font-size: 21px}
+.v_ad_user_content .v_ad_user_info li .v_ad_sch input {padding: 0; width: 44.2%; font-size: 16px}
+.v_ad_user_content .v_ad_user_info li.user_info_file {bottom: 194px; height: 194px;}
+.v_ad_user_content .v_ad_user_info li.user_info_file .btn_ad_user {height: 50px; line-height: 50px; font-size: 18px}
+.v_ad_user_content .v_ad_user_info li.user_info_file .mb_file_name {bottom: 33px}
+
+.v_ad_user_content .v_ad_user_info li.user_info_textarea {height: 108px}
+.v_ad_user_content .v_ad_user_info li.user_info_textarea .col_1 {width: 31%}
+
+
+.v_ad_user_content .user_info_btn_box > * {width: 140px; height: 48px; line-height: 48px; font-size: 18px;}
+
+/*비즈머니 전환*/ 
+.point_box {padding: 40px 0}
+.point_box .point_col_1 > div {font-size: 45px;}
+.point_box .point_col_1 > div b::after {left: -68px; height: 41px; }
+.point_box label {font-size: 21px;}
+.point_box p {font-size: 21px}
+.point_box .point_col_1::after {height: 36px;}
+.point_box .point_col_2 {margin-top: 140px;}
+.point_box .point_col_2 ul li {height: 52px; line-height: 52px}
+.point_box .point_col_2 ul li .col_1 {font-size: 21px;}
+.point_box .point_col_2 ul li .col_2 input {height: 52px; font-size: 21px;}
+.point_box .point_col_2 ul li .col_2 input::placeholder {font-size: 21px;}
+
+.point_box .point_col_2 ul li:last-child p {font-size: 21px}
+.v_ad_content .btn_box .btn_v_ad.btn_exchange.btn_change_money {height: 76px;}
+.v_ad_content .btn_box .btn_v_ad.btn_exchange.btn_change_money i {right: 31%; margin-top: -14px; width: 26px; height: 25px}
+
+}
+@media (max-width : 545px) {
+.v_ad_content h4 em {font-size: 16px;}
+
+/*광고만들기*/
+.v_ad_user_content .v_ad_choice > div {height: 16%}
+.v_ad_user_content .v_ad_choice > div input[type=radio] + label {font-size: 24px}
+.v_ad_user_content .v_ad_choice > div > p {font-size: 18px}
+}
+
+@media (max-width : 500px) {
+/*광고만들기*/
+.v_ad_content h3 {font-size: 35px;}
+.make_txt_info {width: 291px; font-size: 18px}
+.v_ad_banner .banner_teaser i.banner_icon_point {width: 45px; height: 22px; line-height: 22px; font-size: 16px;}
+.v_ad_banner .banner_teaser p {width: 158px; font-size: 18px} 
+.v_ad_banner .banner_teaser a {width: 164px; height: 16%; line-height: 2.5}
+
+.v_ad_user_content .v_ad_choice > div {height: 100px;}
+.v_ad_user_content .v_ad_choice > div input[type=radio] + label {font-size: 22px;}
+.v_ad_user_content .v_ad_choice > div > p {font-size: 16px;}
+.v_ad_user_content .v_ad_choice > div input[type=radio] + label::after {margin-top: -40px; width: 80px; height: 80px }  
+.v_ad_user_content .v_ad_user_info li.user_info_textarea {height: 125px}
+
+.v_ad_user_content .v_ad_user_info li.user_info_file .mb_file_name {bottom: 43px}
+
+/*보유포인트*/
+.v_ad_content .my_point ul li {height: 60px; line-height: 60px}
+.v_ad_content .my_point ul li em {line-height: 60px; font-size: 14px;}
+.v_ad_content .my_point ul li:last-child em  {line-height: 60px; font-size: 14px;}
+.v_ad_content .my_point ul li strong {font-size: 18px}
+
+/*비즈머니전환*/
+.v_ad_content .btn_box .btn_v_ad.btn_exchange.btn_change_money i {right: 26%}
+
+}
+
+@media (max-width : 400px) {
+    
+/*input*/
+.v_ad_content input[type=text]:focus {font-size: 16px}
+.v_ad_content input[type=number]:focus {font-size: 16px;}
+/*버튼*/
+.btn_v_ad_list {width: 57px; height: 26px; line-height: 26px}
+    
+
+    
+.v_ad_content {padding: 0}
+.v_ad_content h4 {font-size: 24px;}
+.v_ad_content .btn_v_ad {top: -3px; padding-left: 12px; width: 110.5px; height: 33px; line-height: 33px; font-size: 12px}
+.v_ad_content .btn_v_ad i {margin-left: 11px; width: 16px; height: 12px;}
+.v_ad_content .btn_v_ad.btn_make_ad i {height: 16px}
+.v_ad_content h4 em {font-size: 12px;}
+
+
+.ad_list_wrap .ad_list tbody tr {height: 37px;}
+.ad_list_wrap .ad_list tbody td {font-size: 15px;}
+.ad_list_wrap .ad_list tbody td::after {font-size: 12px}
+.ad_list_wrap .ad_list tbody td.ad_cat {left: 28.6%;  bottom: -4%;}
+.ad_list_wrap .ad_list tbody td.ad_cat::after {left: -171%}
+.ad_list_wrap .ad_list tbody td.ad_tit {height: 37.5px; line-height: 37.5px; font-size: 14px; background-size: 15px }
+.ad_list_wrap .ad_list tbody td.ad_toggle {top: 31%; left: 26.5%}
+.ad_list_wrap .ad_list tbody td.ad_toggle a {width: 51px; height: 25.5px; line-height: 25.5px;}
+.ad_list_wrap .ad_list tbody .ad_toggle a::after {top: 2.5px;left: 3px; width: 20px; height: 20px}
+.ad_list_wrap .ad_list tbody td.ad_toggle::after {top: -50%; left: -124%}
+.ad_list_wrap .ad_list tbody td.ad_money {right: 10%; bottom: -4%}
+.ad_list_wrap .ad_list tbody td.ad_money::after {left: -50px}
+.ad_list_wrap .ad_list tbody td.ad_state {left: 26.4%}
+.ad_list_wrap .ad_list tbody td.ad_state::after {top: -44%; left: -99%}
+.ad_list_wrap .ad_list tbody td:last-child {top: 32%;}
+.ad_list_wrap .ad_list tbody td:last-child::after {top: -58%; left: -80%}
+.ad_list_wrap .ad_list tbody .ad_state .btn_v_ad_list {font-size: 12px;}
+.ad_list_wrap .ad_list tbody .btn_modi {width: 56px; height: 25.5px; line-height: 25.5px; font-size: 12px; letter-spacing: -0.6px;}
+.ad_list_wrap .ad_list tbody .btn_modi + .btn_modi {bottom: -36px}
+
+.ad_list_wrap .ad_list tbody tr.on {height: 160px;}
+.ad_list_wrap .ad_list tbody tr.on td.ad_tit {background-size: 15px }
+
+/*광고만들기*/
+.v_ad_banner .banner_pop_wrap .banner_pop_content {margin: 33% auto; padding-top: 22px;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content h3 {margin-bottom: 22px; font-size: 20px;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content p {margin: 5% auto; width: 240px; font-size: 15px;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info > div label {line-height: 35px; font-size: 15px;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info > div input {height: 35px; font-size: 15px;}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .banner_user_info > div input::placeholder {font-size: 15px; font-weight: 300}
+.v_ad_banner .banner_pop_wrap .banner_pop_content .btn_banner_pop {height: 50px; line-height: 50px; font-size: 15px}
+
+
+
+.v_ad_user_content .v_ad_choice > div input[type=radio] + label::after {margin-top: -40px;width: 80px; height: 80px}
+.v_ad_user_content .v_ad_choice > div input[type=radio] + label {font-size: 20px}
+.v_ad_user_content .v_ad_user_info {padding: 37px 0 331px}
+.v_ad_user_content .v_ad_user_info.user_info_txt {padding: 37px 0 27px}
+.v_ad_user_content .v_ad_user_info li #mb_money {width: 81%}
+.v_ad_user_content .v_ad_user_info li b {width: 19%; font-size: 16px; }
+.v_ad_user_content .v_ad_choice > div > p {font-size: 14px}
+.v_ad_user_content .v_ad_user_info li label {font-size: 16px}
+.v_ad_user_content .v_ad_user_info li input {font-size: 16px}
+.v_ad_user_content .v_ad_user_info li input::placeholder {font-size: 16px}
+.v_ad_user_content .v_ad_user_info li .v_ad_sch input {padding: 0; font-size: 14px}
+.v_ad_user_content .v_ad_user_info li strong {font-size: 16px}
+.v_ad_user_content .v_ad_user_info li em  {font-size: 16px}
+.v_ad_user_content .v_ad_user_info li.user_info_file {bottom: 166px; height: 166px; border-top-width: 8px}
+.v_ad_user_content .v_ad_user_info li.user_info_file .mb_file_name {bottom: 36px; height: 32px; font-size: 13px}
+.v_ad_user_content .v_ad_user_info li.user_info_file .btn_ad_user {height: 40px; line-height: 40px;font-size: 16px}
+.v_ad_user_content .v_ad_user_info li.user_info_textarea {height: 180px}
+
+
+
+
+
+.v_ad_user_content .user_info_btn_box > * {width: 100px; height: 35px; line-height: 35px; font-size: 14px}
+
+/*비즈머니 전환*/ 
+.v_ad_content h3 {font-size: 30px }
+.v_ad_content .my_point .btn_exchange i {width: 21px; height: 23px;}
+.point_box {padding: 30px 0}
+.point_box p {font-size: 18px;}
+.point_box .point_col_1 > div {font-size: 35px;}
+.point_box .point_col_1 > div b::after {left: -56px; height: 32px}
+
+.point_box .point_col_1::after {top: 132%; height: 25px;}
+.point_box .point_col_2 {margin-top: 83px;}
+
+.point_box label {font-size: 15px;}
+.point_box .point_col_2 ul li {height: 35.5px; line-height: 35.5px}
+.point_box .point_col_2 ul li .col_1 {font-size: 15px;}
+.point_box .point_col_2 ul li .col_2 input {height: 35.5px; font-size: 15px;}
+.point_box .point_col_2 ul li .col_2 input::placeholder {font-size: 15px;}
+
+.point_box .point_col_2 ul li:last-child p {font-size: 18px}
+.point_box .point_col_2 ul li:last-child b {font-size: 18px}
+
+.v_ad_content .btn_box .btn_v_ad.btn_exchange.btn_change_money {height: 50px}
+.v_ad_content .btn_box .btn_v_ad.btn_exchange.btn_change_money  #request_biz_money {margin-left: -10px; font-size: 18px}
+.v_ad_content .btn_box .btn_v_ad.btn_exchange.btn_change_money i {right: 50%; margin-right: -70px; width: 19px; height: 23px}
+.v_ad_content .btn_box .btn_v_ad.btn_v_ad_go_to { font-size: 18px}
+
+.v_ad_content .btn_v_ad.btn_make_ad i {margin-left: 15px; width: 20px; height: 22px}
+}
+
+
+
+@media (max-width : 350px) {
+ /*보유포인트*/
+.v_ad_content .my_point ul li em {font-size: 13px;}
+.v_ad_content .my_point ul li:last-child em  {font-size: 13px;}
+.v_ad_content .my_point ul li strong {font-size: 16px}
+.v_ad_user_content .v_ad_choice > div {height: 99px}
+.v_ad_user_content .v_ad_choice > div input[type=radio] + label::after {margin-top: -35px; width: 70px; height: 70px}
+}
+
+
+
+

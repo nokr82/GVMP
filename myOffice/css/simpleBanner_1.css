@@ -1,0 +1,1393 @@
+@charset "utf-8";
+
+
+
+.simple_banner_wrap {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 100px;
+}
+
+.simple_banner_wrap ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.simple_banner_wrap ul li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    /*    해줘야 넘치는것 방지*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#banner02box {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.banner02 {
+    width: 300px;
+    height: 180px;
+    margin: 10px;
+    min-width: 100px;
+}
+
+.banner02 ul li a {
+    display: block;
+    width: 100%;
+    height: 180px;
+    text-shadow: 0 0 2px #666;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.bn1 {
+    width: 25%;
+    height: 180px;
+    min-width: 100px;
+    background: url(../images/M_BG.png) no-repeat center center;
+    background-size: cover;
+}
+
+.bn2 {
+    width: 50%;
+    height: 180px;
+    min-width: 300px;
+    background: url(../images/A_BG.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.bn3 {
+    width: 25%;
+    height: 180px;
+    min-width: 100px;
+    background: url(../images/VM_BG.png) no-repeat center center;
+    background-size: cover;
+}
+
+
+/*        ---------------------------------------------------------*/
+#M_box div{
+            color: white;
+            float: left;
+            text-align: left;
+            padding-left: 2%;
+        }
+        
+        #M_box div:nth-child(1){
+            width: 20%;
+            padding: 4%;
+            font-size: 0.8em;
+            margin-top: 2%;
+            text-indent: 10px;
+/*            background-color: red;*/
+        }
+        #M_box div:nth-child(2){
+            width: 70%;
+            padding-top: 5%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        
+        #M_box div:nth-child(3){
+            clear: both;
+            width: 38%;
+            margin-top: 2%;
+            margin-left: 7%;
+/*            background-color: black;*/
+        }
+        #M_box div:nth-child(4){
+            margin-top: 2%;
+            width: 43%;
+            margin-top: 8%;
+            margin-left: 4%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+        }
+        #M_box div:nth-child(5){
+            width: 43%;
+            margin-left: 4%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        #M_box div:nth-child(6){
+            width: 43%;
+            margin-left: 4%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+            margin-top: 5%;
+        }
+        #M_box div:nth-child(7){
+            width: 43%;
+            margin-left: 4%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        
+        
+/*        ---------------------------------------------------------*/
+        
+        #S_box{
+            width: 100%;
+            height: 100%;
+            /*background-color: lightblue;*/
+            overflow: hidden;
+            color: white;
+        }
+        
+        #S_box div{
+            float: left;
+            text-align: left;
+        }
+        
+        #S_box div:nth-child(1){
+            width: 23%;
+            font-size: 0.8em;
+            margin-top: 12%;
+/*            background-color: red;*/
+            text-align: center;
+            margin-left: 8%;
+        }
+        
+        #S_box div:nth-child(2){
+            text-align: center;
+            width: 24%;
+            margin-left: 5%;
+            margin-top: 5%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        #S_box div:nth-child(3){
+            text-align: center;
+            width: 40%;
+            margin-top: 15%;
+            font-size: 1.2em;
+/*            background-color: blue;*/
+        }
+
+/*        ---------------------------------------------------------*/
+#VM_box div{
+            color: white;
+            float: left;
+            text-align: left;
+            padding-left: 2%;
+        }
+        
+        #VM_box div:nth-child(1){
+            width: 20%;
+            padding: 4%;
+            font-size: 0.8em;
+            margin-top: 2%;
+            text-indent: 10px;
+/*            background-color: red;*/
+        }
+        #VM_box div:nth-child(2){
+            width: 70%;
+            margin-top: 5%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        
+        #VM_box div:nth-child(3){
+            clear: both;
+            width: 34%;
+            margin-top: 10%;
+            margin-left: 8%;
+/*            background-color: black;*/
+        }
+        #VM_box div:nth-child(4){
+            margin-top: 2%;
+            width: 48%;
+            margin-left: 7%;
+            font-size: 0.8em;
+            margin-top: 8%;
+/*            background-color: red;*/
+        }
+        #VM_box div:nth-child(5){
+            width: 48%;
+            margin-left: 7%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        #VM_box div:nth-child(6){
+            width: 48%;
+            margin-left: 7%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+            margin-top: 5%;
+        }
+        #VM_box div:nth-child(7){
+            width: 48%;
+            margin-left: 7%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        
+        
+/*        ---------------------------------------------------------*/
+        
+        #SS_box{
+            width: 100%;
+            height: 150px;
+            /*background-color: lightblue;*/
+            overflow: hidden;
+            color: white;
+        }
+        
+        #SS_box div{
+            float: left;
+            text-align: left;
+        }
+        
+        #SS_box div:nth-child(1){
+            width: 25%;
+            font-size: 0.8em;
+            margin-top: 12%;
+/*            background-color: red;*/
+            text-align: center;
+            margin-left: 5%;
+        }
+        
+        #SS_box div:nth-child(2){
+            text-align: center;
+            width: 32%;
+            margin-left: 2%;
+            margin-top: 6%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        #SS_box div:nth-child(3){
+            text-align: center;
+            width: 35%;
+            margin-top: 17%;
+            font-size: 1.2em;
+/*            background-color: blue;*/
+        }
+
+/*      아래부턴 테두리  ---------------------------------------------------------*/
+       
+        .loader{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top:50.4%;
+            left:50%;
+            width: 48%;
+            height: 176px;
+            line-height: 100px;
+            text-align: center;
+            z-index: 1;
+            
+            overflow: hidden;
+            
+        }
+        .loader span{
+            position: absolute;
+            background: rgba(255, 255, 255, 0);
+            box-shadow: -1px 1px 5px #ffe450, 1px -1px 5px #ffe450;
+            border-radius: 50%;
+        }
+        .loader span:nth-child(1){
+            width: 100%;
+            height: 2px;
+            top: 0;
+            left: -100%;
+            animation: animate1 2s linear infinite;
+        }
+        .loader span:nth-child(3){
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            right: -100%;
+            animation: animate3 2s linear infinite;
+        }
+        .loader span:nth-child(2){
+            width: 2px;
+            height: 100%;
+            top: -100%;
+            right: 0;
+            animation: animate2 2s linear infinite;
+        }
+        .loader span:nth-child(4){
+            width: 2px;
+            height: 100%;
+            bottom: -100%;
+            left: 0;
+            animation: animate4 2s linear infinite;
+        }
+        
+        @keyframes animate1{
+            0%{
+                left: -100%;
+            }
+            20%{
+                left: 0%;
+            }
+            40%{
+                left: 100%;
+            }
+            60%{
+                left: 100%;
+            }
+            80%{
+                left: 100%;
+            }
+            100%{
+                left: 100%;
+            }
+        }
+        @keyframes animate2{
+            0%{
+                top: -100%;
+            }
+            20%{
+                top: -100%;
+            }
+            40%{
+                top: 0;
+            }
+            60%{
+                top: 100%;
+            }
+            80%{
+                top: 100%;
+            }
+            100%{
+                top: 100%;
+            }
+        }
+        @keyframes animate3{
+            0%{
+                right: -100%;
+            }
+            20%{
+                right: -100%;
+            }
+            40%{
+                right: -100%;
+            }
+            60%{
+                right: 0;
+            }
+            80%{
+                right: 100%;
+            }
+            100%{
+                right: 100%;
+            }
+        }
+        @keyframes animate4{
+            0%{
+                bottom: -100%;
+            }
+            20%{
+                bottom: -100%;
+            }
+            40%{
+                bottom: -100%;
+            }
+            60%{
+                bottom: -100%;
+            }
+            80%{
+                bottom: 0;
+            }
+            100%{
+                bottom: 100%;
+            }
+        }
+
+        #border_all{
+            width: 994px;
+            height: 170px;
+            margin-top: 15px;
+            position: absolute;
+            display: flex;
+            z-index: 1;
+            /*background: rgba(0,0,0, 0.5);*/
+        }
+        #M_box_border{
+            width: 25%;
+            height: 170px;
+            margin-right: 1.5%;
+            border: 1px solid white;
+        }
+        #S_box_border{
+            width: 51%;
+            margin-left: 1.8%;
+            margin-right: 1.8%;
+            height: 170px;
+            border: 1px solid gold;
+        }
+        #VM_box_border{
+            width: 25%;
+            margin-left: 1.5%;
+            height: 170px;
+            border: 1px solid white;
+        }
+        
+        
+    @media (max-width:801px){
+        
+        
+.simple_banner_wrap {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 100px;
+}
+
+.simple_banner_wrap ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+}
+
+.simple_banner_wrap ul li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    /*    해줘야 넘치는것 방지*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#banner02box {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+}
+
+.banner02 {
+    width: 300px;
+    height: 180px;
+    margin: 10px;
+    min-width: 100px;
+}
+
+.banner02 ul li a {
+    display: block;
+    width: 100%;
+    height: 180px;
+    text-shadow: 0 0 2px #666;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-align: center;
+    line-height: 200px;
+}
+
+/*.bn1 {
+    width: 48%;
+    height: 180px;
+    background: url(../images/M_BG.jpg) no-repeat center center;
+    background-size: cover;
+    order: 2;
+    left:-10px
+}
+
+.bn2 {
+    margin:20px auto 0;
+    width: 100%;
+    height: 180px;
+    min-width: 100px;
+    background: url(../images/A_BG.jpg) no-repeat center center;
+    background-size: cover;
+    order: 1;
+}
+
+.bn3 {
+    width: 46%;
+    height: 180px;
+    background: url(../images/VM_BG.jpg) no-repeat center center;
+    background-size: cover;
+    order: 3;
+    position: absolute;
+    right:9px;
+    top: 270px;
+}*/
+
+.bn2 {
+    width: 100%;
+    background: url(../images/A_BG.jpg) no-repeat center center;
+    background-size: cover;
+    margin: 0 0 20px 0;
+    order: 1;
+}
+
+.bn1, .bn3 {
+    width: 49%;
+    margin: 0;
+}
+
+.bn1 {
+    background: url(../images/A_BG.jpg) no-repeat center center;
+    background-size: cover;
+    order: 2;
+}
+
+.bn3 {
+    background: url(../images/VM_BG.jpg) no-repeat center center;
+    background-size: cover;
+    order: 3;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+/*        ---------------------------------------------------------*/
+    #M_box div{
+            color: white;
+            float: left;
+            text-align: left;
+            margin-left: 5%;
+            padding-left: 2%;
+        }
+        
+        #M_box div:nth-child(1){
+            width: 22%;
+            padding: 4%;
+            font-size: 0.8em;
+            margin-top: 2%;
+            text-indent: 10px;
+/*            background-color: red;*/
+        }
+        #M_box div:nth-child(2){
+            width: 65%;
+            padding-top: 5%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        
+        #M_box div:nth-child(3){
+            clear: both;
+            width: 28%;
+            margin-top: 2%;
+            margin-left: 10%;
+/*            background-color: black;*/
+        }
+        #M_box div:nth-child(4){
+            margin-top: 2%;
+            width: 43%;
+            margin-top: 5%;
+            margin-left: 4%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+        }
+        #M_box div:nth-child(5){
+            width: 43%;
+            margin-left: 4%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        #M_box div:nth-child(6){
+            width: 43%;
+            margin-left: 4%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+            margin-top: 5%;
+        }
+        #M_box div:nth-child(7){
+            width: 43%;
+            margin-left: 4%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        
+        
+/*        ---------------------------------------------------------*/
+        
+        #S_box{
+            width: 100%;
+            height: 100%;
+            /*background-color: lightblue;*/
+            overflow: hidden;
+            color: white;
+        }
+        
+        #S_box div{
+            float: left;
+            text-align: left;
+        }
+        
+        #S_box div:nth-child(1){
+            width: 23%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+            text-align: center;
+            margin-top: 7%;
+            margin-left: 10%;
+        }
+        
+        #S_box div:nth-child(2){
+            text-align: center;
+            width: 18%;
+            margin-top: 2%;
+            margin-left: 8%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        #S_box div:nth-child(3){
+            text-align: center;
+            width: 22%;
+            margin-left: 8%;
+            margin-top: 11%;
+            font-size: 1.2em;
+/*            background-color: blue;*/
+        }
+
+/*        ---------------------------------------------------------*/
+        #VM_box div{
+            color: white;
+            float: left;
+            text-align: left;
+            padding-left: 2%;
+            margin-left: 5%;
+        }
+        
+        #VM_box div:nth-child(1){
+            width: 22%;
+            padding: 4%;
+            font-size: 0.8em;
+            margin-top: 2%;
+            text-indent: 10px;
+/*            background-color: red;*/
+        }
+        #VM_box div:nth-child(2){
+            width: 68%;
+            margin-top: 5%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        
+        #VM_box div:nth-child(3){
+            clear: both;
+            width: 24%;
+            margin-top: 10%;
+            margin-left: 10%;
+/*            background-color: black;*/
+        }
+        #VM_box div:nth-child(4){
+            margin-top: 2%;
+            width: 48%;
+            margin-left: 7%;
+            font-size: 0.8em;
+            margin-top: 4%;
+/*            background-color: red;*/
+        }
+        #VM_box div:nth-child(5){
+            width: 48%;
+            margin-left: 7%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        #VM_box div:nth-child(6){
+            width: 48%;
+            margin-left: 7%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+            margin-top: 5%;
+        }
+        #VM_box div:nth-child(7){
+            width: 48%;
+            margin-left: 7%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        
+        
+/*        ---------------------------------------------------------*/
+        
+        #SS_box{
+            width: 100%;
+            height: 170px;
+            /*background-color: lightblue;*/
+/*            overflow: hidden;*/
+            color: white;
+        }
+        
+        #SS_box div{
+            float: left;
+            text-align: left;
+        }
+        
+        #SS_box div:nth-child(1){
+            width: 25%;
+            margin-top: 7%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+            text-align: center;
+            margin-left: 8%;
+        }
+        
+        #SS_box div:nth-child(2){
+            text-align: center;
+            width: 25%;
+            margin-left: 4.2%;
+            margin-top: 3%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        #SS_box div:nth-child(3){
+            text-align: center;
+            width: 30%;
+            margin-left: 2%;
+            margin-top: 12%;
+            font-size: 1.2em;
+/*            background-color: blue;*/
+        }
+
+/*      아래부턴 테두리  ---------------------------------------------------------*/
+       
+        .loader{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top:86px;
+            left:48.5%;
+            width: 93.5%;
+            height: 176px;
+            line-height: 100px;
+            text-align: center;
+            z-index: 1;
+            
+            overflow: hidden;
+            
+        }
+        .loader span{
+            position: absolute;
+            background: rgba(255, 255, 255, 0);
+            box-shadow: -1px 1px 5px #ffe450, 1px -1px 5px #ffe450;
+            border-radius: 50%;
+        }
+        .loader span:nth-child(1){
+            width: 100%;
+            height: 2px;
+            top: 0;
+            left: -100%;
+            animation: animate1 2s linear infinite;
+        }
+        .loader span:nth-child(3){
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            right: -100%;
+            animation: animate3 2s linear infinite;
+        }
+        .loader span:nth-child(2){
+            width: 2px;
+            height: 100%;
+            top: -100%;
+            right: 0;
+            animation: animate2 2s linear infinite;
+        }
+        .loader span:nth-child(4){
+            width: 2px;
+            height: 100%;
+            bottom: -100%;
+            left: 0;
+            animation: animate4 2s linear infinite;
+        }
+        
+        #border_all {
+            width: 100%;
+            top: 5px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            margin-top:0;
+            /*background: rgba(0,0,0, 0.5);*/
+        }
+        
+        #S_box_border {
+            width: 95%;
+            height: 170px;
+            margin: 0 auto;
+            border: 1px solid gold;
+            order: 1;
+        }
+        
+        #M_box_border,
+        #VM_box_border {
+            width: 44%;
+            height: 170px;
+            position:absolute;
+            top:200px;
+            border: 1px solid white;
+        }
+        
+        #M_box_border {
+            left: 2.5%;
+            order: 2;
+        }
+        
+        #VM_box_border{
+            right: 2.5%;
+            order: 3;
+        }
+            
+        }
+        
+        
+/*    @media(max-width:760px){
+        #VM_box_border{right:-1%}
+    }  
+    @media(max-width:700px){
+        #VM_box_border{right:-4px}
+    }    
+    @media(max-width:670px){
+        #VM_box_border{right:-2px}
+    } 
+    @media(max-width:640px){
+        #VM_box_border{right:0px}
+    }
+    @media(max-width:590px){
+        #M_box_border{left:-2px}
+        #VM_box_border{right:1px}
+    }
+    @media(max-width:570px){
+        #M_box_border{left:-0.6%}
+        #VM_box_border{right:0.6%}
+    }*/
+    @media (max-width:520px){
+        
+    }
+    
+    @media (max-width:510px){
+            #banner02box {
+                width: 100%;
+                /*background: red;*/
+                display: flex;
+                flex-direction: column;
+                flex-wrap:no-wrap;
+                float: left;
+            }
+            
+        .loader{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top:50%;
+            left:50%;
+            width: 102%;
+            height: 176px;
+            line-height: 100px;
+            text-align: center;
+            z-index: 1;
+            
+            overflow: hidden;
+            
+        } 
+            
+/*.bn1 {
+    width: 45%;
+    height: 150px;
+    clear: both;
+    min-width: 90px;
+    background: url(../images/M_BG.jpg) no-repeat center center;
+    background-size: cover;
+    order: 2;
+    left:2px;
+}
+
+.bn2 {
+    width: 95%;
+    height: 180px;
+    max-width: 400px;
+    background: url(../images/A_BG.jpg) no-repeat center center;
+    background-size: cover;
+    order: 1;
+}
+
+.bn3 {
+    width: 45%;
+    height: 150px;
+    min-width: 90px;
+    float: left;
+    background: url(../images/VM_BG.jpg) no-repeat center center;
+    background-size: cover;
+    order: 3;
+    position: absolute;
+    right:2px;
+}*/
+
+
+/*        ---------------------------------------------------------*/
+#M_box div{
+            color: white;
+            float: left;
+            text-align: left;
+            padding-left: 2%;
+        }
+        
+        #M_box div:nth-child(1){
+            width: 25%;
+            padding: 4%;
+            font-size: 0.8em;
+            margin-top: 2%;
+            text-indent: 10px;
+/*            background-color: red;*/
+        }
+        #M_box div:nth-child(2){
+            width: 60%;
+            padding-top: 5%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        
+        #M_box div:nth-child(3){
+            clear: both;
+            width: 38%;
+            margin-top: 2%;
+            margin-left: 7%;
+            min-width: 50px;
+/*            background-color: black;*/
+        }
+        #M_box div:nth-child(4){
+            margin-top: 2%;
+            width: 43%;
+            margin-top: 5%;
+            margin-left: 4%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+        }
+        #M_box div:nth-child(5){
+            width: 43%;
+            margin-left: 4%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        #M_box div:nth-child(6){
+            width: 43%;
+            margin-left: 4%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+            margin-top: 5%;
+        }
+        #M_box div:nth-child(7){
+            width: 43%;
+            margin-left: 4%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        
+        
+/*        ---------------------------------------------------------*/
+        
+        #S_box{
+            width: 100%;
+            height: 100%;
+            /*background-color: lightblue;*/
+            /*overflow: hidden;*/
+            color: white;
+        }
+        
+        #S_box div{
+            float: left;
+            text-align: left;
+        }
+        
+        #S_box div:nth-child(1){
+            width: 23%;
+            font-size: 0.8em;
+            margin-top: 13%;
+/*            background-color: red;*/
+            text-align: center;
+            margin-left: 9%;
+        }
+        
+        #S_box div:nth-child(2){
+            text-align: center;
+            width: 25%;
+            margin-top: 5%;
+            margin-left: 5%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        #S_box div:nth-child(3){
+            text-align: center;
+            width: 32%;
+            margin-left: 0%;
+            margin-top: 15%;
+            font-size: 1.2em;
+/*            background-color: blue;*/
+        }
+
+/*        ---------------------------------------------------------*/
+        #VM_box div{
+            color: white;
+            float: left;
+            text-align: left;
+            padding-left: 2%;
+        }
+        
+        #VM_box div:nth-child(1){
+            width: 25%;
+            padding: 4%;
+            font-size: 0.8em;
+            margin-top: 2%;
+            text-indent: 10px;
+/*            background-color: red;*/
+        }
+        #VM_box div:nth-child(2){
+            width: 60%;
+            margin-top: 5%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        
+        #VM_box div:nth-child(3){
+            clear: both;
+            width: 32%;
+            min-width: 50px;
+            margin-top: 12%;
+            margin-left: 8%;
+/*            background-color: black;*/
+        }
+        #VM_box div:nth-child(4){
+            margin-top: 2%;
+            width: 48%;
+            margin-left: 7%;
+            font-size: 0.8em;
+            margin-top: 4%;
+/*            background-color: red;*/
+        }
+        #VM_box div:nth-child(5){
+            width: 48%;
+            margin-left: 7%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        #VM_box div:nth-child(6){
+            width: 48%;
+            margin-left: 7%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+            margin-top: 5%;
+        }
+        #VM_box div:nth-child(7){
+            width: 48%;
+            margin-left: 7%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        
+        
+/*        ---------------------------------------------------------*/
+        
+        #SS_box{
+            width: 100%;
+            /*background-color: lightblue;*/
+            /*overflow: hidden;*/
+            color: white;
+        }
+        
+        #SS_box div{
+            float: left;
+            text-align: left;
+        }
+        
+        #SS_box div:nth-child(1){
+            width: 22%;
+            font-size: 0.8em;
+            margin-top: 13%;
+/*            background-color: red;*/
+            text-align: center;
+            margin-left: 8%;
+        }
+        
+        #SS_box div:nth-child(2){
+            text-align: center;
+            width: 35%;
+            margin-left: 3%;
+            margin-top: 6%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        #SS_box div:nth-child(3){
+            text-align: center;
+            width: 30%;
+            margin-top: 18%;
+            font-size: 1.2em;
+            margin-left: 0%;
+/*            background-color: blue;*/
+        }
+        
+        #border_all{
+            width: 100%;
+            /*margin-top: 15px;*/
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            /*background: rgba(0,0,0, 0.5);*/
+        }
+/*        #M_box_border{
+            width: 43%;
+            top:160px;
+            left:-5px;
+            position: absolute;
+            height: 140px;
+            margin-left: 2%;
+            border: 1px solid white;
+            order: 2;
+        }
+        #S_box_border{
+            width: 93%;
+            position: absolute;
+            top:0%;
+            margin-left: 2%;
+            margin-right: 0%;
+            border: 1px solid gold;
+            order: 1;
+        }
+        #VM_box_border{
+            width: 42%;
+            position: absolute;
+            right:2px;
+            top:190px;
+            height: 140px;
+            order: 3;
+        }*/
+        
+        /* 롤링배너 하단 텍스트 */
+        .simple_banner_wrap.bn1 ul,
+        .simple_banner_wrap.bn3 ul {transform: translateY(15%);}
+    }
+    
+/*    @media (max-width: 440px){
+        #VM_box_border{right:1%}
+        #S_box_border{width:92%}
+    }
+     @media (max-width: 415px){
+        #VM_box_border{right:1.5%}
+    }*/
+    
+    @media (max-width: 400px){
+/*        #M_box_border{left:-1%}*/
+        #SS_box{
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            color: white;
+        }
+        
+        #SS_box div{
+            float: left;
+            text-align: left;
+        }
+        
+        #SS_box div:nth-child(1){
+            width: 25%;
+            font-size: 0.8em;
+            margin-top: 18%;
+            text-align: center;
+            margin-left: 5%;
+        }
+        
+        #SS_box div:nth-child(2){
+            text-align: center;
+            width: 32%;
+            margin-left: 2%;
+            margin-top: 12%;
+            font-size: 1.2em;
+        }
+        #SS_box div:nth-child(3){
+            text-align: center;
+            width: 35%;
+            margin-top: 22%;
+            font-size: 1.2em;
+        }
+        
+        #S_box{
+            width: 100%;
+            height: 100%;
+            /*background-color: lightblue;*/
+            overflow: hidden;
+            color: white;
+        }
+        
+        #S_box div{
+            float: left;
+            text-align: left;
+        }
+        
+        #S_box div:nth-child(1){
+            width: 23%;
+            font-size: 0.8em;
+            margin-top: 18%;
+/*            background-color: red;*/
+            text-align: center;
+            margin-left: 4%;
+        }
+        
+        #S_box div:nth-child(2){
+            text-align: center;
+            width: 24%;
+            margin-left: 2%;
+            margin-top: 10%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        #S_box div:nth-child(3){
+            text-align: center;
+            width: 40%;
+            margin-top: 20%;
+            font-size: 1.2em;
+/*            background-color: blue;*/
+        }
+        
+        #M_box div{
+            color: white;
+            float: left;
+            text-align: left;
+            padding-left: 2%;
+        }
+        
+        #M_box div:nth-child(1){
+            width: 25%;
+            padding: 2%;
+            font-size: 0.8em;
+            margin-top: 5%;
+            text-indent: 10px;
+/*            background-color: red;*/
+        }
+        #M_box div:nth-child(2){
+            width: 60%;
+            padding-top: 5%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        
+        #M_box div:nth-child(3){
+            clear: both;
+            width: 40%;
+            margin-top: 2%;
+            margin-left: 7%;
+/*            background-color: black;*/
+        }
+        #M_box div:nth-child(4){
+            margin-top: 2%;
+            width: 43%;
+            margin-top: 1%;
+            margin-left:0%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+        }
+        #M_box div:nth-child(5){
+            width: 42%;
+            margin-left: 0%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        #M_box div:nth-child(6){
+            width: 42%;
+            margin-left:0%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+            margin-top: 2%;
+        }
+        #M_box div:nth-child(7){
+            width: 50%;
+            margin-left: 0%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        #VM_box div{
+            color: white;
+            float: left;
+            text-align: left;
+            padding-left: 2%;
+        }
+        
+        #VM_box div:nth-child(1){
+            width: 25%;
+            padding: 2%;
+            font-size: 0.8em;
+            margin-top: 5%;
+            text-indent: 10px;
+/*            background-color: red;*/
+        }
+        #VM_box div:nth-child(2){
+            width: 60%;
+            margin-top: 5%;
+            font-size: 1.2em;
+/*            background-color: green;*/
+        }
+        
+        #VM_box div:nth-child(3){
+            clear: both;
+            width: 34%;
+            margin-top: 12%;
+            margin-left: 8%;
+/*            background-color: black;*/
+        }
+        #VM_box div:nth-child(4){
+            margin-top: 2%;
+            width: 48%;
+            margin-left: 7%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+        }
+        #VM_box div:nth-child(5){
+            width: 48%;
+            margin-left: 7%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        #VM_box div:nth-child(6){
+            width: 48%;
+            margin-left: 7%;
+            font-size: 0.8em;
+/*            background-color: red;*/
+            margin-top: 2%;
+        }
+        #VM_box div:nth-child(7){
+            width: 48%;
+            margin-left: 7%;
+            font-size: 1.2em;
+/*            background-color:green;*/
+        }
+        
+        
+    }
+/*    @media (max-width: 360px){
+        #M_box_border{left:-1%}
+        #S_box_border {width:90%}
+        #VM_box_border {right:2.3%} 
+    }*/

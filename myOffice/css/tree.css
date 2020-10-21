@@ -1,0 +1,461 @@
+.tree {
+	border: 1px solid #e5eaed;
+	margin-bottom: 5%;
+	margin-top: 30px;
+	border-radius: 10px;
+	border: 1px solid #e1e2e6;
+	background-color: #fff;
+}
+
+.tree>div.title {
+	overflow: hidden;
+	padding: 6px 20px;
+}
+
+.tree>div {
+	padding: 20px;
+}
+
+.tree div h2 {
+	float: left;
+	line-height: 36px;
+	font-size: 21px;
+}
+
+#tree_go {
+	display: block;
+	float: right
+}
+
+.tree div img {
+	cursor: pointer;
+}
+
+#line {
+	width: 100%;
+	height: 1px;
+	background: #e1e2e6;
+	padding: 0
+}
+
+/*.boxSearBox form {
+    width: 85%;
+}*/
+
+.search_info {
+	position: relative;
+	display: none
+}
+
+.search_info>table {
+/*	position: absolute;
+	right: 0px;
+	top: 41px;*/
+	width: 366px;
+	background: #fff;
+	border: 1px solid #bbb;
+	z-index: 99999;
+/*	border-top: none*/
+}
+
+.search_info>table>tbody {
+	text-align: center
+}
+
+.search_info>table>tbody>tr:hover {
+	background: #f0f0f0;
+	cursor: pointer
+}
+
+.partner h3 {
+	float: left
+}
+
+.partner h3 strong {
+	color: #2399f1;
+	font-size: 18px
+}
+
+.search_box input#search {
+	width: 150px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #2b303b;
+	font-size: 10pt;
+	float: left;
+	color: #555;
+	padding-left: 10px;
+	border-radius: 3px 0 0 3px;
+	float: left
+}
+
+.search_box button.icon {
+	float: right;
+	width: 30px;
+	height: 30px;
+	border: 0px;
+	outline: none;
+	background: #232833;
+	color: #fff;
+	border-radius: 0 3px 3px 0;
+	font-size: 20px
+}
+
+.boxSearBox>form {
+    float: right;
+    position: relative;
+}
+
+#searchclick {
+	background-color: #343f51;
+	color: #fff;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 20px; /*border-radius:0 5px 5px 0;*/
+}
+
+#searchclick:hover {
+	background-color: #333;
+}
+
+#searchInput {
+	line-height: 40px;
+	height: 40px;
+	padding: 0 10px; /*border-radius:5px 0 0 5px;*/
+	border: 1px solid #343f51;
+	margin-left: 5px;
+}
+
+/*.boxSearBox>form>select, #searchInput, #searchclick {
+    float: right;
+}*/
+
+#select_box {
+	position: relative
+}
+
+#nameNick {
+/*	position: absolute;
+	right: 228px;
+	float: right;*/
+	width: 200px;
+	height: 40px;
+        background: #fff;
+	/* background:url(../images/select_bg.gif) 180px center no-repeat; background-size:13px 11px; */
+	border: 1px solid #343f51;
+}
+
+div#select_box label {
+	display: none;
+	position: absolute;
+	font-size: 14px;
+	color: #333;
+	top: 7px;
+	left: 12px;
+	letter-spacing: 1px;
+}
+
+#nameNick select#nameNick {
+	width: 100%;
+	height: 40px;
+	min-height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	opacity: 0;
+	filter: alpha(opacity = 0); /* IE 8 */
+}
+
+.list {
+	margin-left: 1.4%;
+	overflow: hidden;
+	background: #f4f8fb;
+	border-top: 1px solid #e8e9ed;
+	border-bottom: 1px solid #e8e9ed
+}
+
+.list ul li {
+	float: left;
+	width: 15.28%;
+	text-align: center;
+	padding: 0 10px
+}
+
+.tree_table {
+	position: relative;
+	cursor: pointer;
+}
+
+.tree_table ul {
+	overflow: hidden;
+	border: 1px solid #e8e9ed;
+	margin: 10px 0;
+}
+
+.tree_table ul span {
+	display: inline-block
+}
+
+.tree_table ul li {
+	float: left;
+	text-align: center;
+	width: 10.28%;
+	padding: 19px 0;
+}
+
+.tree_table ul li:nth-child(1) {
+	padding-left: 0;
+	margin-left: 29px;
+}
+
+.tree_table ul li:nth-child(2) {
+	padding-left: 0;
+	margin-left: 43px;
+}
+
+.tree_table ul li:nth-child(3) {
+	padding-left: 0;
+	margin-left: 49px
+}
+
+.tree_table ul li:nth-child(4) {
+	padding-left: 0;
+	margin-left: 28px
+}
+
+.tree_table ul li:nth-child(5) {
+	padding-left: 0;
+	margin-left: 69px
+}
+
+.tree_table ul li:nth-child(6) {
+	padding-left: 0;
+	margin-left: 46px
+}
+
+.tree_number_circle {
+	background: #2399f1;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	position: relative;
+	top: 13px;
+	left: 16px;
+}
+
+.tree_number_circle2 {
+	background: red;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	position: relative;
+	top: 13px;
+	left: 16px;
+}
+
+.tree_number_circle3 {
+	background: gold;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	position: relative;
+	top: 13px;
+	left: 16px;
+}
+
+.tree>div.treeTableW {
+	overflow: hidden;
+	padding: 0px;
+}
+
+.tree>div.treeTableW>div.list {
+	padding: 20px;
+}
+
+@media ( max-width : 801px) {
+	.tree>div.treeTableW {
+		overflow: scroll;
+		padding: 0px;
+	}
+	.tree {
+		border-radius: 0px;
+		margin-top: 10px;
+	}
+	.search_box {
+		width: 100%;
+	}
+/*	#tree_go {
+		margin-top: 6px;
+	}*/
+	.tree div.list {
+		width: 1024px;
+	}
+	.tree div.tree_table {
+		width: 1024px;
+	}
+/*	#tree_go>img {
+		width: 119px;
+	}*/
+	.partner h3 {
+		display: none;
+	}
+}
+
+@media ( max-width : 457px) {
+    #nameNick {
+/*        left: -21%;*/
+        width: 35%;
+    }
+}
+
+
+/* 산하 회원정보 - 리스트형 : 회원리스트 */
+.list2 > ul > li,
+.tree_table.tree_table2 > ul > li {
+    width: 12%;
+}
+
+.tree_table.tree_table2 {
+    padding: 20px;
+}
+
+.tree_table.tree_table2 > ul {
+    margin: 10px 0 10px 1.4%;
+}
+
+.tree_table.tree_table2 > ul > li {
+    margin-left: 0;
+}
+
+.list2 > ul > li:nth-child(6),
+.tree_table.tree_table2 > ul > li:nth-child(6) {
+    width: 16%;
+}
+
+
+/* 산하 회원정보 - 리스트형 : 그룹선택 */
+.selector_partnerGroup {
+    height: 40px;    
+}
+
+.selector_partnerGroup::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.selector_partnerGroup > li {
+    width: 100px;
+    float: left;
+    font: 400 14px/40px 'Noto Sans KR', sans-serif;
+}
+
+.selector_partnerGroup > li:nth-child(2) {
+    margin-left: 2px;
+}
+
+.selector_partnerGroup > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #f4f8fb;
+}
+
+.selector_partnerGroup > li > a.select {
+    color: #fff;
+    background-color: #2399f1;
+}
+
+.selector_partnerGroup {
+    margin-left: 1.4%;
+}
+
+
+/* 리스트형 버튼 */
+.boxBtn-group {
+    float: right;
+}
+
+.list-btn {
+    color: #fff;
+    float: left;
+    display: block;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+a.list-btn:link, a.list-btn:visited {color: #fff;}
+
+.list-part,
+.list-all {
+    background: #f76e5e; /* Old browsers */
+    background: -moz-linear-gradient(top, #f5968a 0%, #e94936 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f5968a 0%, #e94936 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f5968a 0%, #e94936 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5968a', endColorstr='#e94936',GradientType=0 ); /* IE6-9 */
+}
+
+.list-tree {
+    background: #a7a8a9; /* Old browsers */
+    background: -moz-linear-gradient(top, #a7a8a9 0%, #7d7d7d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a7a8a9 0%,#7d7d7d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a7a8a9 0%,#7d7d7d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7a8a9', endColorstr='#7d7d7d',GradientType=0 ); /* IE6-9 */
+}
+
+/* 회원검색창 */
+#searchInput, #searchclick {float: left; display: block;}
+.boxSearBox > form[onsubmit] > div {float: left;}
+.boxSearBox > form[onsubmit] .search_info {
+    position: absolute;
+    left: 0;
+    top: 42px;
+}
+
+#search_info_tbl {line-height: 40px;}
+
+@media(max-width:801px){
+    .tree .title h2{width:100%; text-align:center;}
+	/*191220 레이아웃 깨져서 추가 ㅡㅡㅡㅡㅡㅡㅡ */
+	.boxSearBox {display: flex; justify-content: center;}
+	.boxSearBox>form {float:none;}
+	#nameNick {width:85px;}
+	/*ㅡㅡㅡㅡㅡㅡㅡ 191220 레이아웃 깨져서 추가*/
+    .list-btn{ height:30px; line-height: 30px; margin:0 1%; width:23%;}
+    .boxBtn-group{float:none; width:100%; display: flex; margin-top: 20px;}/*191220 수정 */
+}
+
+
+@media screen and (max-width: 500px) {
+    #select_box {width: 90px; height: 40px;}
+    #nameNick {float: none; right: 0; width: 100%;}
+}
+
+@media screen and (max-width : 400px) {
+	/*191220 레이아웃 깨져서 추가 ㅡㅡㅡㅡㅡㅡㅡ */
+	.tree>div {padding: 20px 5px;}
+	.tree>div.title {padding: 6px 5px;}
+	#searchInput {padding: 0 6px;}
+	/*ㅡㅡㅡㅡㅡㅡㅡ 191220 레이아웃 깨져서 추가*/
+	#select_box {width: 70px;}
+    
+}

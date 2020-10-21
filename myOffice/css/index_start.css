@@ -1,0 +1,47 @@
+@charset "utf-8"; /*2019년 10월 14일부터 index_start.php에 추가,수정되는 css 입니다 */
+
+/*포인트 달력 수정 2019.11.18*/
+.calendar_tab {width:1024px;margin:50px auto 0;font-size:1rem; position:relative;text-align:left;}
+.calendar_tab .c_tab {position:relative; overflow:hidden;}
+.calendar_tab li {box-sizing:border-box; float:left; background-color:#9a9a9a;color:#ffffff;border-radius:23px;width:161px; height:46px; line-height:46px; cursor:pointer; text-align:center;}
+.button_image {display:inline-block;}
+.calendar_tab .button_image {background-size:100%;background-repeat:no-repeat;width:18px;height:17px;margin-left:29px; vertical-align:-2px;}
+.calendar_tab li.on, .calendar_tab li:hover, .calendar_tab li:active {background-color:#1a7da0;}
+.calendar_tab li.list_dps .button_image {background-image:url('../images/icon_dps.png');}
+.calendar_tab li.list_wth {margin:0 7px;}
+.calendar_tab li.list_wth .button_image {background-image:url('../images/icon_wth.png');}
+.calendar_tab li.list_dpsWth .button_image {background-image:url('../images/icon_dps_wth.png');width:21px;height:15px;margin-left:11px;}
+.research_detail {width:161px; position:absolute; right:0; top:0}
+.research_detail button {border-radius:23px;color:#ffffff; background-color:#24345a; width:161px; height:46px; line-height:45px; text-align:center;}
+.research_detail .button_image {background-image:url('../images/icon_research.png');}
+.calendar form {font-size:14px;display:table-cell;float:none;text-align:right;vertical-align:middle;margin:0;padding:20px 0;}
+.calendar h2 {display:table-cell;float:none;padding:20px 0 20px 20px}
+.calendar form select {margin-right:1%;margin-left:1%;}
+.calendar .test_btn {width:auto;height:auto;margin-left:3%;margin-top:-4px;padding:6px 15px;}
+@media only screen and (max-width:801px) {
+	.calendar_tab {width:auto;display:block;padding:0 15px;font-size:17px;}
+	.calendar_tab li {position:relative; max-width:240px; height:46px; line-height:46px; text-align:center; border-radius:50px;}
+	.research_detail {position:relative;width:100%;}
+	.research_detail button {margin-top:2.5%;width:100%;position:relative;border-radius:33px;}
+	.research_detail .button_image {position:absolute; right:40px; top:50%; margin-top:-9px; margin-left:0;}
+	.calendar_tab li .button_image {vertical-align:-1px; display:inline-block;}
+	.calendar_tab li.list_dps {width:calc(33.3% - 7px);}
+	.calendar_tab li.list_wth {width:calc(33.4% - 7px);}
+	.calendar_tab li.list_dpsWth {width:33.3%;}
+	.calendar_tab li.list_dps .button_image {background-image:url('../images/icon_dps_m.png');}
+	.calendar_tab li.list_wth .button_image {background-image:url('../images/icon_wth_m.png'); margin-left:39px;}
+	.list_dpsWth .button_image {margin-left:39px;width:15px;height:11px;}
+	.calendar_tab li.list_dpsWth .button_image {background-image:url('../images/icon_dps_wth_m.png'); margin-left:12px;}
+}
+@media only screen and (max-width:520px) {
+	.calendar_tab {font-size:15px;}
+	.calendar_tab li {width:120px; height:34px; line-height:34px;border-radius:35px;}
+	.calendar_tab li.list_wth .button_image {margin-left:19px;}
+	.calendar_tab li.list_wth .button_image {margin-left:19px;}
+	.calendar_tab li.list_dpsWth .button_image {margin-left:6px;}
+}
+@media only screen and (max-width:470px) {
+	.calendar_tab {font-size:13px;}
+
+	.calendar {padding-right:3%;}
+}

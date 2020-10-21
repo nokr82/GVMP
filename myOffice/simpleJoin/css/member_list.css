@@ -1,0 +1,242 @@
+@charset 'utf-8';
+
+html {font-size: 18px;}
+body {padding: 0; padding-bottom: 5%; margin: 0; min-width: 320px; line-height:1.3; color: #333; background-color:#edeff5; font-family: 'NanumSquare_EB'; word-break: keep-all;}
+h1, h2, h3, h4, h5, h6 {font-size:1rem;}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {margin:0; padding:0;}
+ul, ol, li {list-style:none;}
+img {border:0;}
+a {text-decoration:none; font-size: 1rem; font-weight: 300;}
+i, address, small, em {text-decoration: none; font-weight: 400; font-style: normal}
+table {border-collapse: collapse; border-spacing: 0;}
+figure {margin: 0; }
+strong, b {font-weight: normal; color: #333}
+
+
+
+/* 공통사항  */
+.clearfix::after{content: ''; display: block; clear: both;}
+.sound_only {position: absolute;top: 0;left: 0; margin: 0; padding: 0; width: 0; height: 0; font-size: 0; text-indent: -9999em; line-height: 0; border: 0;}
+.info_box {padding-left: 12.5px; margin-bottom: 2px; font-size: 0.8rem;}
+.info_box i {display: block; float: left; margin-right: 5px; width: 18px;}
+.info_box i > img {width: 100%; object-fit: contain}
+.info_box p {display: block; float: left; width: 92%; font-family: 'NanumGothicExtraBold'; font-size: 0.7rem; font-weight: bold; text-align: left; line-height: 18px; letter-spacing: -0.04rem}
+
+
+.container {margin: 0 auto; padding-top: 56px; width: 1080px;}
+.container > ul {margin-top: 43px}
+
+.container .tab_box {overflow: hidden;}
+.container .tab_box a.tab_btn {float: left; padding-left: 12%; width: 38%; font-size: 1.35rem; color: #58c0df}
+.container .tab_box a.tab_btn.off {padding-top: 3px; font-family: 'NanumSquare_B'; font-size: 1.15rem; color: #8d8d8d}
+.container .tab_box a.impossible_btn {color: #f75e61}
+
+.slider > li {float: left; margin: 0 12.5px 25px 12.5px; padding: 21px 24px 0 24px; width: 31%; background-color: #fff; border-radius: 10px; box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.15); box-sizing: border-box;}
+.slider > li .member_info {font-family: 'NanumGothicExtraBold'; font-size: 0.7rem}
+.slider > li .member_info li + li {margin-top: 20px}
+.slider > li .member_info i {display: inline}
+.slider > li .member_info em {display: block; font-weight: 700; color: #7d7d7d}
+.slider > li .member_info strong {display: block; margin-top: 3px; font-size: 0.8rem; font-weight: bold; color: #333333}
+.slider > li .member_info li.recomm_box i {display: inline-block; margin-right: 5px} 
+.slider > li .member_info li.sponsor_box i {display: inline-block; margin-right: 5px}
+.slider > li .member_info li.recomm_box strong {display: inline-block;} 
+.slider > li .member_info li.sponsor_box strong {display: inline-block;}
+.slider > li .member_info li > label[for='sponsor_team'] {display: block; margin-bottom: 5px}
+.slider > li .member_info li > label[for='1team'] {margin-right: 38px}
+.slider > li .member_info li input[type="radio"] {width: 15px; height: 15px; border: 1px solid #d2d2d2; border-radius: 50%; background-color: #fff; -webkit-appearance: none; -moz-appearance: none; appearance: none; vertical-align: bottom}
+/*.slider > li .member_info li input[type="radio"]:checked {background-color: #3db8db}*/
+.slider > li .member_info li a.modify_btn {display: block; margin-bottom: 15px; padding-left: 12px; border-radius: 10px; line-height: 37px;background: #3db8db url('../img/vmp_arrow_2.png')no-repeat 95% center; background-size: 32px 30px; font-size: 0.7rem; font-weight: bold; color: #fff}
+
+.slider_2 > li {float: left; margin: 0 12.5px 25px 12.5px; padding: 21px 24px 0 24px; width: 31%; background-color: #fff; border-radius: 10px; box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.15); box-sizing: border-box;}
+.slider_2 > li .member_info {font-family: 'NanumGothicExtraBold'; font-size: 0.7rem}
+.slider_2 > li .member_info li + li {margin-top: 20px}
+.slider_2 > li .member_info i {display: inline}
+.slider_2 > li .member_info em {display: block; font-weight: 700; color: #7d7d7d}
+.slider_2 > li .member_info strong {display: block; margin-top: 3px; font-size: 0.8rem; font-weight: bold; color: #333333}
+.slider_2 > li .member_info li.recomm_box i {display: inline-block; margin-right: 5px} 
+.slider_2 > li .member_info li.sponsor_box i {display: inline-block; margin-right: 5px}
+.slider_2 > li .member_info li.recomm_box strong {display: inline-block;} 
+.slider_2 > li .member_info li.sponsor_box strong {display: inline-block;}
+.slider_2 > li .member_info li > label[for='sponsor_team'] {display: block; margin-bottom: 5px}
+.slider_2 > li .member_info li > label[for='1team'] {margin-right: 38px}
+.slider_2 > li .member_info li input[type="radio"] {width: 15px; height: 15px; border: 1px solid #d2d2d2; border-radius: 50%; background-color: #fff; -webkit-appearance: none; -moz-appearance: none; appearance: none; vertical-align: bottom}
+/*.slider_2 > li .member_info li input[type="radio"]:checked {background-color: #ccc}*/
+.slider_2 > li .member_info li a.modify_btn {display: block; margin-bottom: 15px; padding-left: 12px; border-radius: 10px; line-height: 37px;background: #3db8db url('../img/vmp_arrow_2.png')no-repeat 95% center; background-size: 32px 30px; font-size: 0.7rem; font-weight: bold; color: #fff; cursor: not-allowed}
+
+
+.bx-wrapper .bx-controls-direction a {left: -37px; margin-top: -33.5px; width: 21px; height: 41px; background: url(../img/vmp_left_arrow.png)no-repeat 0 0; background-size: 100%}
+.bx-wrapper .bx-controls-direction a.bx-next {left: auto; right: -37px; background-image: url(../img/vmp_right_arrow.png)}
+.bx-wrapper .bx-next:focus, .bx-wrapper .bx-next:hover {background-position: 0 0}
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {display: none}
+
+
+.impossible_list {display: none}
+.impossible_list .slider_2 > li {position: relative; height: 410px}
+.impossible_list .slider_2 > li .member_info li a.modify_btn {position: absolute; left: 0; right: 0; bottom: 0; margin: 0; padding: 0; width: 100%; background: #f75e61; text-align: center; border-top-left-radius: 0; border-top-right-radius: 0}
+
+
+/*회원정보 수정*/ 
+#fregisterform {overflow:hidden; font-family: none; font-size: 0.8rem}
+#fregisterform h2, .frm_label {width:100%; height:40px; color:#fff; font-size:15px; font-weight:300; text-align:center; line-height:40px; margin-bottom:10px;}
+#fregisterform h2.noti { color: #666; text-align:left; font-size:12px; }
+#fregisterform .agree li { width:100%; float:left; }
+#fregisterform li.mailing_con, #fregisterform li.sms_con { width:50%; text-align: center; }
+.full_input {width: 98%;}
+.frm_input { padding: 5px; max-width: 100%; height: 31px; border: 1px solid #ccc; background: #fff; font-size: 0.7rem; color: #000; vertical-align: middle; border-radius: 3px; box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075);}
+#captcha { text-align: center;}
+
+#fregisterform .form_01{max-width:620px;margin:15px auto;background:#fff;padding:15px 20px;border:1px solid #e6e6e6; overflow: hidden;}
+#fregisterform .form_01 .title_txt {font-family: 'NanumSquare_B'; font-size: 1rem; font-weight: bold; color: #333}
+#fregisterform .form_01 li {margin: 5px 0}
+#fregisterform #select_box #searchInput {padding: 5px; width: 64% !important; border: 1px solid #ccc; border-radius: 3px }
+#fregisterform #select_box #searchclick {border: none; background: #fff}
+#fregisterform #select_box #searchclick i.fa-search {font-size: 20px; color: #333}
+#fregisterform #reg_mb_email, #fregisterform .frm_address {width:98%}
+#fregisterform textarea {width:100%;height:50px}
+#fregisterform #msg_certify {margin:5px 0 0;padding:5px;border:1px solid #dbecff;background:#eaf4ff;text-align:center}
+
+#fregisterform .reg_hp_box > p {margin: 10px 0; word-break: keep-all; color: #737373}
+#fregisterform .reg_hp_box  .reg_hp_info {margin-top: 25px; font-size: 0.7rem;}
+#fregisterform .reg_hp_box #reg_mb_hp {width: 40%;}
+#fregisterform .reg_hp_box #reg_mb_hp:read-only {background-color: #f7f7f7} 
+#fregisterform .reg_hp_box .reg_hp_btn {margin-left: 10px; padding: 9px 13px; border-radius: 5px; background: #00bff0; font-size: 13px; font-weight: 400; color: #fff;vertical-align: middle;}
+#fregisterform .reg_hp_box .reg_hp_reconf_btn {display: none;}
+#fregisterform .reg_hp_box .reg_hp_confirm_msg {visibility: hidden; margin-left: 10px; font-size: 13px; font-weight: 500; font-style: normal; color: #e8104c;}
+#fregisterform .reg_hp_box .reg_hp_confirm_box #reg_hp_innumber{margin-left: 10px; padding-left: 12px; height: 26px; border: 3px solid #f75e61; box-shadow: none; border-radius: 12px; }
+#fregisterform .reg_hp_box .reg_hp_confirm_box #reg_hp_innumber:focus {border: 3px solid #00bff0 !important;}
+#fregisterform .reg_hp_box .reg_hp_confirm_box .reg_hp_text {margin-top: 10px; color: #f75e61;}
+#fregisterform .reg_hp_box .reg_hp_confirm_box > p {margin-bottom: 10px; font-size: 13px; color: #4286f4}
+#fregisterform .reg_hp_box .reg_hp_confirm_box > p:first-child {margin-bottom: 10px;}
+
+#fregisterform .frm_address {margin:5px 0 0}
+#fregisterform #mb_addr3 {display:block;margin:5px 0 0}
+#fregisterform #mb_addr_jibeon {display:block;margin:5px 0 0}
+#fregisterform caption{text-align:center;color:#000}
+button.btn_frmline {display: inline-block; padding: 0 5px; height: 1.9em; border: 0; background: #333; color: #fff; letter-spacing: -0.1em; text-decoration: none; vertical-align: top; line-height: 1.9em;}
+#fregisterform .tbl_frm01{margin-bottom:20px}
+#fregisterform .tbl_frm01 th{display:none;}
+#fregisterform .tbl_frm01 td{display:block;padding:3px 0;border:0;}
+#register_form .tbl_frm01 .frm_input{width:100%;height:40px;line-height:40px;border:1px solid #e6e6e6;padding:0 10px;background:#fff;}
+#register_form .tbl_frm01 .frm_input1{width:30%;height:40px;line-height:40px;border:1px solid #e6e6e6;padding:0 10px;background:#fff;}
+#register_form .tbl_frm01 .btn_frmline{height:40px;}
+#register_form .frm_info{font-size:0.92em;color:#999;margin-top:3px;display:block}
+#register_form .tbl_frm01  .frm_info{margin-bottom:10px;}
+#register_form .tbl_frm05{background:#f3f3f3;border:1px solid #d3d3d3;padding:0 15px 15px}
+#register_form .tbl_frm05 th{width:100px;border-top:1px solid #e5e5e5;text-align:left;font-weight:normal;padding:10px 0;font-size:0.92em;;font-weight:bold}
+#register_form .tbl_frm05 td{;border-top:1px solid #e5e5e5;padding:5px 0;vertical-align:middle}
+#register_form .tbl_frm05 textarea{border:1px solid #d3d3d3;padding:10px}
+#register_form .tbl_frm05  .frm_input{height:30px;line-height:30px;border:1px solid #d3d3d3;padding:0 10px;background:#fff;}
+#fregisterform .btn_confirm{margin:15px 0}
+#fregisterform .btn_submit{width:50%;height:40px;max-width:250px;font-weight:bold; margin-bottom:30px;}
+#fregisterform .btn_grd{display:inline-block;border:1px solid #ddd;vertical-align:middle;line-height:40px;height:40px;padding:0 20px}
+#fregisterform .frm_label {display:block;margin:18px 0 10px; color:#fff;}
+#fregisterform .btn_frmline{height:40px}
+#fregisterform .btn_top {text-align:center; }
+
+#bankName {width: 100%}
+#reg_mb_account {width: 98%}
+#fregisterform .btn_submit {width: 50%; height: 40px; max-width: 250px; border:none; background: #3d3e3e; color: #fff; font-weight: bold; margin-bottom: 30px; cursor: pointer}
+.btn_submit:hover {background: #222}
+.load_msg {display: none}
+#wrap {height: 400px !important;}
+.popup_body {height: 500px !important; overflow: scroll}
+#fregisterform .load_msg {margin-bottom: 65px; text-align: center}
+#fregisterform .load_msg > img {margin-top: -36px; width: 147px;}
+#fregisterform .load_msg > p {margin-top: -27px; font-family: 'NanumSquare_B'; line-height: 2rem}
+
+/* ------------------media--------------------- */
+/* ------------------media--------------------- */
+
+@media (max-width: 1110px){
+.container {width: 92%}
+.slider > li {width: 30%}
+.slider_2 > li {width: 30%}
+
+}
+
+
+@media (max-width: 833px){ 
+.container {width: 97%}
+.slider > li {width: 29%}
+.slider_2 > li {width: 29%}
+
+}
+
+
+@media (max-width: 780px){ 
+.container {width: 85%}
+.container .tab_box a.tab_btn {padding-left: 6%; width: 39%}
+.container .tab_box a.impossible_btn {width: 49%}
+.slider > li {width: 45.5%}
+.slider_2 > li {width: 45.5%}
+
+}
+    
+
+@media (max-width: 671px){ 
+.container {width: 95%}
+}
+
+@media (max-width: 605px){ 
+.container .tab_box a.tab_btn {padding-left: 3%; width: 45%}
+.container .tab_box a.impossible_btn {padding-left: 7%; width: 42%}
+
+.slider > li {width: 44%}
+.slider_2 > li {width: 44%}
+}
+
+
+@media (max-width: 480px){ 
+html {font-size: 14px}
+.container .tab_box a.tab_btn {padding-left: 4%; width: 67%; color: #333; text-align: left;}
+.container .tab_box a.tab_btn.off {overflow: hidden; width: 22px; height: 40px; background: url('../img/vmp_right_arrow.png')no-repeat; background-size: 55%; font-size: 0; text-indent: -9999999px}
+
+.container .tab_box a.impossible_btn {width: 84%; text-align: right}
+
+.container .tab_box a.possible_btn.off {float: left; background: url('../img/vmp_left_arrow.png')no-repeat; background-size: 55%; }
+.container .tab_box a.impossible_btn.off {float: right; background-position-x: right}
+
+.list_wrap {position: relative;}
+.list_wrap .info_box {position: absolute; top: -14px; left: 0; width: 75%;}
+.list_wrap .info_box p {width: 91%}
+
+.info_box {padding-left:0; margin-left: 12.5px; margin-bottom: 30px; width: 288px; background: #3db8db; color: #fff}
+.info_box i {margin-top: 4px; width: 16px; height: 17px; background: url('../img/vmp_info_w.png')no-repeat; background-size: 100%;}
+.info_box i > img {display: none}
+.info_box p {line-height: 24px}
+
+.container {padding-top:32px; width: 90%}
+.container > ul {margin-top: 0;}
+
+.slider {margin-top: 2%; width: 100%}
+.slider > li {margin: 11px; width: 20rem !important;}
+
+.slider_2 {width: 100%}
+.slider_2 > li {margin: 11px; width: 20rem !important;}
+
+.bx-viewport {height: 441px !important;}
+.bx-wrapper {padding-top: 26px}
+.bx-wrapper .bx-controls-direction a {display: none} 
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {padding: 0; bottom: -37px}
+.bx-wrapper .bx-pager.bx-default-pager a {width: 8px; height: 8px; background-color: #a0a0a0}
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {margin: 0 8px; width: 38px; background-color: #a0a0a0}
+.bx-wrapper .bx-pager.bx-default-pager a:hover {background-color: #a0a0a0}
+
+.impossible_list .info_box {left: auto; right: 0; background-color: #f75e61}
+.impossible_list .slider_2 > li {height: 330px}
+.impossible_list .slider_2 > li .member_info li:last-child {display: none}
+
+
+
+/*회원정보 수정*/
+#fregisterform .form_01 .title_txt {font-size: 1.3rem}
+.full_input {width: 95.5%}
+.frm_input {font-size: 0.85rem}
+#fregisterform #reg_mb_email, #fregisterform .frm_address {width: 95.5%}
+#fregisterform .reg_hp_box .reg_hp_info {font-size: 0.85rem}
+#reg_mb_account {width: 95.5%}
+#wrap {width: 100% !important}
+#wrap .post_search .placeholder.show {font-size: 0.8rem !important}
+#wrap .post_search .placeholder{font-size: 0.8rem !important}
+#region_name {font-size: 0.8rem}
+}

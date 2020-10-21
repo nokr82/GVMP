@@ -1,0 +1,368 @@
+@charset 'utf-8';
+
+html {font-size: 18px;}
+body {padding: 0; padding-bottom: 5%; margin: 0; min-width: 320px; line-height:1.3; color: #333; background-color:#e2ebed; font-family: 'NanumSquare_EB'; word-break: keep-all;}
+h1, h2, h3, h4, h5, h6 {font-size:1rem;}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {margin:0; padding:0;}
+ul, ol {list-style:none;}
+img {border:0;}
+a {text-decoration:none; font-size: 1rem; font-weight: 300; color: #333}
+i, address, small, em {text-decoration: none; font-weight: 400; font-style: normal}
+table {border-collapse: collapse; border-spacing: 0;}
+figure {margin: 0; }
+strong, b {font-weight: normal}
+input {-webkit-appearance: none; -webkit-border-radius: 0; appearance: none;}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; appearance: none;margin: 0;}
+
+/* 공통사항 */
+.clearfix::after {content: ''; display: block; clear: both}
+
+input[type="text"]{padding-left: 10px; height: 30px; line-height: 30px; border:1px solid #d2d2d2;}
+input[type="radio"]{width: 18px; height: 18px}
+input[type="radio"]:focus {outline-color: transparent}
+input:focus {outline-color: #3db8db}
+
+
+a.btn {display: block; margin: 0 auto; padding: 0 5%; width: 29%; height: 38px; border-radius: 19px; background-color:#3db8db; color: #fff; font-size: 0.95rem; line-height: 38px;}
+a.btn i {margin-right: 6px}
+a.btn i img {width: 19px; height: auto; object-fit: contain; vertical-align: sub;}
+
+.info_box {margin-top: 26px; font-size: 0.8rem}
+.info_box i {display: block; float: left; padding-top: 5px; width: 6%;}
+.info_box i > img {width: 100%; object-fit: contain}
+.info_box p {display: block; float: right; width: 92%; font-family: 'NanumGothicExtraBold'; font-size: 0.7rem; font-weight: bold; text-align: left; line-height: 18px; letter-spacing: -0.04rem}
+
+
+
+/* 간편 회원가입권 */ 
+.main_content {width: 1080px; margin: 0 auto; padding-top: 30px}
+.main_content > .info_box {margin: 0 0 4px 0; padding-left: 2%}
+.main_content > .info_box p {float: left; padding-top: 8px}
+.main_content > .info_box i {width: 2%}
+
+.join_content li {float: left; padding: 21px 21px 0 21px; width: 32.59%; height: 292px; font-size: 1rem; border-radius: 10px; background-color: #fff; text-align: center; box-sizing: border-box}
+.join_content li + li {margin-left: 1%;}
+.join_content li > img {width: 34px; height: 36px}
+.join_content li em {display: block}
+.join_content li strong {display: block}
+
+.join_content li.join_step h2 {margin-top: 21px; font-size: 1rem}
+.join_content li.join_step strong {margin: 9px 0 23px 0; font-family: 'NanumSquare_EB'; font-size: 1.5rem; font-weight: 900;}
+.join_content li.join_step .payment_btn {width: 99px}
+.join_content li.join_step .renewal_btn {margin-top: 7px; width: 99px; background-color: #328ea8}
+.join_content li.join_step2 {background: #fff url('../img/vmp_arrow_1.png')no-repeat center 227px; background-size: 48px}
+.join_content li.join_step2 h2 {margin: 40px auto 23px;  width: 190px}
+.join_content li.join_step2 p {color: #3db8db; font-weight: bold}
+
+.join_content li.join_step3 {float: right;}
+.join_content li.join_step3 h2 {margin: 41px auto 28px;}
+.join_content li.join_step3 .payment_btn {width: 106px}
+
+
+/* 회원가입 폼  */
+.join_form {margin-top: 10px; padding: 27px 0 20px 0; background-color: #fff; border-radius: 10px;}
+.join_form .info_box {margin:44px auto 0; width: 400px}
+.join_form .info_box i {width: 5%; clear: both;}
+.join_form .info_box p {padding-top: 6px; width: 94%}
+.join_form a.submit_btn {margin-top: 37px; padding: 0 1%; width: 107px; text-align: center}
+
+.form_container ul {margin: 0 auto; width: 400px }
+.form_container ul li {position: relative; margin-top: 7px; height:34px; font-family: 'notoSans_medium'; font-weight: 500}
+.form_container ul li.recomm_name_box {margin-top: 35px;}
+.form_container ul li.recomm_name_box #recommender_name {background-color: #f7f7f7}
+.form_container ul li.sponsor_name_box {margin-top: 35px;}
+.form_container ul li.sponsor_name_box #sponsor_name {background-color: #f7f7f7}
+
+
+.form_container ul label {display: inline-block; width: 46%; font-family: 'NanumSquare_EB'}
+.form_container ul input[type="text"] {position:absolute; right:0;top:0; width: 49%; height: 30px;}
+.form_container ul label[for="1team"] {width: 8%}
+.form_container ul label[for="2team"] {width: 8%}
+.form_container ul input[type="radio"] {margin-left: 28px; border: 1px solid #d2d2d2; border-radius: 50%; background-color: #fff; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+.form_container ul input[type="radio"]:checked {position: relative}
+.form_container ul input[type="radio"]:checked::after {content:''; position: absolute; top: -8px; width: 22px; height: 22px; background: url('../img/vmp_check2.png')no-repeat; background-size: contain}
+.form_container ul #recommender_name:focus {outline-color: transparent}
+.form_container ul #sponsor_name:focus {outline-color: transparent}
+
+.form_container ul .number_check_btn {position: absolute; top:0; right: -55px; padding: 2px; width: 46px; border-radius: 5px; background-color: #3db8db; font-size: 0.8rem; font-weight: bold; line-height: 1.7rem; color: #fff; text-align: center}
+
+
+
+/* 체크 메세지  */
+.check_msg {display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,0.6)}
+
+/* load 일때는 로딩메세지가, error 일때는 에러메세지가 보이고 complete일때는 확인메세지가 보입니다. */
+.check_msg.error {display: block}
+.check_msg.error .error_msg {display: block}
+
+.check_msg.error_pay {display: block}
+.check_msg.error_pay .error_pay_msg {display: block}
+
+
+.check_msg.complete {display: block}
+.check_msg.complete .complete_msg {display: block}
+
+.check_msg.complete_pay {display: block}
+.check_msg.complete_pay .complete_pay_msg {display: block}
+
+
+.check_msg.load {display: block}
+.check_msg.load .loading_msg{display: block}
+
+.check_msg .msg_box {display: none; position: absolute; top: 50%; left: 50%; margin-top: -125px; margin-left: -125px; width: 250px; /*height: 204px;*/ background-color: #fff; border-radius: 5px; text-align: center; font-family: 'NanumGothicExtraBold'; font-size: 0.7rem}
+.check_msg .msg_box span {position: absolute; top: -30px; left: 50%; margin-left: -30px; width: 60px; height: 60px}
+.check_msg .msg_box span i {display: block; margin: 0 auto; width: 56px; height: 56px; background-color: #f75e61; border: 4px solid #fff; border-radius: 50%; text-align: center;}
+.check_msg .msg_box span i img {margin-top: 14px; width: 24px; height: 24px}
+.check_msg .msg_box p {margin: 84px auto 54px; width: 94%}
+.check_msg .msg_box a {display: block; margin: 0 auto 7px; width: 94%; border-radius: 5px; background-color: #f75e61; color: #fff; font-size: 0.7rem; line-height: 2rem;}
+
+.check_msg .complete_msg span i {background-color: #36ac74}
+.check_msg .complete_msg p {margin: 82px 0 61px 0;}
+.check_msg .complete_msg p + p {margin: 0 0 27px 0}
+.check_msg .complete_msg a {background-color: #36ac74}
+
+
+.check_msg .complete_pay_msg span i {background-color: #36ac74}
+.check_msg .complete_pay_msg p {margin: 82px 0 61px 0;}
+.check_msg .complete_pay_msg p + p {margin: 0 0 27px 0}
+.check_msg .complete_pay_msg a {background-color: #36ac74}
+
+
+
+.check_msg .loading_msg {display: none; position: absolute; top: 50%; left: 50%; margin-top: -145px; margin-left: -100px; width: 200px; height: 290px; line-height: 2rem; color: #fff}
+.check_msg .loading_msg img {display: block; margin: 0 auto;}
+.check_msg .loading_msg p {margin: -27px auto 0; width:195px; text-align: center; letter-spacing: 0.1rem;}
+
+/*회원가입권 구매하기*/ 
+.pay_join {display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5)}
+.pay_join .pay_container {position: absolute; top: 50%; left: 50%; margin-top: -210.5px; margin-left: -140px; padding: 68px 20px 20px; width: 280px; border-radius: 10px; background: #fff; font-family: 'NanumGothicExtraBold'; font-size: 0.85rem}
+.pay_join .pay_container h3 {position: absolute; top: 0; left: 0; right: 0; margin-bottom: 20px; padding: 10px 0; border-top-right-radius: 10px; border-top-left-radius: 10px;  background-image: linear-gradient(120deg, #89f7fe -33%, #66a6ff 100%); font-family: 'NanumSquare_EB'; font-size: 1rem; text-align: center; color: #fff}
+.pay_join .pay_container ul {text-align: center}
+.pay_join .pay_container ul li:first-child {text-align: center}
+.pay_join .pay_container ul li {margin-bottom: 30px}
+
+.pay_join .pay_container ul li.vmc_point {margin: 30px 0 10px 0;}
+.pay_join .pay_container ul li.my_vmc_point {margin-bottom: 15px; text-align: left; font-size: 0.7rem}
+.pay_join .pay_container ul li.vmp_point {margin: 30px 0 10px 0;}
+.pay_join .pay_container ul li.my_vmp_point {margin-bottom: 30px; text-align: left; font-size: 0.7rem}
+
+.pay_join .pay_container ul li .my_point {margin: 0 2px 0 3px}
+
+.pay_join .pay_container ul li label {margin-right: 15px}
+.pay_join .pay_container ul li input {margin-right: 10px; width: 60%;}
+.pay_join .pay_container ul li input[type="number"] {padding-left: 10px; width: 26%; height: 1.3rem; border:1px solid #d2d2d2; line-height: 1.3rem}
+
+.pay_join .pay_container a {display: block; margin-bottom: 15px; padding: 10px 0; border-radius: 5px; background-color: #66a6ff; font-family: 'NanumSquare_EB'; font-size: 1rem; color: #fff; text-align: center}
+.pay_join .pay_container a.pay_btn {margin-top: 30px}
+.pay_join .pay_container a.cancel_btn {margin-bottom: 0}
+
+.pay_join .pay_container .pay_load_msg {display: none; margin-bottom: 15px;}
+.pay_join .pay_container .pay_load_msg img {display: block; margin: 0 auto; width: 100px}
+.pay_join .pay_container .pay_load_msg p {font-family: 'NanumSquare_EB'; font-size: 1rem; text-align: center; line-height: 1.5rem; color: #66a6ff}
+
+
+/*리뉴얼 팝업*/ 
+.renewal_pop.active {display: block}
+.renewal_pop {display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5)}
+.renewal_wrap {margin: 20% auto 0; padding: 27px 0 18px 0; width: 453px; border-radius: 10px; background: #fff;  font-size: 1rem; text-align: center; transition: all 0.5s ease-in-out}
+.renewal_wrap a {font-size: 0.9rem; font-weight: normal;}
+
+/*.renewal_wrap .search_box {height: 108px}*/
+.renewal_wrap .search_box input {margin-left: 15px; width: 137px; height: 35px; line-height: 35px; border: solid 1px #e5e5e5; font-size: 0.8rem; text-align: center}
+.renewal_wrap .search_box #renewal_name.on {visibility: visible; opacity: 1; margin-bottom: 20px; height: 37px;}
+.renewal_wrap .search_box #renewal_name {visibility: hidden; opacity: 0; height: 0; margin:7px 0 0 97px; padding: 0; width: 147px; background-color: #e5e5e5; color: #333; transition: all 0.5s ease-in-out}
+.renewal_wrap .search_box .search_btn {display: inline-block; width: 50px; height: 39px; line-height: 39px; background: #328ea8; font-size: 0.9rem; color: #fff}
+
+.renewal_wrap .renewal_btn_box a {display: inline-block}
+.renewal_wrap .renewal_btn_box .confirm_btn {padding: 0 3%; width: 100px; height: 37px; background-color: #328ea8; line-height: 37px;}
+.renewal_wrap .renewal_btn_box .confirm_btn i img{vertical-align: middle;}
+.renewal_wrap .renewal_btn_box .close_btn {margin-left: 6px; width: 65px; height: 37px; border-radius: 19px; background-color: #d2e8ef; color: #494741; line-height: 37px; text-align: center;}
+
+
+
+
+/* ------------------------media---------------------------- */
+/* ------------------------media---------------------------- */
+
+@media (min-width: 781px) and (max-width: 1080px){
+/* 공통사항 */
+.info_box i {width: 15px}
+
+/* 간편 회원가입권 */ 
+.main_content {width: 91%}
+.join_content li {padding: 1% 1% 0 1%; height: 274px;}
+.join_content li.join_step .info_box p {padding-top: 0}
+.join_content li.join_step2 {background-position: center 212px}
+
+}
+
+
+@media (min-width: 571px) and (max-width: 780px){
+html {font-size: 16px}
+
+/* 공통사항  */
+a.btn {padding: 0 3%; height: 30px; line-height: 30px}
+a.btn i {margin-right: 4px}
+a.btn i img {width: 16px}
+
+.info_box {margin-top: 8px;}
+ join_step3 .info_box i {width: auto; max-width:6%; padding-top:0;}
+.join_step3 .info_box i > img { width:100%; vertical-align:super;}
+
+/* 간편 회원가입권 */
+.main_content {width: 86%;}
+.main_content > .info_box p {padding: 0; margin-top: -2px}
+.main_content > .info_box i {padding: 0}
+
+.join_content li {padding: 2% 2% 0 2%; height: 200px;}
+.join_content li + li {padding: 1% 0 0 0}
+.join_content li.join_step h2 {margin-top: 11px}
+.join_content li.join_step strong {margin: 9px 0 6px}
+.join_content li.join_step .payment_btn {width: 83px}
+.join_content li.join_step .renewal_btn {width: 83px}
+
+.join_content li.join_step2 {background-position-y: 156px; background-size: 40px 36px}
+.join_content li.join_step2 h2 {margin: 15px auto 21px; width: 144px}
+
+.join_content li.join_step3 h2 {margin: 15px auto 21px}
+.join_content li.join_step3 .payment_btn {width: 94px;}
+.join_content li.join_step3 .info_box p {padding-top:0; max-width:94%; width:auto;}
+
+.form_container ul {width: 360px}
+.form_container ul input[type="radio"]:checked::after {top: -6px; width: 20px; height: 20px;}
+.form_container ul .number_check_btn{right: -55px; padding: 0 6px; width: 38px; height:34px; line-height:34px;}
+
+.join_form .info_box {margin: 26px auto 0; width: 367px}
+.join_form .info_box i {width: 4%}
+/*.join_form .info_box p {padding-top: 16px}*/
+
+.join_form a.submit_btn {margin-top: 16px; width: 87px}
+
+.pay_join .pay_container {font-size: 1rem}
+.pay_join .pay_container h3 {font-size: 1.2rem}
+.pay_join .pay_container ul li input[type="number"] {height: 2rem; line-height: 2rem}
+.pay_join .pay_container ul li.my_vmc_point {font-size: 0.8rem }
+.pay_join .pay_container ul li.my_vmp_point {font-size: 0.8rem}
+
+.renewal_wrap {margin-top: 37%; font-size: 1rem}
+.renewal_wrap a {font-size: 1rem}
+.renewal_wrap .search_box input {font-size: 1rem}
+.renewal_wrap .search_box #renewal_name {margin-left: 67px; width: 147px}
+.renewal_wrap .search_box .search_btn {vertical-align: bottom}
+
+.check_msg .msg_box a {line-height: 3rem}
+.check_msg .loading_msg img {width: 150px}
+.check_msg .loading_msg p {margin-top: -20px; font-size: 1.3rem}
+
+
+}
+
+@media (max-width: 570px){
+/* 공통사항  */
+a.btn {height: 28px; line-height: 28px;}
+a.btn i img {width: 15px; vertical-align: middle;}
+.info_box {margin-top: 13px}
+
+
+html {font-size: 14px}
+.main_content {width: 94%}
+.main_content > .info_box p {margin-top: 0; padding: 4px}
+.main_content > .info_box i {width: 3%}
+
+.join_content li {padding: 2% 2% 0 2%; width: 48%; height: 200px;}
+.join_content li.join_step h2 {margin-top: 11px}
+.join_content li.join_step .info_box p {padding-top: 0px}
+.join_content li.join_step .payment_btn {width: 73px}
+.join_content li.join_step .renewal_btn {width: 73px}
+.join_content li.join_step strong {margin-bottom: 9px}
+
+.join_content li.join_step2 {clear: both; float: none; margin-left: 0; width: 100%; height: 110px; border-bottom-left-radius: 0; border-bottom-right-radius: 0}
+.join_content li.join_step2 > img {margin-top: 7px}
+.join_content li.join_step2 p {display: none}
+.join_content li.join_step2 h2 {margin: 17px auto 20px; width: 130px}
+
+.join_content li.join_step3 {margin-bottom: 11px}
+.join_content li.join_step3 h2 {margin: 14px auto 24px;}
+.join_content li.join_step3 .payment_btn {width: 77px}
+
+.form_container ul {width: auto; max-width:280px;}
+.form_container ul li input::placeholder {font-size: 0.9rem}
+.form_container ul .number_check_btn {top: 1px; right: -50px; padding: 6px; width: 32px;}
+ .form_container ul label {width:100px; }
+ .form_container ul input[type="text"] {max-width:180px; width:63%;}
+                                              
+.join_form {margin-top: 0; padding-top: 11px; border-top-left-radius: 0; border-top-right-radius: 0}
+.join_form .info_box {margin-top: 26px; width: 355px}
+.join_form .info_box i {width: 4%}
+.join_form a.submit_btn {margin-top: 14px; width: 82px}
+
+
+.pay_join .pay_container {top: 45%; font-size: 1.2rem}
+.pay_join .pay_container h3 {font-size: 1.2rem}
+.pay_join .pay_container ul li input[type="number"] {height: 2.2rem; line-height: 2.2rem}
+.pay_join .pay_container ul li.my_vmc_point {font-size: 1rem}
+.pay_join .pay_container ul li.my_vmp_point {font-size: 1rem}
+.pay_join .pay_container a {font-size: 1.2rem}
+
+.renewal_wrap {margin-top: 40%; width: 82%; font-size: 1.2rem}
+.renewal_wrap .search_box input {font-size: 1rem}
+.renewal_wrap a {font-size: 1rem}
+.renewal_wrap .search_box .search_btn {font-size: 1rem}
+.renewal_wrap .search_box #renewal_name {margin-left: 72px; width: 118px;}
+
+
+.check_msg .msg_box p {font-size: 1.2rem}
+.check_msg .msg_box a {line-height: 3rem}
+.check_msg .loading_msg img {width: 150px}
+.check_msg .loading_msg p {font-size: 1.3rem}
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+ /*공통사항*/ 
+ a.btn i img {width: 13px; vertical-align: sub}
+ .info_box {margin-top: 18px}
+ .info_box i {padding-top: 6px; width: 9%}
+ .info_box p {width: 88%; font-family: 'NanumSquare_EB'; font-size: 0.9rem;}
+
+.main_content {padding-top: 10px; width: 96%}
+.join_content li {padding-top: 3%; width: 49%; height: 230px}
+.join_content li.join_step strong {margin-bottom: 9px}
+.join_content li.join_step .info_box p {padding-top: 0;}
+
+.join_content li.join_step2 h2 {margin: 11px auto 14px; height: 95px}
+
+/*.form_container ul {padding: 0 3%; width: 84%}*/
+.form_container ul li:last-child {margin-top: 12px}
+.form_container ul label {width: 35%}
+.form_container ul input[type="text"] {width: 51%; max-width:120px; position:static}
+.form_container ul input[type="radio"] {margin:0; width: 16px; height: 16px; vertical-align: -4px;}
+.form_container ul input[type="radio"]:checked::after {top: 0; width: 14px; height: 14px;}
+ .form_container ul label[for="1team"] {width:auto; padding-right:10px; vertical-align:middle;}
+.form_container ul li input::placeholder {font-size: 12px}
+.form_container ul .number_check_btn {top: 0; right:0; width: 27px; font-size: 0.9rem; padding:0 5px; height:28px; line-height:28px;}
+#recommender_number + .number_check_btn {top:2px}
+.join_content .join_step  {width:40%;}
+ .join_content  .join_step3  {width:58%;}
+.join_form .info_box {width: 84%}
+.join_form .info_box i {padding-top: 8px; width: 4%}
+.join_form a.submit_btn {width: 85px; height: 32px; line-height: 32px; font-size: 1rem}
+
+.pay_join .pay_container {margin-left: -145px; width: 250px; font-size: 1.2rem}
+.pay_join .pay_container h3 {padding: 14px 0; font-size: 1.4rem}
+.pay_join .pay_container a {font-size: 1.4rem}
+.pay_join .pay_container ul li {margin-bottom: 9px}
+.pay_join .pay_container ul li input {margin-right: 4px; width: 53%; font-size: 1.25rem}
+.pay_join .pay_container ul li input[type="number"] {height: 27px; line-height: auto}
+.pay_join .pay_container ul li input[type="text"] {height: 27px; line-height: 27px}
+.pay_join .pay_container ul li.vmc_point {margin-top: 14px}
+.pay_join .pay_container ul li.vmp_point {margin-top: 23px}
+
+.renewal_wrap {width: 94%}
+.renewal_wrap .search_box input {width: 108px; font-size: 1.2rem}
+.renewal_wrap .search_box .search_btn {vertical-align: bottom}
+
+.check_msg .loading_msg img {width: 150px}
+.check_msg .loading_msg p {margin-top: -20px;}
+}

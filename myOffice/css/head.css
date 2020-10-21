@@ -1,0 +1,44 @@
+/* css 초기화 */
+
+html, body { height: 100%; padding:0; margin:0; }
+img, fieldset { border:0 }
+ul, ol { list-style:none }
+em, address { font-style:normal }
+a { text-decoration:none }
+a:hover, a:active, a:focus { text-decoration:underline }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {position:relative;background:#fff;-webkit-text-size-adjust: none}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:Helvetica;color:#333}
+a {color:#3577e8;text-decoration:none}
+a:active, a:hover {text-decoration:underline}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+button::-moz-focus-inner,
+input::-moz-focus-inner{border:0;padding:0;}
+/* css 초기화 */
+
+
+body {background:#edeff5;width:100%;height:100%}
+
+header {background:#fff; width:100%; height:80px; min-width:1024px;}
+.header_wrap {width:1024px; min-width:1024px; position:relative; margin:0 auto}
+header h1 {display:inline-block;}
+header h1 a{display:block;}
+header h1 img {width:80px}
+.user {float: right;margin-top: 15px;    position: relative;}
+.user_img{float: left}
+.user_name {color:#2399f1; font-weight: 700; font-size:16px}
+.user_id {float: left; margin-left:15px;margin-top:5px}
+.user_btn {margin-left: 35px;margin-top: 5px;float: right;}
+.hidden{background: #fff;border: 1px solid #c5c5c5;border-radius: 4px;position: absolute;top: 28px;right: 0;width:300px;    width: 112px;
+    text-align: center; display:none}
+.hidden li{border-bottom:1px solid #c5c5c5; font-size: 11px; padding: 7px 0 7px 0; color: #c5c5c5;}
+.hidden li:last-child{border-bottom:0}
+.event_btn1{display:none}
+
+section{width:1024px; margin: 0 auto; overflow: hidden}

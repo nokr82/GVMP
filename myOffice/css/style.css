@@ -1,0 +1,50 @@
+/* Kurien / Kurien's Blog / http://blog.kurien.co.kr */
+/* 주석만 제거하지 않는다면, 어떤 용도로 사용하셔도 좋습니다. */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+#kCalendar {position: relative; width: 1024px;  margin: 0px auto; background:#fff; overflow: hidden;}
+
+
+#kCalendar #header {height: 50px; line-height: 50px; text-align: center; font-size: 18px; font-weight: bold}
+#kCalendar .button {color: #2399f1; text-decoration: none; margin:0 50px}
+#kCalendar table {width: 1024px; height: 200px; margin:50px 0;border-spacing:0px; border:1px solid #edeff5;}
+#kCalendar table th, #kCalendar table td {padding:0px; border:1px solid #edeff5;}
+#kCalendar caption {display: none;}
+#kCalendar .sun {color: deeppink !important;}
+#kCalendar .sun > div  > ul > li{color:#333;}
+#kCalendar .sat {color: deepskyblue;}
+#kCalendar .sat > div  > ul > li{color:#333;}
+#kCalendar table td{width:14.28%; height:110px; text-align: right; vertical-align: top;}
+
+#kCalendar .box > .box1, #kCalendar .box > .box2, #kCalendar .box > .box3, #kCalendar .box > .box4, #kCalendar .box > .box5 {border-radius: 3px; line-height:18px; width: 32%; text-align: center; float: left; color:#fff;}
+.box1 { background:#1bb934;}
+/*{ background:#1bb934; float: left}*/
+.box2 {background:#f2a80a;}
+.box3 {background:#fc565e;}
+.box4 {background:#2c89cc;}
+.box5 {background:#384053;}
+.box_wrap {margin-top:8px}
+.box {margin-bottom: 5px; padding:0 5px}
+
+
+
+
+@media (max-width: 801px) {
+	#kCalendar {width: 100%;  margin: 0px auto; background:#fff; overflow: hidden;}
+	#kCalendar table{width:100%; margin:20px 0 0;}
+	#kCalendar table th{font-size:8px !important;}
+	#kCalendar table td{height:100px; font-size:8px !important;}
+	.box{margin:0;}
+	#kCalendar .box > .box1, #kCalendar .box > .box2, #kCalendar .box > .box3,#kCalendar .box > .box4, #kCalendar .box > .box3,#kCalendar .box > .box5 {height:auto; line-height:11px; padding:0 3px;}
+        
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+.table_wrap table {word-break: keep-all}
+.table_wrap table tbody th {width: 16%}
+.table_wrap table tbody td > input[type="text"] {width: 100%}
+
+#kCalendar .box_wrap .box li {display: block; text-align: left;}
+#kCalendar .box_wrap .box li:first-child {width: 72%; text-align: center;}
+}

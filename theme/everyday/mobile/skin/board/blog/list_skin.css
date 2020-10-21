@@ -1,0 +1,117 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018. 6. 1, 오후 6:04:43
+    Author     : NeungE
+*/
+
+@media (max-width: 1040px){
+    body{
+        width:100%;
+        overflow:none;
+    }
+}
+
+
+#fboardlist {
+    width: 70%;
+    margin: 0 auto;
+}
+#bo_gall {width:100%;}
+#bo_gall #fboardlist .gall_box {width: 100%;}
+
+/* 하단 버튼그룹 */
+#gall_allchk {position: relative; right: 0; width: auto; height: 40px; font-size: 1.1em; border: 1px solid #ddd; padding: 0 10px; box-sizing: border-box; background-color: #fff;}
+#gall_allchk > label {display: block; text-indent: 20px; line-height: 38px; position: relative;}
+#gall_allchk > input {position: absolute; left: 10px; top: 12.5px;}
+
+.btn_bo_user .btn {
+    height: 40px;
+    line-height: 38px;
+}
+
+
+/* 리스트검색 */
+#bo_sch {
+    width: 50%;
+    margin: 0;
+    float:left;
+/*    margin-bottom:20px;*/
+}
+
+#bo_sch > form[name="fsearch"] {
+    position: relative;
+}
+
+#stx {width: 80%;
+    /*max-width: 200px;*/
+    float: left;
+}
+
+#stx + .sch_btn {position: absolute;right: 0;top: 0;}
+
+/* 리스트버튼 */
+.clearfix::after {content: '';clear: both;display: block;}
+
+div.bo_fx {margin-right: 0;}
+
+.mobile-br {display: none;}
+
+
+
+
+
+
+
+/**/
+@media (max-width:1200px){
+    #bo_sch {width: 100%;}
+    
+
+    .bo_fx {
+        width: 100%;
+        clear: both;
+        float: none;
+    }
+    
+    ul.btn_bo_user {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 10px;
+    }
+    
+    .btn_bo_user li {
+        margin: 0;
+        float: none;
+        flex: 1;
+        margin-right: 5px;
+    }
+    
+    #gall_allchk {margin: 0;}
+    .btn_bo_user li > input {width: 100%;}
+    
+    .btn_bo_user li:nth-child(5) {
+        margin-right: 0;
+    }
+    
+    .btn_bo_user li:last-child > .btn {
+        margin: 0;
+        width: 100%;
+    }
+
+
+
+@media screen and (max-width: 768px) {
+    #fboardlist {width: 90%;}
+    #bo_sch {width: 100%; margin-bottom: 10px; position: relative;}
+    #bo_sch .sch_btn {float: none; position: absolute; right: 0;}
+    #gall_allchk {margin-left: 0;}
+    
+}
+@media (max-width:777px){
+    #bo_sch{width: 100%;}
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script type="text/javascript">
+            var myTime=new Date();
+            var myHours=myTime.getHours();
+            var myMin=myTime.getMinutes();
+              
+            if( (myHours=="23" && myMin>="30") && (myHours=="23" && myMin<="59") || (myHours=="00" && myMin>="00") && (myHours=="00" && myMin<="30")){
+                    alert('회원가입이불가합니다');
+            }
+        </script>
+            
+    </body>
+</html>

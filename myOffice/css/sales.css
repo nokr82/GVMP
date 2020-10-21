@@ -1,0 +1,128 @@
+.sales_title {border-radius:10px; border:1px solid #e1e2e6; margin-top: 30px; background-color:#fff;}
+.sales_title > div{padding:15px; }
+.sales_title > div.title{padding: 6px 20px; overflow:hidden}
+.sales_title > div.title > h3{padding:0 20px; line-height:36px; font-size:21px; float:left;}
+.sales_title > div.title > h3 > a{display:inline-block; float:right; }
+.boxBtn-group {
+    float: right;
+}
+
+.list-btn {
+    color: #fff;
+    float: left;
+    display: block;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+a.list-btn:link, a.list-btn:visited {color: #fff;}
+
+.list-part,
+.list-all {
+    background: #f76e5e; /* Old browsers */
+    background: -moz-linear-gradient(top, #f5968a 0%, #e94936 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f5968a 0%, #e94936 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f5968a 0%, #e94936 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5968a', endColorstr='#e94936',GradientType=0 ); /* IE6-9 */
+}
+
+.list-tree {
+    background: #a7a8a9; /* Old browsers */
+    background: -moz-linear-gradient(top, #a7a8a9 0%, #7d7d7d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a7a8a9 0%,#7d7d7d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a7a8a9 0%,#7d7d7d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7a8a9', endColorstr='#7d7d7d',GradientType=0 ); /* IE6-9 */
+}
+
+.sales_title > div > h2 {float: left; line-height:36px; font-size:21px;}
+.sales_title > div > a{display: inline-block; float: left}
+
+.search_info {position:relative; display:none}
+.search_info > table{position:absolute; right:0px; top:40px; width:382px; background:#fff; border:1px solid #bbb; z-index:99999; border-top:none}
+.search_info > table > tbody {text-align:center}
+.search_info > table > tbody > tr:hover {background:#f0f0f0; cursor:pointer}
+
+#line {width:100%; height:1px; background:#e1e2e6; padding:0}
+#line2 {width:100%; height:1px; background:#e1e2e6; padding:0}
+.date_search{float: left; width: 46%;}
+#date_select{cursor:pointer; width: 90px;height: 28px;background: #2b303b; display:inline-block; color:#fff; text-align: center; border-radius: 3px; line-height: 28px; display:inline-block; vertical-align:middle;}
+.date_search input{ border:1px solid #2b303b}
+.date_search img {vertical-align: middle; margin: 3px 6px; width:24px}
+.date_search a{color:#fff}
+.date_search input {width:20%;}
+#date_impor {font-size:10px;}
+.sear_box {width:43%; float:left;}
+.partner {width:45%;}
+
+.partner{ float: right}
+.partner h3 strong{color:#2399f1; font-size: 18px}
+
+.btn {border-bottom: 1px solid #e6eaed; float: left; margin-left:38px;}
+.btn > a{display: block; margin-right:10px }
+
+
+.clr{content:'';content:none; clear:both; float:none;}
+.boxSearBox > form {float:right}
+.boxSearBox > form  > button{background-color:#343f51; color:#fff; line-height:40px; height:40px; padding:0 20px; /*border-radius:0 5px 5px 0;*/}
+.boxSearBox > form  > button:hover{background-color:#333;}
+.boxSearBox > form  > input{line-height:40px; height:40px; padding:0 10px; /*border-radius:5px 0 0 5px;*/ border:1px solid #343f51; margin-left:5px;} 
+.boxSearBox > form > select, .boxSearBox > form > input, .boxSearBox > form > button{float:right;}
+
+#select_box {position:relative}
+#nameNick {position: absolute;left:-199px; float:right; width: 200px; height: 40px; /* background:url(../images/select_bg.gif) 180px center no-repeat; */ background-size:13px 11px;  border: 1px solid #343f51;}
+#select_box label {position: absolute; font-size: 14px; color: #333; top: 7px; left: 12px; letter-spacing: 1px; display:none}
+#nameNick select#nameNick {width: 100%; height: 40px; min-height: 40px; line-height: 40px; padding: 0 10px; opacity: 0; filter: alpha(opacity=0); /* IE 8 */}
+
+.salesTableW {width:100%}
+.salesTableW table {width:100%; box-sizing:border-box; border-collapse: collapse}
+.salesTableW table tr {text-align: center;}
+.salesTableW thead tr th{width:25%;}
+.salesTableW thead tr th:first-child{padding-left:-0}
+.salesTableW thead tr{background:#f4f8fb; height:38px;border-bottom:1px solid #e6eaed}
+.salesTableW tbody tr td{padding:11px 0;border-bottom:1px solid #e6eaed}
+
+.name1 span, .name2 span, .name3 span {width:150px; height:40px;  border-radius: 3px;color:#fff; display: inline-block; text-align: center; line-height: 40px;}
+.name1 span{background:#39a66c;}
+.name2 span{background:#f76e5e;}
+.name3 span{background:#beaff2;}
+
+.sales_title > div.salesTableW{padding:0; }
+
+
+@media (max-width: 801px) {
+	.sear_box {text-align:right}
+	.sales_title {border-radius:0; margin-top: 10px;}
+	.date_search{width:100%; box-sizing:border-box;}
+	.date_search > span{display:none;}
+	.date_search img {vertical-align: middle; margin: 3px 0; width:10px;}
+	.date_search select {line-height:27px; height:27px;}
+	.partner{width:100%; box-sizing:border-box;}
+	.search_box{margin-right: 0; width:100%;}
+	.sales_title > div.salesTableW{overflow:scroll; }
+	.name1 span, .name2 span, .name3 span {padding:5px; width:auto; height:auto; line-height:normal; border-radius: 3px;color:#fff; display: inline-block; text-align: center;}
+	.salesTableW > table > tbody > tr > td, .salesTableW > table > thead > tr > th{font-size:9px  !important;}
+	.sear_box {width:100%;}
+
+        a.boxTree_btn {height: 22px; padding: 0 10px; font-size: 12px; line-height: 22px; border-radius: 2px;}
+
+
+        
+        .title h3{width:100%; text-align:center;}
+        .list-btn{ height:30px; line-height: 30px; margin:0 1%; width:31.33%; }
+        .boxBtn-group{float:none; width:100%; }
+
+}
+@media (max-width: 457px) {
+	#date_select {width:13%; font-size:8px}
+	.sear_box {text-align:right}
+	.sear_box span:nth-child(1){display:none}
+	.sear_box img{width:5%}
+	#nameNick{left:-91px; width:37%;}
+
+}
+
+

@@ -1,0 +1,76 @@
+* { margin:0; padding:0;}
+#phone_body {font:8.5pt Verdana, Dotum, sans-serif; color:#666; background:#fff; padding:0 0 20px 0; margin:0; background:url(../sms_images/bg.gif) no-repeat bottom; width:198px}
+#phone_body .al{text-align:left}
+#phone_body .ar{text-align:right}
+#phone_body .ac{text-align:center}
+#phone_body table {border-collapse:collapse; border:none; padding:0; margin:0}
+#phone_body table td{padding:0; margin:0}
+#phone_body table td{padding:0; margin:0}
+#phone_body .line{ background:url(../sms_images/line.gif) no-repeat; height:2px; margin:5px 0}
+#phone_body image{border:none;margin:0;padding:0}
+
+/* 텍스트 */
+#phone_body .white{color:#fff}
+#phone_body .red {color:#CC0000 !important}
+#phone_body .orange {color:#FF6600 !important}
+#phone_body .blue {color:#a3cdf7 !important}
+#phone_body .gray {color:#9f9f9f !important}
+#phone_body .b {font-weight:bold }
+#phone_body .head{padding:0; margin:0;}
+#phone_body .head img{display: block;}
+#phone_body .text{padding:10px 0 0px 30px; margin:0; background:url(../sms_images/window.gif) no-repeat}
+#phone_body .text textarea.sendsms{font:100% Verdana, Dotum, sans-serif; letter-spacing:0; border:none; OVERFLOW-X: hidden; OVERFLOW-Y: auto; margin:0 0 10px 0;height:90px; width:116px; padding:15px 12px 15px 12px;}
+#phone_body .text input{height:18px; width:116px; padding:0 12px;border:1px #ccc solid; font:8.5pt Verdana, Dotum, sans-serif;}
+#phone_body .byte {height:23px; padding:4px 20px 0 20px; margin:0; background:url(../sms_images/bite.gif) no-repeat}
+#phone_body .Numb{padding:4px 20px 0 20px; margin:0;}
+#phone_body .Numb input{width:108px; margin:2px 0; height:18px; border:1px #ccc solid}
+#phone_body .Numb .sendNumb{font:8.5pt Verdana, Dotum, sans-serif; letter-spacing:0; OVERFLOW-X: hidden; OVERFLOW-Y: auto; margin:0; width:100%; padding:0 12px}
+#phone_body .Rn{padding:4px 20px 0 20px; margin:0;}
+#phone_body .Rn .rt{display: inline-block;vertical-align: top;padding:0 0 0 2px;}
+#phone_body #sDest input{text-align:center;margin:2px 0; height:18px; border:1px #ccc solid; font:8.5pt Verdana, Dotum, sans-serif; }
+#phone_body #sDest td{display:block;text-align:right;padding-right:3px;}
+#phone_body .st{padding:4px 0 0 27px; margin:0;}
+#phone_body .btnarea{padding:0; margin:0; text-align:center}
+#phone_body .btnarea2{padding:4px 0; margin:0; text-align:right}
+#phone_body .btnarea2 .button1 {
+   border-top: 1px solid #333333;
+   background: #d15000;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ff8438), to(#d15000));
+   background: -webkit-linear-gradient(top, #ff8438, #d15000);
+   background: -moz-linear-gradient(top, #ff8438, #d15000);
+   background: -ms-linear-gradient(top, #ff8438, #d15000);
+   background: -o-linear-gradient(top, #ff8438, #d15000);
+   padding: 2px 8px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ffffff;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+#phone_body .btnarea2 .button1:hover,#phone_body .btnarea2 .button2:hover {border-top-color: #212121; background: #212121;color: #ffffff;}
+#phone_body .btnarea2 .button1 a, #phone_body .btnarea2 .button2 a{color: #ffffff; text-decoration:none}
+#phone_body .btnarea2 .button2 {
+    border-top: 1px solid #333333;
+    background: #414141;
+    background: -webkit-gradient(linear, left top, left bottom, from(#696869), to(#414141));
+    background: -webkit-linear-gradient(top, #696869, #414141);
+    background: -moz-linear-gradient(top, #696869, #414141);
+    background: -ms-linear-gradient(top, #696869, #414141);
+    background: -o-linear-gradient(top, #696869, #414141);
+    padding: 2px 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: middle;
+}

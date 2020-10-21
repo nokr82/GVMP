@@ -1,0 +1,179 @@
+#chart-container {
+	width: 100%;
+	height: 100%;
+	/*overflow: hidden;*/
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;     
+}
+
+.zoomBtn_box {
+    position: fixed;
+    right: 60px;
+    background: transparent;
+    height: 44px;
+    z-index: 9;
+    padding-top: 10px;    
+}
+
+.zoomBtn_box .zoomBtn {
+	font-size: 30px;
+	line-height: 30px;
+	width: 40px;
+	height: 40px;
+	z-index: 9;
+	border-radius: 10px;
+	border: solid 5px #282828;
+	background-color: #f6f6f6;
+	color: #282828;
+	box-sizing: border-box;
+}
+
+
+
+div.orgChart {
+	display: block;
+	max-width:100%;
+	max-height:100%;
+	cursor: move;
+	touch-action: none; 
+}
+
+
+
+div.orgChart h2 {
+    margin                : 0px;
+    font-size             : 1em;
+    border-bottom         : none;
+}
+
+div.orgChart ul {
+    list-style            : none;
+    margin                : 4px;
+    padding               : 0px;
+    font-size             : 0.8em;
+    text-align            : left;
+}
+
+div.orgChart ul.stack,
+div.orgChart ul.stack ul {
+    text-align            : center;
+}
+
+div.orgChart table {
+    width                 : 100%;
+}
+
+div.orgChart tr.lines td.line {
+    width                 : 1px;
+    height                : 20px;
+}
+
+div.orgChart tr.lines td.top {
+    border-top            : 2px solid #aaaaaa;
+}
+
+div.orgChart tr.lines td.left {
+    border-right          : 1px solid #aaaaaa;
+}
+
+div.orgChart tr.lines td.right {
+    border-left           : 1px solid #aaaaaa;
+}
+
+div.orgChart td {
+    text-align            : center;
+    vertical-align        : top;
+    padding               : 0px 2px;
+}
+
+div.orgChart div {
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	height: 32px;
+	line-height: 32px;
+	/*overflow: hidden;*/
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background-color: #edc951;
+	border: solid 1px #000000;
+	color: #000;
+	width: 50px;
+	position: relative;
+	display: inline-block;
+}
+
+
+div.orgChart div.sad {
+    background-color: #5ea763;
+    color: #fff;
+}
+
+div.orgChart div.angry {
+    background-color: #e56a77;
+    color: #fff;
+}
+
+div.orgChart div.plus {
+    background-color: #FFFFF !important;
+    color: #000;
+}
+
+
+div.orgChart div:after {
+    content:"";
+    position:absolute;
+    top: -18px; 
+    left: -10px;
+    width: 28px ;
+    height: 28px;
+    background-image: url(../images/pt_smile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: 9;    
+}
+
+div.orgChart div.sad:after {
+    background-image: url(../images/pt_sad.png);
+}
+
+div.orgChart div.angry:after {
+    background-image: url(../images/pt_angry.png);
+}
+
+div.orgChart div.plus:after {
+    background-image: url('') !important;
+}
+
+
+
+
+div.orgChart.interactive div.hasChildren {
+    cursor                : pointer;
+}
+
+div.orgChart div.node.hover {
+    background-color      : white;
+}
+
+div.orgChart div.adjunct.node {
+    position              : absolute;
+    margin-top            : 8px;
+    margin-left           : -110px;
+    width                 : 80px;
+    height                : 40px;
+    background-color      : #efefef;
+}
+
+div.orgChart div.adjunct-link {
+    display               : inline-block;
+    position              : absolute;
+    margin-left           : -20px;
+    margin-top            : 25px;
+    width                 : 20px;
+    border                : 1px dashed black;
+}

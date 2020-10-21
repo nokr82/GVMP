@@ -1,0 +1,67 @@
+/*컨텐츠*/
+.boxSection{margin-top:30px; border-radius:10px; border:1px solid #e1e2e6;}
+.boxSection > h3{border-bottom:1px solid #e1e2e6;padding:6px 20px; line-height:36px; font-size:21px;}
+.boxSection > h3 > a{display:inline-block; float:right;}
+.boxSearBox{padding:15px 20px; line-height:40px; border-bottom:1px solid #e1e2e6;}
+.boxSearBox > a{float:left; display:inline-block; margin-right:10px; line-height:10px;}
+.boxSearBox > a:hover{text-decoration:none;}
+.boxSearBox > form > select, .boxSearBox > form > input, .boxSearBox > form > button{float:right;}
+.clr{content:'';content:none; clear:both; float:none;}
+
+@media (max-width: 801px) {
+.boxSection > h3 > a > img{ width:80px;}
+.boxSearBox > a > img{ width:70px;}
+.boxSection{background-color:#fff; margin-top:10px; border-radius:0;}
+.boxSearBox > form{display:block;}
+}
+/*
+.commonButton1{border:1px solid #2f9ff3; background: linear-gradient(to bottom, #67bcfc, #269af1);}
+.commonButton1:hover{background: linear-gradient(to bottom, #269af1, #67bcfc);}
+.commonButton2{border:1px solid #25374b; background: linear-gradient(to bottom, #365b76, #354253);}
+.commonButton2:hover{background: linear-gradient(to bottom, #354253, #365b76);}
+*/
+.boxSearBox > form  > button{background-color:#343f51; color:#fff; line-height:42px; height:42px; padding:0 20px; /*border-radius:0 5px 5px 0;*/}
+.boxSearBox > form  > button:hover{background-color:#333;}
+.boxSearBox > form  > input{line-height:40px; height:40px; padding:0 10px; /*border-radius:5px 0 0 5px;*/ border:1px solid #343f51; margin-left:5px;} 
+.boxContentW{overflow:scroll; height:700px; background-color:#333;}
+.boxContent{width:1955px;}/*최하단갯수 곱하기 가로값 + 21 */
+.boxContent > div{text-align:center;}
+.boxContent > div > div{display:inline-block; vertical-align:top;  text-align:center;  position:relative;  height:247px;}
+.boxContent > div > div.boxLeveTop{height:297px;}
+.boxContent > div > div > .boxLine{position:absolute; width:1px; top:0; height:20px; background-color:#ccc; left:50%;}
+.boxContent > div > div > a::after{content: ""; position:absolute; width:1px; left:50%; bottom:0; height:20px; background-color:#ccc;}
+.boxContent > div > div.boxNone > a::before{content: "";}
+.boxContent > div > div.boxLeft > a::before{content: ""; position:absolute; width:50%; top:0; left:0; height:1px; margin-top:-1px; background-color:#ccc;}
+.boxContent > div > div.boxRight > a::before{content: ""; position:absolute; width:50%; top:0; right:0; height:1px; margin-top:-1px; background-color:#ccc;}
+.boxContent > div > div.boxEmpty{height:0; padding-top::266px;}
+.boxContent > div > div.boxEmpty > span::before{content: ""; position:absolute; width:100%;  margin-top:-266px; top:0; left:0; height:1px; margin-top:-1px; background-color:#ccc;}
+.boxContent > div > div.hidden2 > span::before{content: ""; position:absolute; width:100%;  margin-top:-266px; top:0; left:0; height:1px; margin-top:-1px; background-color:#fff;}
+.boxContent > div > div.boxEmpty > span::after{content: ""; position:absolute; width:1px; bottom:0; height:20px; background-color:#ccc; right:0;}
+.boxContent > div > div.boxEmpty > span::after, .boxContent > div > div.hidden2 > span::after{content: ""; position:absolute; width:1px; right:0; bottom:0; height:20px; background-color:#fff;}
+.boxLeveTop{background-color:#39a76a;}
+.boxLevel0 > a{background-color:#39a76a}
+.boxContent > div > div.boxLevel1 > a{background-color:#beaff2}
+.boxContent > div > div.boxLevel2 > a{background-color:#f76e5e}
+.boxContent > div > div > a{color:#fff; display:block; padding:10px; margin:20px; width:126px;  box-sizing:border-box;}
+.boxContent > div > div > span{color:#fff; display:block; padding:10px; margin:20px; width:126px;  box-sizing:border-box;}
+.boxContent > div > div > a > p{text-align:left; font-size:11px; line-height:16px;}
+.boxContent > div > div > span > p{text-align:left; font-size:11px; line-height:16px;}
+.boxContent > div > div > a > h5{font-size:12px; padding:10px 0 5px;}
+
+
+div#select_box {position: relative; float:right; width: 200px; height: 40px; background:url(../images/select_bg.gif) 180px center no-repeat; background-size:13px 11px;  border: 1px solid #343f51;}
+div#select_box label {position: absolute; font-size: 14px; color: #333; top: 0; left: 12px; letter-spacing: 1px;}
+div#select_box select#nameNick {width: 100%; height: 40px; min-height: 40px; line-height: 40px; padding: 0 10px; opacity: 0; filter: alpha(opacity=0); /* IE 8 */}
+@media (max-width: 801px) {
+div#select_box {width: 32%; background:url(../images/select_bg.gif) 95% center no-repeat; background-size:13px 11px;}
+.boxSearBox > form  > input{width: 42%;} 
+.boxSearBox > a{float:right; margin-right: 0; margin-left:10px;}
+.boxContent > div > div > a > p{font-size:8px; line-height:11px;}
+.boxContent > div > div > a > h5{font-size:9px; padding:7px 0 5px;}
+.boxContent > div > div{height:202px;}
+.boxContent > div > div > a{width:96px;}
+.boxContent > div > div > span{width:96px;}
+.boxContent > div > div > a > .img > img {width:70px;}
+}
+
+

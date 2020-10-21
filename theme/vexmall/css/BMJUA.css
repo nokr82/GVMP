@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'BM JUA';
+    src: url('./fonts/BMJUA.eot');
+    src: url('./fonts/BMJUA.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BMJUA.woff2') format('woff2'),
+        url('./fonts/BMJUA.woff') format('woff'),
+        url('./fonts/BMJUA.ttf') format('truetype'),
+        url('./fonts/BMJUA.svg#BMJUA') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

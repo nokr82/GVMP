@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>우편번호 검색</title>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="//cdn.poesis.kr/post/search.min.js" charset="UTF-8"></script>
+    <!--[if IE 6]><script type="text/javascript" src="http://cdn.poesis.kr/post/search.min.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="./zip.css" />
+</head>
+
+<h1 id="postcodify_title">우편번호 검색</h1>
+
+<!-- 검색창이 표시되는 곳 -->
+
+<div id="postcodify"></div>
+
+<!-- Postcodify 설정 -->
+
+<script type="text/javascript">
+    
+    var odoc = window.opener.document;
+    
+    $("#postcodify").postcodify({
+        insertAddress : $("input[name='mb_addr1']", odoc),
+        insertDetails : $("input[name='mb_addr2']", odoc),
+        insertExtraInfo : $("input[name='mb_addr3']", odoc),
+        insertJibeonAddress : $("input[name='mb_addr_jibeon']", odoc),
+        useFullJibeon : false,
+        focusDetails : false,
+        hideSummary : false,
+        hideOldAddresses : false,
+        mapLinkProvider : "daum",
+        afterSelect : function(selectedEntry) {
+            $("input[name='mb_zip']", odoc).val(selectedEntry.data("code5"));
+            var pc6 = selectedEntry.data("code6").split("-");
+            $("input[name='mb_zip1']", odoc).val(pc6[0]);
+            $("input[name='mb_zip2']", odoc).val(pc6[1]);
+            //$("input[name='mb_zip']", odoc).val(pc6[0]+pc6[1]);
+            if (window.opener.jQuery) {
+                window.opener.jQuery("input[name='mb_addr2']").focus();
+            }
+            window.open("", "_self", "");
+            window.close();
+        }
+    });
+    
+</script>
+
+<!-- 검색 도움말 -->
+
+<div id="search_guide">
+    <p>검색 요령</p>
+    <ul>
+        <li>도로명주소 검색 : 도로명과 건물번호를 입력하세요. &nbsp; 예: <span>세종대로 110</span></li>
+        <li>지번주소 검색 : "동" 또는 "리" 이름과 번지수를 입력하세요. &nbsp; 예: <span>연산동 1000</span></li>
+        <li>건물명 검색 : 빌딩 또는 아파트 이름을 입력하세요. &nbsp; 예: <span>방배동 래미안</span>, <span>수곡동 주공3차</span></li>
+        <li>사서함 검색 : 사서함 이름과 번호를 입력하세요. &nbsp; 예: <span>광화문우체국사서함 123-4</span></li>
+    </ul>
+    <p>주의사항</p>
+    <ul>
+        <li>시·군·구·읍·면 등은 쓰지 않아도 되지만, 만약 쓰실 경우 반드시 띄어쓰기를 해 주세요.</li>
+        <li>도로명에 "××번길" 등이 포함되어 있는 경우에도 잊지 말고 써 주세요.</li>
+        <li>건물명보다는 도로명주소 또는 지번 주소로 검색하시는 것이 빠르고 정확합니다.</li>
+    </ul>
+</div>
+
+<!-- 닫기 버튼 -->
+
+<div class="win_btn">
+    <button type="button" onclick="window.close();">창닫기</button>
+    <!-- 링크 노출을 원하지 않으시면 삭제하셔도 됩니다 -->
+    <div class="powered_by_postcodify">Powered by <a href="http://postcodify.poesis.kr/" target="_blank">Postcodify</a></div>
+</div>
+
+</body>
+</html>

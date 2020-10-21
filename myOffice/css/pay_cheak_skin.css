@@ -1,0 +1,281 @@
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+
+*{margin:0; padding:0; }
+li{list-style:none;}
+a{text-decoration:none;}
+.clearfix:after{content:'';  display:block;  clear:both;}  
+img,video{vertical-align:bottom; border:0;}
+body{background-color:#edeff5;}
+
+
+
+.pay_math_all{font-family: 'Nanum Gothic', sans-serif; background-color:#edeff5;}
+.pay_no1{
+    font-size:20px;
+    max-width: 620px;
+    margin: 15px auto;
+    text-align:center;
+}
+.pay_no2{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    margin:10px 0;
+
+}
+
+.form01 {position: relative;}
+
+.form02{
+    display:none;
+}
+
+.form03{
+    display:none;
+    margin-bottom:0 !important;
+}
+.form04{
+    display:none;
+    margin:0 auto !important;
+}
+
+.pay_1{background-color:#1cb934;}
+.pay_2{background-color:#f2a80b;}
+.pay_3{background-color:#2399f1;}
+.pay_4{background-color:#fc565e;}
+
+.form_pay{
+    max-width: 620px;
+    margin: 15px auto 0;
+    background: #fff;
+    padding: 15px 20px;
+
+    overflow: hidden;
+    text-align:center;
+}
+
+.form01 input {background: #eee; cursor: not-allowed}
+.radio_css{
+    margin:20px 10px;
+}
+.theme_text{
+    margin:15px 0;
+    text-align:left;
+}
+.text_info{
+     margin:10px 5px 5px 10px; 
+     font-size:12px; 
+     line-height:15px;
+}
+.text_info.caution {
+    margin: 10px 77px 15px 30px;
+    position: relative;
+    text-align: left;
+    font-size: 15px;
+    line-height: 25px;
+    word-break: keep-all;
+}
+.text_info.caution::after{content:''; position:absolute; top: 5px; left: -23px;  width: 17px; height: 17px; background: url('../images/exclamation-mark.png'); background-size: contain; }
+
+.text_info img{
+    width:15px;
+}
+
+.tt_3, .tt_4, .tt_5{
+    display:none;
+}
+
+.input_text{
+    width:100%;
+    height: 40px;
+    padding:5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #000;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin:5px 0;
+}
+
+
+.unum_m{
+    float:left;
+    padding:5px;
+    width:10%;
+    text-align:center;
+    height: 40px;
+    line-height:40px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ccc;
+}
+.input_text_left{
+    float:left;
+    width:45%;
+}
+.input_text_left_1{
+    width:60%;
+}
+.input_text_right{
+    float:right;
+    width:45%;
+}
+.input_text_right_1{
+    float:left;
+    width:40%;
+    border:0;
+    text-align:center;
+}
+.input_text_right_2{
+    float:left;
+    width:30%;
+    border:0;
+    text-align:center;
+}
+
+
+
+.text_left{
+    float:left;
+    width:45%;
+    padding:5px;
+    line-height:40px;
+}
+.text_right{
+    float:left;
+    height: 40px;
+    padding:5px;
+    line-height:40px;
+
+}
+
+.pay_btn{
+    margin:10px 0;
+    padding:10px 20px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+    color:#fff;
+    background: #a7a8a9;
+}
+
+.point_c{
+    background: #ffffff;
+    width: 50%;
+    color: black;
+    border-radius:5px;
+    transition:all 0.5s;
+    padding:5px 10px;
+}
+.point_c.on{
+    background: #1bb934;
+    color: white;
+}
+
+.point_p{
+    background: #ffffff;
+    width: 50%;
+    color: black;
+    border-radius:5px;
+    padding:5px 10px;    
+}
+
+.point_p_fales, .point_c_fales{
+    background: #ffffff;
+    width: 50%;
+    color: black;
+    border-radius:5px;
+    padding:5px 10px;
+    
+}
+
+.point_p.on{
+    background: #fc565e;
+    color: white;
+}
+
+.point_p_fales.on{
+    background: #f2a80a;
+    color: white;
+}
+
+.point_c_fales.on{
+    background: #2399f1;
+    color: white;
+}
+
+
+/*신분증 인증 시스템*/
+.certify_idcard_wrap {position: relative; margin: 75px auto 35px;padding: 105px 18px 18px 18px; max-width: 620px; background: #fff; text-align: center}
+.certify_idcard_wrap .text_info.caution {font-size: 14px; letter-spacing: -0.7px; color: #222}
+.certify_idcard_wrap .step_alert {position: absolute; top: -43px; left: 50%; margin-left: -125px; width: 250px;}
+.certify_idcard_wrap .step_alert > div {font-family: 'NanumSquare'}
+.certify_idcard_wrap .step_alert > div span {display: inline-block; width: 82px; height: 82px; line-height: 82px; border-radius: 50%; background-color: #79cecd; font-size: 15px; font-weight: 500; letter-spacing: -0.75px; color: #fff;}
+.certify_idcard_wrap .step_alert > div p {padding: 23px 0; font-size: 18px; letter-spacing: -0.9px; color: #79cecd}
+
+.certify_idcard_wrap .step_alert > div.step_2 span {background-color: #1b83a3}
+.certify_idcard_wrap .step_alert > div.step_2 p {color: #1b83a3}
+
+.certify_idcard_wrap .step_alert > div.step_3 span {background-color: #36b65d}
+.certify_idcard_wrap .step_alert > div.step_3 p {color: #36b65d}
+
+.certify_idcard_wrap .step_alert > div.step_4 span {background-color: #c45252}
+.certify_idcard_wrap .step_alert > div.step_4 p {color: #c45252}
+
+.certify_idcard_wrap .idcard_content .img_container {overflow: hidden; width: 100%; height: 400px; background-color: f1f1f1; cursor: pointer}
+.certify_idcard_wrap .idcard_content .complete_imgbox {overflow: hidden; width: 100%; height: 400px; background-color: #fff; cursor: pointer;}
+.certify_idcard_wrap .idcard_content .complete_imgbox.off {display:none;}
+.certify_idcard_wrap .idcard_content .complete_imgbox img {margin-top:40px; max-width:100%}
+
+.certify_idcard_wrap .idcard_content .img_container img {width: 100%; height: 100%; object-fit: contain}
+
+.certify_idcard_wrap .idcard_content .reset_btn_area {margin:30px auto;}
+.certify_idcard_wrap .idcard_content .reset_btn_area .reset_btn {padding:10px 20px; background:#595959; color:#fff; font-size:18px; cursor:pointer;}
+.certify_idcard_wrap .idcard_content .reset_cnxl_btn_area {margin:30px auto 0; overflow:hidden; display:none;}
+.certify_idcard_wrap .idcard_content .reset_cnxl_btn_area .reset_cnxl_btn {padding:10px 20px; background:#595959; color:#fff; font-size:14px; cursor:pointer; float:right;}
+
+.certify_idcard_wrap .idcard_content .txt_container{overflow: hidden; margin-top: 12px}
+.certify_idcard_wrap .idcard_content .txt_container p {float: left;}
+.certify_idcard_wrap .idcard_content .txt_container #img_file {display: none}
+.certify_idcard_wrap .idcard_content .txt_container label[for="img_file"] {float: right; width: 138px; height: 39px; line-height: 39px; background-color: #595959; font-size: 13px; letter-spacing: -0.65px; color: #fff; cursor: pointer}
+
+.certify_idcard_wrap .idcard_info ul li:nth-child(3) {text-align: left}
+.certify_idcard_wrap .idcard_info ul li:nth-child(3) input[type="radio"] {margin-left: 10px; }
+.certify_idcard_wrap .idcard_info ul li:nth-child(3) input[type="radio"] + label {font-size: 14px; letter-spacing: -0.7px; color: #222}
+.certify_idcard_wrap .idcard_info .pay_btn {border-radius: 5px; font-size: 13px}
+
+
+.certify_idcard_wrap .custom-object-fit {position: relative; background-size: contain;  background-position: center center;}
+.certify_idcard_wrap .custom-object-fit img {opacity: 0;}
+
+
+.form_pay_cover {position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 900; background: rgba(0,0,0,0.7);}
+.form_pay_cover p {margin: 39% auto; width: 400px; line-height: 1.5; font-size: 35px; font-weight: 600; letter-spacing: -1.75px; color: #fff; text-align: center; word-break: keep-all}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px){
+.text_info.caution {margin: 10px 22px 15px 30px}
+
+    .certify_idcard_wrap .idcard_content .complete_imgbox {height: 300px;}
+    .certify_idcard_wrap .idcard_content .complete_imgbox img {margin-top:20px;}
+}
+@media (max-width: 480px){
+.text_info.caution {margin: 10px 6px 15px 21px}
+}
