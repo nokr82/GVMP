@@ -21,7 +21,7 @@ while ($row = mysql_fetch_array($query)){
         echo $row['mb_id']."<br>";
     }
 
-    mysql_query("update g5_member set VMC = '{$updateVMC}' where mb_id = '{$row['mb_id']}'");
+    //mysql_query("update g5_member set VMC = '{$updateVMC}' where mb_id = '{$row['mb_id']}'");
 }
 
 

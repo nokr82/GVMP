@@ -199,6 +199,9 @@ function parsing($val) {
         case "forceRenewal" :
             $re = "관리자 강제 리뉴얼";
             break;
+        case "usageFee" :
+            $re = "전산사용료";
+            BREAK;
     }
     return $re;
 }

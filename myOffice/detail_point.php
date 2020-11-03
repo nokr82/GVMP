@@ -25,6 +25,7 @@ $ANGELVMP = $row['VMP'];
 $result = mysql_query("SELECT * FROM genealogy where mb_id = '{$member['mb_id']}'"); /* 로그인했을때 사용자의 genealogy정보를 불러옴 */
 $row = mysql_fetch_array($result);
 
+
 $dateCheck_1 = mysql_fetch_array(mysql_query("SELECT date_add('{$member['renewal']}', interval +4 month) AS date"));
 $dateCheck_2 = mysql_fetch_array(mysql_query("SELECT date_add('{$member['renewal']}', interval +5 month) AS date"));
 $TIMESTAMP = $dateCheck_1["date"];
@@ -201,7 +202,7 @@ $sql = " select date,mb_id,VMC,VMR,VMP,VMM,VMG,V,VCash,VPay,bizMoney,VMC+VMP+VMR
              order by date desc
              ";
 $result = sql_query($sql);
-
+echo $sql;
 $total_p = 0; //포인트 총 합계금액
 ?>
 
@@ -626,6 +627,7 @@ include_once('../shop/shop.head.php');
                     <td><b class="mobile_tit">합계</b><span
                                 class="m_font_inhrt"><?php echo number_format($row['total']); ?></span>원
                     </td>
+                    <!-- 조건 추가  -->
                     <td><b class="mobile_tit">내용</b><?php echo parsing($row['way']); ?></td>
                 </tr>
                 <?php

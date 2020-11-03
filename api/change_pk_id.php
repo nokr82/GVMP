@@ -16,19 +16,24 @@ if ($member_t && $change_member) {
     $data['sql'] = $sql;
     $change_se = mysql_query($sql);
 
-    if ($change_se){
+    if ($change_se) {
         $sql = "UPDATE `gyc5`.`g5_member` SET `pk_id` = '{$pk_id}' WHERE (`mb_id` = '{$change_member['mb_id']}')";
         $change_se2 = mysql_query($sql);
         $data['sql2'] = $sql;
-        if ($change_se2){
+        if ($change_se2) {
             $data['success'] = 'success';
-        }else{
+        } else {
             $data['success'] = 'error2';
         }
-    }else{
+    } else {
         $data['success'] = 'error1';
     }
 
+} elseif ($change_member) {
+    $sql = "UPDATE `gyc5`.`g5_member` SET `pk_id` = '{$pk_id}' WHERE (`mb_id` = '{$change_member['mb_id']}')";
+    mysql_query($sql);
+    $data['sql3'] = $sql;
+    $data['success'] = 'success2';
 } else {
     $data['success'] = 'fail';
 }
